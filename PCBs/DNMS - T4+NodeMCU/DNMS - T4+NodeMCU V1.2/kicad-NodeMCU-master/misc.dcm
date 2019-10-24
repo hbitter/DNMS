@@ -1,0 +1,30 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP JACK_TRS_4PINS
+D TRS audio jack, 4 pins, mic
+K audio jack connector TRS mic
+$ENDCMP
+#
+$CMP L298N_H-Bridge
+D An H-Bridge based on the L298N
+K bridge, h-bridge, L298N
+$ENDCMP
+#
+$CMP RFID-RC522
+D An RC522 RFID reader
+K RC522, RFID, MRC522, MFRC522
+$ENDCMP
+#
+$CMP Tiny_Breakout_1.1
+D Tiny ESP8266 Breakout Board
+K Tiny Breakout ESP8266 ESP-8266
+F https://github.com/skorokithakis/tiny-ESP8266-breakout
+$ENDCMP
+#
+$CMP Tiny_Breakout_1.2
+D Tiny ESP8266 Breakout Board
+K Tiny Breakout ESP8266 ESP-8266
+F https://github.com/skorokithakis/tiny-ESP8266-breakout
+$ENDCMP
+#
+#End Doc Library

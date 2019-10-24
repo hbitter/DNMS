@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name P82B715PN_112)(type Legacy)(uri ${KIPRJMOD}/P82B715PN_112/P82B715PN_112.lib)(options "")(descr ""))
+  (lib (name teensy)(type Legacy)(uri "${KIPRJMOD}/Teensy KiCad/teensy.lib")(options "")(descr ""))
+  (lib (name DNMS-rescue)(type Legacy)(uri ${KIPRJMOD}/DNMS-rescue.lib)(options "")(descr ""))
+)

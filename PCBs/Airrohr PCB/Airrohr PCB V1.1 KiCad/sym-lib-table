@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name P82B715PN_112)(type Legacy)(uri ${KIPRJMOD}/P82B715PN_112/P82B715PN_112.lib)(options "")(descr ""))
+  (lib (name ESP8266)(type Legacy)(uri ${KIPRJMOD}/kicad-ESP8266-master/ESP8266.lib)(options "")(descr ""))
+  (lib (name nodemcu)(type Legacy)(uri ${KIPRJMOD}/kicad-NodeMCU-master/nodemcu.lib)(options "")(descr ""))
+)
