@@ -4,7 +4,9 @@ Ein Sensor-Modul zur Schallpegelmessung. Es wird neben dem LAeq-Wert über einem
 
 Die Werte werden dann über eine I²C-Schnittstelle an einen abfragenden Mikrocontroller zur Weiterverarbeitung übertragen. Das Abfrage-Intervall kann 1 Sekunde betragen oder auch bis zu 3600 Sekunden.
 
-Geplante Erweiterungen sind zusätzlich zur A-Bewertung eine C-Bewertung d.h. Bildung von LCeq, LCmax und LCmin, sowie eine FFT zur weiteren Analyse im Frequenzbereich. 
+Geplante Erweiterungen sind zusätzlich zur A-Bewertung eine C-Bewertung d.h. Bildung von LCeq, LCmax und LCmin, sowie eine FFT zur weiteren Analyse im Frequenzbereich.
+
+Die Software/Firmware für Teensy 4.0 ist in Erprobung und noch nicht frei gegeben.
 
 ----------------------------------------------------------------------------------------------------------------
 
@@ -15,5 +17,5 @@ All measurements will be transfered to a further microcontroller via I²C bus. T
 
 Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and further FFT for analysis in the frequency domain.
 
-
+Software/Firmware for Teensy 4.0 is still beeing tested and not yet released.
 
