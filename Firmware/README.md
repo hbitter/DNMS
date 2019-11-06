@@ -1,4 +1,4 @@
-# DNMS Firmware for Teensy3.6 and Teensy4.0
+# DNMS Firmware for Teensy 3.6 and Teensy 4.0
 
 
 ## Die Software/Firmware für Teensy 4.0 ist in Erprobung und noch nicht freigegeben
