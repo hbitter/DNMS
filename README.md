@@ -6,7 +6,7 @@ Die Werte werden dann über eine I²C-Schnittstelle an einen abfragenden Mikroco
 
 Geplante Erweiterungen sind zusätzlich zur A-Bewertung eine C-Bewertung d.h. Bildung von LCeq, LCmax und LCmin, sowie eine FFT zur weiteren Analyse im Frequenzbereich.
 
-## Die Software/Firmware für Teensy 4.0 ist in Erprobung und noch nicht frei gegeben.
+## Die Software/Firmware für Teensy 4.0 ist in Erprobung und noch nicht freigegeben.
 
 ----------------------------------------------------------------------------------------------------------------
 
