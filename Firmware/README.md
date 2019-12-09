@@ -8,9 +8,9 @@
 
 ## Version Historie Teensy 3.6
 
-### V1.0.0 und V1.0.1 - erste Versionen
+###  - V1.0.0 und V1.0.1 - erste Versionen
 
-### V1.1.0 und V1.1.1 - Änderung I²C Bibliothek, es wird nun die i2c_t3 Bibliothek eingesetzt https://github.com/nox771/i2c_t3, die in der Kommunikation stabiler ist 
+###  - V1.1.0 und V1.1.1 - Änderung I²C Bibliothek, es wird nun die i2c_t3 Bibliothek eingesetzt https://github.com/nox771/i2c_t3, die in der Kommunikation stabiler ist 
 
 
 ## Bezeichnung der Versionen
@@ -28,9 +28,9 @@
 
 ## version history Teensy 3.6
 
-### V1.0.0 und V1.0.1 - initial versions
+###  - V1.0.0 und V1.0.1 - initial versions
 
-### V1.1.0 und V1.1.1 - change of I²C library, now it is: i2c_t3  https://github.com/nox771/i2c_t3, which is more stable 
+###  - V1.1.0 und V1.1.1 - change of I²C library, now it is: i2c_t3  https://github.com/nox771/i2c_t3, which is more stable 
 
 
 ## naming convention for the different versions
