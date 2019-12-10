@@ -6,7 +6,7 @@
 ### Airrohr PCBs
 Basis Board für eine NodeMCU V2 od. V3 mit Anschlüssen für die folgenden Sensoren:
 - Feinstaubsensor SD011 über Steckverbinder
-- Feinstaubsensor SPS30 über Steckverbinder
+- Feinstaubsensor SPS30 (Sensirion) über Steckverbinder
 - DHT22 Temperatur- Feuchtigkeitssensor über Stiftleiste
 - I²C Anschlüsse mit 3,3V und 5V Versorgungsspannungs für DNMS und andere Sensoren (z.B. BMP/E280 Temperatur- Feuchtigkeitssensor) über Stiftleiste
 - I²C-Bus-Verlängerung mit 5V Versorgungsspannung für entfernten DNMS Sensor (bei Verbindungen > 250mm) über Stiftleiste
@@ -16,6 +16,9 @@ Airrohr V1.1 - erste freigegebene Version
 Airrohr V1.2 - I²C-Bus-Verlängerung mit zusätzlicher RJ-12 (Modular Jack) Buchse
 
 ### DNMS - T3.6+NodeMCU
+Kombiniertes Board für DNMS mit Teensy3.6 und NodeMCU V2 od. V3, neben der DNMS Funktion sind noch Anschlüsse für die die folgenden Sensoren vorhanden:
+- Feinstaubsensor SPS30 (Sensirion) über Steckverbiner
+- I²C Anschluss mit 3,3V Versorgungsspannung für z.B. BMP/E280 Temperatur- Feuchtigkeitssensor od. SHT3X Sensor über Stiftleiste
 
 ### DNMS - T3.6
 
