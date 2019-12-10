@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Teensy3.6)(type Legacy)(uri "C:/Ablage/sonstiges/Microcontroller Boards/teensy 3.6/Kicad/Teensy3.6.pretty/Teensy3.6.lib")(options "")(descr ""))
+  (lib (name P82B715PN_112)(type Legacy)(uri ${KIPRJMOD}/P82B715PN_112/P82B715PN_112.lib)(options "")(descr ""))
+  (lib (name E5566-Q0LK22-L)(type Legacy)(uri "${KIPRJMOD}/RJ-12 6P-6C Pulse/E5566-Q0LK22-L.lib")(options "")(descr ""))
+)
