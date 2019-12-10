@@ -3,7 +3,7 @@
 
 ## Funktion der verschiedenen PCBs
 
-### Airrohr PCBs
+### Airrohr PCB
 Basis Board für eine NodeMCU V2 od. V3 mit Anschlüssen für die folgenden Sensoren:
 - Feinstaubsensor SD011 über Steckverbinder
 - Feinstaubsensor SPS30 (Sensirion) über Steckverbinder
