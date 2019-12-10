@@ -20,6 +20,9 @@ Kombiniertes Board für DNMS mit Teensy3.6 und NodeMCU V2 od. V3, neben der DNMS
 - Feinstaubsensor SPS30 (Sensirion) über Steckverbiner
 - I²C Anschluss mit 3,3V Versorgungsspannung für z.B. BMP/E280 Temperatur- Feuchtigkeitssensor od. SHT3X Sensor über Stiftleiste
 
+PCB Historie:
+- DNMS - T3.6+NodeMCU V1.0 - erste freigegebene Version
+
 ### DNMS - T3.6
 Basis Board für Teensy3.6 zum Anschluss ICS-43434 Mikrofon, die Lärmwerte werden über I²C an einen Kommunikationsprozessor (z.B. Airrohr V1.1 od. V1.2 mit NodeMCU) übertragen, für Entfernungen zum Kommunikationsprozessor > 250mm ist eine I²C-Bus-Verlängerung vorhanden.
 
