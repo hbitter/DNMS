@@ -9,7 +9,7 @@ Basis Board für eine NodeMCU V2 od. V3 mit Anschlüssen für die folgenden Sens
 - Feinstaubsensor SPS30 (Sensirion) über Steckverbinder
 - DHT22 Temperatur- Feuchtigkeitssensor über Stiftleiste
 - I²C Anschlüsse mit 3,3V und 5V Versorgungsspannungs für DNMS und andere Sensoren (z.B. BMP/E280 Temperatur- Feuchtigkeitssensor) über Stiftleiste
-- I²C-Bus-Verlängerung mit 5V Versorgungsspannung für entfernten DNMS Sensor (bei Verbindungen > 250mm) über Stiftleiste
+- optionale I²C-Bus-Verlängerung mit 5V Versorgungsspannung für entfernten DNMS Sensor (bei Verbindungen > 250mm) über Stiftleiste
 
 PCB Historie:
 - Airrohr V1.1 - erste freigegebene Version
@@ -24,7 +24,7 @@ PCB Historie:
 - DNMS - T3.6+NodeMCU V1.0 - erste freigegebene Version
 
 ### DNMS - T3.6
-Basis Board für Teensy3.6 zum Anschluss ICS-43434 Mikrofon, die Lärmwerte werden über I²C an einen Kommunikationsprozessor (z.B. Airrohr V1.1 od. V1.2 mit NodeMCU) übertragen, für Entfernungen zum Kommunikationsprozessor > 250mm ist eine I²C-Bus-Verlängerung vorhanden.
+Basis Board für Teensy3.6 zum Anschluss ICS-43434 Mikrofon, die Lärmwerte werden über I²C an einen Kommunikationsprozessor (z.B. Airrohr V1.1 od. V1.2 mit NodeMCU) übertragen, für Entfernungen zum Kommunikationsprozessor > 250mm ist eine optionale I²C-Bus-Verlängerung vorhanden.
 
 PCB Historie:
 - DNMS - T3.6 V1.1 - erste freigegebene Version
