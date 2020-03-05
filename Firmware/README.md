@@ -8,7 +8,7 @@
 
 ## Teensy 3.6
 
-### aktuelle Firmware für Teensy 3.6 ist V1.1.0 und V1.1.1
+### Aktuelle Firmware für Teensy 3.6 ist V1.1.0 und V1.1.1
 
 ### Versions Historie Teensy 3.6
 
@@ -31,7 +31,7 @@
 
 ## Teensy 3.6
 
-### current firmware for Teensy 3.6 is V1.1.0 and V1.1.1 
+### Current firmware for Teensy 3.6 is V1.1.0 and V1.1.1 
 
 
 ### Version history Teensy 3.6
