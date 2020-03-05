@@ -10,7 +10,7 @@ Nach dem Flashen oder nach Power Up startet das Testprogramm und berechnet aus d
 
 ------------------------------------------------------------------------
 
-# test program for Teensy 4.0 and ICS-43434
+# Test program for Teensy 4.0 and ICS-43434
 
 ## How to flash the Teensy 4.0 with the test program
 
