@@ -25,7 +25,7 @@
 ------------------------------------------------------------------------
 
 ## Teensy 4.0 
-## I²C library for I²C Slave-Mode is still missing, though there is no communication to the NodeMCU.
+## I²C library for I²C Slave-Mode is still missing, ´hence there is no communication to the NodeMCU.
 ## for testing the Teensy 4.0 board and a connected ICS-43434 microphone there is the test program DNMS_Vt.0.4
 
 
