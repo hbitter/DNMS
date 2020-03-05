@@ -25,8 +25,8 @@
 ------------------------------------------------------------------------
 
 ## Teensy 4.0 
-## I²C library for I²C Slave-Mode is still missing, ´hence there is no communication to the NodeMCU.
-## for testing the Teensy 4.0 board and a connected ICS-43434 microphone there is the test program DNMS_Vt.0.4
+## I²C library for I²C Slave-Mode is still missing, hence there is no communication to the NodeMCU.
+## For testing the Teensy 4.0 board and a connected ICS-43434 microphone there is the test program DNMS_Vt.0.4
 
 
 ## Teensy 3.6
@@ -34,14 +34,14 @@
 ## current firmware for Teensy 3.6 is V1.1.0 and V1.1.1 
 
 
-## version history Teensy 3.6
+## Version history Teensy 3.6
 
 ###  - V1.0.0 und V1.0.1 - initial versions
 
 ###  - V1.1.0 und V1.1.1 - change of I²C library, now it is: i2c_t3  https://github.com/nox771/i2c_t3, which is more stable 
 
 
-## naming convention for the different versions
+## Naming convention for the different versions
 
 <img src="images/Versionsbezeichnung english.jpg"><br>
 
