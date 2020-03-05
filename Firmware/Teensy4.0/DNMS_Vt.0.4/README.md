@@ -22,5 +22,5 @@ After flashing or after power up the test program starts caculatiing LAeq, LAmin
 
 ------------------------------------------------------------------------
 
-<img src="images/image 1.jpg"><br>
+<img src="images/Image 1.jpg"><br>
 
