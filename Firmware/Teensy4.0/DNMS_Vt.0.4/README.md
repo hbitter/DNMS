@@ -4,7 +4,7 @@
 
 Für die Teensy Boards existiert ein standalone Flash-Programm - der Teensy Loader - sowohl mit grafischer Oberfläche als auch als Version für die Kommandozeile jeweils für Windows, Linux und Mac. Der Download des Teensy Loader ist unter: https://www.pjrc.com/teensy/loader.html möglich. Weiterhin ist dort im Detail der Flash Vorgang unter den verschiedenen Betriebssystemen beschrieben.
 
-## Funktion und Ausgabe des Testgrogramms
+## Funktion und Ausgabe des Testprogramms
 
 Nach dem Flashen oder nach Power Up startet das Testprogramm und berechnet aus den Werten des angeschlossenen Mikrofons den LAeq, LAmin und LAmax. Diese drei Werte werden dann alle 10 Sekunden über die USB Schnittstelle an ein Terminalprogramm ausgegeben (Serieller Monitor der Arduino IDE od. PuTTY mit 115200 baud). Die interne rote LED des Teensy Boards blinkt (245ms an, 245 ms aus). Die Ausgabe sollte wie auf dem folgenden Bild aussehen:
 
