@@ -2,7 +2,8 @@
 
 
 ## Teensy 4.0
-### Es fehlt immer noch die I²C Library für den I²C Slave-Mode, deshalb können keine Werte an die NodeMCU übertragen werden.
+### Die erste Firmware für Teensy 4.0 ist nun verfügbar V1.0.4 und V1.0.5
+
 ### Um das Teensy 4.0 Board und ein daran angeschlossenes ICS-43434 Mikrofon zu testen, gibt es das Testprogramm DNMS_Vt.0.4
 
 
@@ -25,7 +26,8 @@
 ------------------------------------------------------------------------
 
 ## Teensy 4.0 
-### I²C library for I²C Slave-Mode is still missing, hence there is no communication to the NodeMCU.
+### First firmware for Teensy 4.0 is now available V1.0.4 and V1.0.5
+
 ### For testing the Teensy 4.0 board and a connected ICS-43434 microphone there is the test program DNMS_Vt.0.4
 
 
