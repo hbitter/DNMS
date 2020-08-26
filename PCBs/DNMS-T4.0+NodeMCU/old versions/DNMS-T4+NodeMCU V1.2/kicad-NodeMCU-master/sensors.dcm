@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DHT11_Temperature_Humidity
+D A DHT11 temperature and humidity sensor
+K DHT11, temperature, humidity
+$ENDCMP
+#
+$CMP DHT22_Temperature_Humidity
+D A DHT22 temperature and humidity sensor
+K DHT22, temperature, humidity
+$ENDCMP
+#
+$CMP PIR_Motion_Sensor
+D PIR motion sensor
+K motion, sensor, pyroelectric, infrared, ir
+$ENDCMP
+#
+$CMP Photoresistor
+D A photoresistive light sensor
+K light, sensor
+$ENDCMP
+#
+$CMP RF_Receiver_433_MHz
+D An RF receiver at 433 MHz
+K rf, receiver, 433
+$ENDCMP
+#
+$CMP RF_Transmitter_433_MHz
+D An RF transmitter at 433 MHz
+K rf, transmitter, 433
+$ENDCMP
+#
+#End Doc Library

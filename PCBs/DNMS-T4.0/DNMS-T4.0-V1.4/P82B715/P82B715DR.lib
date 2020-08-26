@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# P82B715DR
+#
+DEF P82B715DR U 0 40 Y Y 1 L N
+F0 "U" -401 501 50 H V L BNN
+F1 "P82B715DR" -401 -401 50 H V L BNN
+F2 "SOIC8" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -400 400 -400 -300 N
+P 2 0 0 10 -400 -300 400 -300 N
+P 2 0 0 10 400 -300 400 400 N
+P 2 0 0 10 400 400 -400 400 N
+X LX 2 -600 100 200 R 40 40 0 0 P 
+X SX 3 -600 0 200 R 40 40 0 0 P 
+X LY 7 600 100 200 L 40 40 0 0 P 
+X SY 6 600 0 200 L 40 40 0 0 P 
+X GND 4 0 -500 200 U 40 40 0 0 W 
+X VCC 8 0 600 200 D 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library
