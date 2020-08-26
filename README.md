@@ -10,15 +10,15 @@ Geplante Erweiterungen sind zusätzlich zur A-Bewertung eine C-Bewertung d.h. Bi
 ## Neuigkeiten
 
 ### August 2020: Neue PCBs verfügbar
-#### Airrohr-PCB-V1.4
-#### DNMS-T3.6-V1.4
-#### DNMS-T4.0-V1.4
-#### DNMS-T4.0+NodeMCU-V1.4
+- Airrohr-PCB-V1.4
+- DNMS-T3.6-V1.4
+- DNMS-T4.0-V1.4
+- DNMS-T4.0+NodeMCU-V1.4
 
 ### Juni 2020: Teensy4.0 läuft stabil und wird nun empfohlen
-#### Teensy4.0 ist preiswerter als Teensy3.6
-#### Teensy4.0 ist leistungsfähiger als Teensy3.6
-#### Teensy3.6 wird weiter unterstützt
+- Teensy4.0 ist preiswerter als Teensy3.6
+- Teensy4.0 ist leistungsfähiger als Teensy3.6
+- Teensy3.6 wird weiter unterstützt
 
 
 
@@ -36,15 +36,15 @@ Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and f
 ## News
 
 ### August 2020: New PCBs are available
-#### Airrohr-PCB-V1.4
-#### DNMS-T3.6-V1.4
-#### DNMS-T4.0-V1.4
-#### DNMS-T4.0+NodeMCU-V1.4
+- Airrohr-PCB-V1.4
+- DNMS-T3.6-V1.4
+- DNMS-T4.0-V1.4
+- DNMS-T4.0+NodeMCU-V1.4
 
 ### June 2020: Teensy4.0 is stable and now recommended
-#### Teensy4.0 is cheaper than Teensy3.6
-#### Teensy4.0 has a lot more power than Teensy3.6
-#### Teendsy3.6 will be further supported
+- Teensy4.0 is cheaper than Teensy3.6
+- Teensy4.0 has a lot more power than Teensy3.6
+- Teendsy3.6 will be further supported
 
 
 
