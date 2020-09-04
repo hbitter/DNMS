@@ -704,4 +704,6 @@ F 3 "~" V 7750 5875 50  0001 C CNN
 	1    7750 5850
 	1    0    0    -1  
 $EndComp
+Text Notes 9000 5200 0    50   ~ 0
+RJ12 connectors with two different\nfootprints are supported
 $EndSCHEMATC

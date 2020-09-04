@@ -133,7 +133,7 @@ Jumper\nVUSB to VIN
 Text Notes 1350 4700 0    50   ~ 0
 L/R\nWS\nSD
 Text Notes 1950 5150 0    50   ~ 0
-I²S connection to\nICS-43434\nmicrophon
+I²S connection to\nICS-43434\nmicrophone board
 Text Notes 3250 4700 0    50   ~ 0
 GND\nSCK\n3V3
 $Comp

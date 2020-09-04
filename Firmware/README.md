@@ -15,7 +15,7 @@
 
 ####  - V1.0.0 und V1.0.1 - erste Versionen
 
-####  - V1.1.0 und V1.1.1 - Änderung I²C Bibliothek, es wird nun die i2c_t3 Bibliothek eingesetzt https://github.com/nox771/i2c_t3, die in der Kommunikation stabiler ist 
+####  - V1.1.0 und V1.1.1 - Änderung I²C Bibliothek, es wird nun die i2c_t3 Bibliothek (https://github.com/nox771/i2c_t3)eingesetzt, die in der Kommunikation stabiler ist 
 
 
 ## Bezeichnung der Versionen
@@ -40,10 +40,10 @@
 
 ####  - V1.0.0 und V1.0.1 - initial versions
 
-####  - V1.1.0 und V1.1.1 - change of I²C library, now it is: i2c_t3  https://github.com/nox771/i2c_t3, which is more stable 
+####  - V1.1.0 und V1.1.1 - change of I²C library, now the i2c_t3 lib (https://github.com/nox771/i2c_t3) is used,  which is more stable 
 
 
-## Naming convention for the different versions
+## Naming convention of the different versions
 
 <img src="images/Versionsbezeichnung english.jpg"><br>
 

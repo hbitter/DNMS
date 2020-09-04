@@ -127,13 +127,13 @@ SDA
 Wire Wire Line
 	6550 4550 7100 4550
 Text Notes 7400 4500 0    50   ~ 0
-I²C 3.3V\nAnschluss
+I²C 3.3V\nconnection
 Text Notes 4800 3250 0    50   ~ 0
-Jumper\nVUSB nach VIN
+Jumper\nVUSB to VIN
 Text Notes 1350 4700 0    50   ~ 0
 L/R\nWS\nSD
 Text Notes 1950 5150 0    50   ~ 0
-connection of\nICS-43434\nBreak-Out Board\nPesky Products
+I²S connection to\nICS-43434\nmicrophon
 Text Notes 3250 4700 0    50   ~ 0
 GND\nSCK\n3V3
 $Comp

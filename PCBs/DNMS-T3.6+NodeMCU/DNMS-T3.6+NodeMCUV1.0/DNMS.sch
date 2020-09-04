@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:DNMS-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -132,7 +131,7 @@ Jumper\nVUSB nach VIN
 Text Notes 1350 4700 0    50   ~ 0
 L/R\nWS\nSD
 Text Notes 1950 5150 0    50   ~ 0
-connection of\nICS-43434\nBreak-Out Board\nPesky Products
+connection of\nICS-43434\nmicrophone board
 Text Notes 3250 4700 0    50   ~ 0
 GND\nSCK\n3V3
 $Comp
