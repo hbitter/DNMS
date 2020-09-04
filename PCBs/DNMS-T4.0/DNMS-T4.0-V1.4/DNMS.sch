@@ -177,7 +177,7 @@ Wire Wire Line
 Text Notes 10250 1500 0    50   ~ 0
 I²C\nconnection
 Text Notes 4650 5250 0    50   ~ 0
-connection of\nICS-43434\nmicrophon board
+connection of\nICS-43434\nmicrophone board
 Wire Wire Line
 	7100 1850 7350 1850
 $Comp
