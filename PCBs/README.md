@@ -83,7 +83,7 @@ PCB revision history:
 - DNMS-T3.6+NodeMCU V1.0 - first version
 
 ### DNMS-T3.6
-DNMS board for Teensy3.6 to connect a ICS-43434 microphon, the noise measurements are transmitted via the I²C-bus to a communication processor (i.e. Airrohr-V1.4 with NodeMCU), if the distance to the communication processor exceeds 250mm then the I²C-bus-extension with RJ12 connector (Modular Jack 6P/6C) can be used. A standard telephone cable with RJ12 jacks on both sides (6P/6C) with up to 5m length or more provides the connection of the DNMS and the Airrohr board.
+DNMS board for Teensy3.6 to connect a ICS-43434 microphone, the noise measurements are transmitted via the I²C-bus to a communication processor (i.e. Airrohr-V1.4 with NodeMCU), if the distance to the communication processor exceeds 250mm then the I²C-bus-extension with RJ12 connector (Modular Jack 6P/6C) can be used. A standard telephone cable with RJ12 jacks on both sides (6P/6C) with up to 5m length or more provides the connection of the DNMS and the Airrohr board.
 
 PCB revision history:
 - DNMS-T3.6-V1.1 - first version
@@ -102,7 +102,7 @@ PCB revision history:
 
 
 ### DNMS-T4.0
-DNMS board for Teensy4.0 to connect a ICS-43434 microphon, the noise measurements are transmitted via the I²C-bus to a communication processor (i.e. Airrohr-V1.4 with NodeMCU), if the distance to the communication processor exceeds 250mm then the I²C-bus-extension with RJ12 connector (Modular Jack 6P/6C) can be used. A standard telephone cable with RJ12 jacks on both sides (6P/6C) with up to 5m length or more provides the connection of the DNMS and the Airrohr board.
+DNMS board for Teensy4.0 to connect a ICS-43434 microphone, the noise measurements are transmitted via the I²C-bus to a communication processor (i.e. Airrohr-V1.4 with NodeMCU), if the distance to the communication processor exceeds 250mm then the I²C-bus-extension with RJ12 connector (Modular Jack 6P/6C) can be used. A standard telephone cable with RJ12 jacks on both sides (6P/6C) with up to 5m length or more provides the connection of the DNMS and the Airrohr board.
 
 PCB revision history:
 - DNMS-T4.0-V1.2 - first version
