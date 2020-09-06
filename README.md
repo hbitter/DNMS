@@ -44,7 +44,7 @@ Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and f
 ### June 2020: Teensy4.0 is stable and now recommended
 - Teensy4.0 is cheaper than Teensy3.6
 - Teensy4.0 has a lot more power than Teensy3.6
-- Teendsy3.6 will be further supported
+- Teensy3.6 will be further supported
 
 
 
