@@ -6,6 +6,7 @@ Auch um einen einzelnen Hex-File (z.B. DNMS_V1.1.0.ino.hex) herrunterzuladen ist
 <img src="images/DNMS_herrunterladen.jpg"><br>
 
 
+
 ## Anmerkung zum selbst Übersetzen der DNMS Firmware
 
 Um die Firmware selbst zu übersetzen ist neben der Installation der Arduino IDE (Version 1.8.13) und der Teensyduino Erweiterung (Version 1.53)(PJRC Link: https://www.pjrc.com/teensy/teensyduino.html) noch folgendes zu beachten:
@@ -19,6 +20,7 @@ In der Audio Bibliothek sind einige Dateien mit dem Namen "control_xxx.cpp" vorh
 
 Even if you want to download only a single Hes-File (i.e. DNMS_V1.1.0.ini.hex), the easiest way is to download the complete repository as a ZIP and then unpack it.
 <img src="images/DNMS_herrunterladen.jpg"><br>
+
 
 
 ## Note how to compile the firmware by yourself
