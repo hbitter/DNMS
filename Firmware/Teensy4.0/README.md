@@ -19,7 +19,7 @@ In der Audio Bibliothek sind einige Dateien mit dem Namen "control_xxx.cpp" vorh
 ------------------------------------------------------------------------
 ## Note how to download the hex file
 
-Even if you want to download only a single Hes-File (i.e. DNMS_V1.1.0.ini.hex), the easiest way is to download the complete repository as a ZIP and then unpack it.
+Even if you want to download only a single Hex-File (i.e. DNMS_V1.1.0.ini.hex), the easiest way is to download the complete repository as a ZIP and then unpack it.
 <img src="images/DNMS_herrunterladen.jpg"><br>
 
 
