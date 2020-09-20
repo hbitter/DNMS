@@ -2005,7 +2005,7 @@
   (segment (start 200.4492 81.0494) (end 200.4492 80.9244) (width 0.25) (layer B.Cu) (net 24))
   (segment (start 148.431 77.4192) (end 148.2786 77.4192) (width 0.25) (layer B.Cu) (net 24))
   (segment (start 144.63557 46.9138) (end 142.9954 48.55397) (width 0.5) (layer F.Cu) (net 24))
-  (segment (start 145.7132 46.9138) (end 144.63557 46.9138) (width 0.25) (layer F.Cu) (net 24))
+  (segment (start 145.7132 46.9138) (end 144.63557 46.9138) (width 0.5) (layer F.Cu) (net 24))
   (segment (start 148.2786 77.4192) (end 148.1262 77.4192) (width 0.25) (layer F.Cu) (net 24))
   (segment (start 142.97 48.514) (end 142.97 80.73203) (width 0.5) (layer F.Cu) (net 24))
   (segment (start 150.114 75.3618) (end 150.114 25.6032) (width 0.5) (layer F.Cu) (net 24))
