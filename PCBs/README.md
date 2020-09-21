@@ -18,6 +18,9 @@ PCB Versions Historie:
 			   - einige Bauelemente nach innen verschoben, damit der Einbau in ein Gehäuse (Rohr) einfacher ist 
 			   - P82B715 (I²C-bus Extender IC) kann im DIP8 Gehäuse oder im SO8 Gehäuse bestückt werden
 
+<img src="images/Airrohr-PCB-V1.4.jpg"><br>
+
+
 ### DNMS-T3.6+NodeMCU
 Kombiniertes Board für DNMS mit Teensy3.6 und NodeMCU V2 od. V3, neben der DNMS Funktion sind noch Anschlüsse für die die folgenden Sensoren vorhanden:
 - Feinstaubsensor SPS30 (Sensirion) über Steckverbiner
@@ -25,6 +28,7 @@ Kombiniertes Board für DNMS mit Teensy3.6 und NodeMCU V2 od. V3, neben der DNMS
 
 PCB Versions Historie:
 - DNMS-T3.6+NodeMCU V1.0 - erste Version
+
 
 ### DNMS-T3.6
 Basis Board für Teensy3.6 zum Anschluss ICS-43434 Mikrofon, die Lärmwerte werden über I²C an einen Kommunikationsprozessor (z.B. Airrohr-V1.4 mit NodeMCU) übertragen, für Entfernungen zum Kommunikationsprozessor > 250mm ist eine optionale I²C-Bus-Verlängerung vorhanden. Ein standard Telefonkabel mit RJ12 Verbindern (6P/6C) dient dann zur Verbindung des DNMS mit dem Airrohr Board.
@@ -35,6 +39,7 @@ PCB Versions Historie:
 - DNMS-T3.6-V1.3 - P82B715 (I²C-bus Extender IC) kann im DIP8 Gehäuse oder im SO8 Gehäuse bestückt werden
 - DNMS-T3.6-V1.4 - RJ12 Buchse nun für zwei unterschiedliche "Footprints"
 
+
 ### DNMS-T4.0+NodeMCU
 Kombiniertes Board für DNMS mit Teensy4.0 und NodeMCU V2 od. V3, neben der DNMS Funktion sind noch Anschlüsse für die die folgenden Sensoren vorhanden:
 - Feinstaubsensor SPS30 (Sensirion) über Steckverbiner
@@ -44,6 +49,8 @@ PCB Versions Historie:
 - DNMS-T4.0+NodeMCU V1.2 - erste veröffentlichte Version
 - DNMS-T4.0+NodeMCU V1.4 - einige Bauelemente wurden nach innen verschoben, damit der Einbau ins Gehäuse einfacher wird
 
+<img src="images/DNMS-T4.0+NodeMCU-V1.4.jpg"><br>
+
 
 ### DNMS-T4.0
 Basis Board für Teensy4.0 zum Anschluss ICS-43434 Mikrofon, die Lärmwerte werden über I²C an einen Kommunikationsprozessor (z.B. Airrohr-V1.4 mit NodeMCU) übertragen, für Entfernungen zum Kommunikationsprozessor > 250mm ist eine optionale I²C-Bus-Verlängerung vorhanden. Ein standard Telefonkabel mit RJ12 Verbindern (6P/6C) dient dann zur Verbindung des DNMS mit dem Airrohr Board.
@@ -52,6 +59,9 @@ PCB Versions Historie:
 - DNMS-T4.0-V1.2 - erste Version
 - DNMS-T4.0-V1.4 - P82B715 (I²C-bus Extender IC) kann im DIP8 Gehäuse oder im SO8 Gehäuse bestückt werden
 				 - RJ12 Buchse für I²C-Bus-Verlängerung mit zwei unterschiedlichen "Footprints"
+
+<img src="images/DNMS.T4.0-V1.4.jpg"><br>
+
 
 ----------------------------------------------------------------------------------------------------------------
 
@@ -71,6 +81,8 @@ PCB revision history:
 - Airrohr-V1.4 - support for two different footprints for RJ12 connector, placement of RJ12 connector to different side
 			   - placement of some components more to the inner side, so that everything fits better in a case (i.e. tube)
 			   - P82B715 (I²C-bus Extender IC) layout allows assembly of DIP8 or SO8 package
+			   
+<img src="images/Airrohr-PCB-V1.4.jpg"><br>
 
 
 ### DNMS-T3.6+NodeMCU
@@ -100,6 +112,8 @@ PCB revision history:
 - DNMS-T4.0+NodeMCU V1.2 - first version
 - DNMS-T4.0+NodeMCU V1.4 - some components were moved towards the inner side, so that everything fits better in a case (i.e. tube)
 
+<img src="images/DNMS-T4.0+NodeMCU-V1.4.jpg"><br>
+
 
 ### DNMS-T4.0
 DNMS board for Teensy4.0 to connect a ICS-43434 microphone, the noise measurements are transmitted via the I²C-bus to a communication processor (i.e. Airrohr-V1.4 with NodeMCU), if the distance to the communication processor exceeds 250mm then the I²C-bus-extension with RJ12 connector (Modular Jack 6P/6C) can be used. A standard telephone cable with RJ12 jacks on both sides (6P/6C) with up to 5m length or more provides the connection of the DNMS and the Airrohr board.
@@ -109,4 +123,4 @@ PCB revision history:
 - DNMS-T4.0-V1.4 - P82B715 (I²C-bus Extender IC) layout allows assembly of DIP8 or SO8 package
 				 - support for two different footprints for RJ12 connector
 
-
+<img src="images/DNMS.T4.0-V1.4.jpg"><br>
