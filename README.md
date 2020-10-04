@@ -9,6 +9,10 @@ Geplante Erweiterungen sind zusätzlich zur A-Bewertung eine C-Bewertung d.h. Bi
 
 ## Neuigkeiten
 
+### Oktober 2020
+- Neues Manual V2.0 verfügbar mit detaillierten Beschreibungen der V1.4 Boards
+- Stücklisten/BOM für die V1.4 Boards (Airrohr-PCB-V1.4, DNMS-T4.0-V1.4, DNMS-T4.0+NodeMCU-V1.4)
+
 ### August 2020: Neue PCBs verfügbar
 - Airrohr-PCB-V1.4
 - DNMS-T3.6-V1.4
@@ -34,6 +38,11 @@ Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and f
 
 
 ## News
+
+### October 2020
+- New Manual V2.0 (right now only in german) with detailed description of V1.4 boards
+- BOM for V1.4 Boards (Airrohr-PCB-V1.4, DNMS-T4.0-V1.4, DNMS-T4.0+NodeMCU-V1.4)
+- 
 
 ### August 2020: New PCBs are available
 - Airrohr-PCB-V1.4
