@@ -45,7 +45,7 @@ Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and f
 ## News
 
 ### Further development
-- As a new basis in the Audio Lib computing will be changed from 32-Bit integer to 32-Bit floating point. Teensy 3.6 /4.0 are very capable, their processors have HW 32-Bit floating point calculation included, Teensy 4.0 even 64-Bit floating point in HW. This change will take some weeks.
+- As a new basis in the Audio Lib computing will be changed from 32-Bit integer to 32-Bit floating point. Teensy 3.6 /4.0 are very capable, their processors have HW 32-Bit floating point calculation included, Teensy 4.0 even for 64-Bit floating point in HW. This change will take some weeks.
 - On the new basis the next step will be frequency analysis based on FFT, which will take some more weeks.
 
 ### October 2020
