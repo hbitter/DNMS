@@ -9,7 +9,12 @@ Geplante Erweiterungen sind zusätzlich zur A-Bewertung eine C-Bewertung d.h. Bi
 
 ## Neuigkeiten
 
+### Weiterentwicklung
+- Als Grundlage für die weitere Entwicklung wird zuerst eine Umstellung in der Audio Lib von 16-Bit Integer Verarbeitung auf 32-Bit Floating Point erfolgen. Teensy3.6 /4.0 sind dafür leistungsfähig genug, da sie über eine HW Floating Point Einheit verfügen, Teensy 4.0 sogar für 64-Bit Floating Point. Diese Umstellung wird einige Wochen in Anspruch nehmen.
+- Danach wird auf der neuen Basis das Thema Frequenzanalyse mittels FFT angegangen. Auch hier sind weitere Wochen anzusetzen.
+
 ### Oktober 2020
+- Kleine Korrekturen und Ergänzungen im Manual, Stand nun V2.2
 - Neues Manual V2.0 verfügbar mit detaillierten Beschreibungen der V1.4 Boards
 - Stücklisten/BOM für die V1.4 Boards (Airrohr-PCB-V1.4, DNMS-T4.0-V1.4, DNMS-T4.0+NodeMCU-V1.4)
 
@@ -39,7 +44,12 @@ Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and f
 
 ## News
 
+### Further development
+- As a new basis in the Audio Lib computing will be changed from 32-Bit integer to 32-Bit floating point. Teensy 3.6 /4.0 are very capable, their processors have HW 32-Bit floating point calculation included, Teensy 4.0 even 64-Bit floating point in HW. This change will take some weeks.
+- On the new basis the next step will be frequency analysis based on FFT, which will take some more weeks.
+
 ### October 2020
+- Small corrections and additions, now it is V2.2
 - New Manual V2.0 (right now only in german) with detailed description of V1.4 boards
 - BOM for V1.4 Boards (Airrohr-PCB-V1.4, DNMS-T4.0-V1.4, DNMS-T4.0+NodeMCU-V1.4)
 
