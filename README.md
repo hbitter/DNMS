@@ -6,8 +6,15 @@ Die Werte werden dann über eine I²C-Schnittstelle an einen abfragenden Mikroco
 
 Geplante Erweiterungen sind zusätzlich zur A-Bewertung eine C-Bewertung d.h. Bildung von LCeq, LCmax und LCmin, sowie eine FFT zur weiteren Analyse im Frequenzbereich.
 
-
+## PCBs und Teile
+-  Wer bei dem Lärmprojekt mitmachen will und Hilfe bei der Beschaffung benötigt, kann bei Franz Hoefle <franz.hoefle (at) buergerforum-gladbeck.de> anfragen, ob Platinen (auch bestückt) bzw. fertige Teile verfügbar sind  - s.a. ebay-Kleinanzeigen Suchwort <DNMS>.
+ 
+ 
 ## Neuigkeiten
+
+### Dezember 2020
+- Als Grundlage für die weitere Entwicklung erfolgt zur Zeit eine Umstellung von 16-Bit Integer Verarbeitung auf 32-Bit Floating Point. Teensy3.6 /4.0 sind dafür leistungsfähig genug, da sie über eine HW Floating Point Einheit verfügen, Teensy 4.0 sogar für 64-Bit Floating Point. Die volle 24-Bit Auflösung des Mikrofons wird dann auch ausgenutzt, was einen unteren Messbereich für den LAeq von ca. 31 dBA ermöglicht. Für Teensy3.6 ist diese Umstellung schon lauffähig. Die Filter für die A-Bewertung und Frequenzgangkorrektur des Mikrofons müssen aufgrund der Umstellung noch angepasst werden. Dies soll im Zeitraum Januar/Februar 2021 erfolgen.
+- Auf der neuen Basis wird danach das Thema Frequenzanalyse mittels FFT angegangen, was einige Zeit dauern wird.
 
 ### Oktober 2020
 - Kleine Korrekturen und Ergänzungen im Manual, Stand nun V2.2
@@ -37,8 +44,15 @@ All measurements will be transfered to a further microcontroller via I²C bus. T
 
 Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and further FFT for analysis in the frequency domain.
 
+# PCBs and parts
+- Anybody who will participate and need some help for buying parts can contact Franz Hoefle <franz.hoefle (at) buergerforum-gladbeck.de> to get information about available PCBs (assembled or not) and ready made parts of the system - have a look at ebay classifieds for <DNMS>.
+
 
 ## News
+
+### December 2020
+- As a new basis processing of the audio signal will be changed from 16-Bit integer to 32-Bit floating point. Teensy 3.6 /4.0 are very capable, their processors have 32-Bit floating point in HW, Teensy 4.0 even 64-Bit. The full 24-Bit resolution of the microphone will be used as well, this will result in a lower limit of the measurement range for LAeq around 31 dBA. For Teensy3.6 these changes are done. Still the filters for A-weighting and correction of the microphone frequency response needs some adaption. This work should happen in the january/february 2021.
+- On the new basis the next step will be frequency analysis based on FFT, which will take some more time.
 
 ### October 2020
 - Small corrections and additions, now it is V2.2
@@ -55,6 +69,8 @@ Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and f
 - Teensy4.0 is cheaper than Teensy3.6
 - Teensy4.0 has a lot more power than Teensy3.6
 - Teensy3.6 will be further supported
+
+
 
 
 
