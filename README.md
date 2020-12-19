@@ -51,7 +51,7 @@ Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and f
 ## News
 
 ### December 2020
-- As a new basis processing of the audio signal will be changed from 16-Bit integer to 32-Bit floating point. Teensy 3.6 /4.0 are very capable, their processors have 32-Bit floating point in HW, Teensy 4.0 even 64-Bit. The full 24-Bit resolution of the microphone will be used as well, this will result in a lower limit of the measurement range for LAeq of around 31 dBA. For Teensy3.6 these changes are done. Still the filters for A-weighting and correction of the microphone frequency response needs some adaption. This work should happen in the january/february 2021.
+- As a new basis processing of the audio signal will be changed from 16-Bit integer to 32-Bit floating point. Teensy 3.6 /4.0 are very capable, their processors have 32-Bit floating point in HW, Teensy 4.0 even 64-Bit. The full 24-Bit resolution of the microphone will be used as well, this will result in a lower limit of the measurement range for LAeq of around 31 dBA. For Teensy3.6 these changes are done. Still the filters for A-weighting and correction of the microphone frequency response needs some adaption. This work should happen in january/february 2021.
 - On the new basis the next step will be frequency analysis based on FFT, which will take some more time.
 
 ### October 2020
