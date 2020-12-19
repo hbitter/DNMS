@@ -44,7 +44,7 @@ All measurements will be transfered to a further microcontroller via I²C bus. T
 
 Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and further FFT for analysis in the frequency domain.
 
-# PCBs and parts
+## PCBs and parts
 - Anybody who will participate and need some help for buying parts can contact Franz Hoefle <franz.hoefle (at) buergerforum-gladbeck.de> to get information about available PCBs (assembled or not) and ready made parts of the system - have a look at ebay classifieds for <DNMS>.
 
 
