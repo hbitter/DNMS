@@ -1,4 +1,6 @@
-# PCBs
+## English text below
+
+## PCBs
 
 
 ## Funktion der verschiedenen PCBs
@@ -64,6 +66,8 @@ PCB Versions Historie:
 
 
 ----------------------------------------------------------------------------------------------------------------
+## PCBs
+
 
 ## use of different PCBs
 

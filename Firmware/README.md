@@ -1,4 +1,6 @@
-# DNMS Firmware for Teensy 3.6 and Teensy 4.0
+## English text below
+
+## DNMS Firmware for Teensy 3.6 and Teensy 4.0
 
 
 ## Teensy 4.0
@@ -29,6 +31,8 @@
 
 
 ------------------------------------------------------------------------
+## DNMS Firmware for Teensy 3.6 and Teensy 4.0
+
 
 ## Teensy 4.0
  
