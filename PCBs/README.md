@@ -118,7 +118,7 @@ PCB revision history:
 - DNMS-T4.0+NodeMCU V1.4 - some components were moved towards the inner side, so that everything fits better in a case (i.e. tube)
 - DNMS-T4.0+NodeMCU V1.5 - ground-planes on both sides to improve shielding between Teensy4.0 and WLAN of NodeMCU
 
-<img src="images/DNMS-T4.0+NodeMCU-V1.4.jpg"><br>
+<img src="images/DNMS-T4.0+NodeMCU-V1.5.jpg"><br>
 
 
 ### DNMS-T4.0

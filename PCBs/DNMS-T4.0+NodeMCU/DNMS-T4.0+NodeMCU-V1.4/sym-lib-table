@@ -1,6 +1,0 @@
-(sym_lib_table
-  (lib (name ESP8266)(type Legacy)(uri ${KIPRJMOD}/kicad-ESP8266-master/ESP8266.lib)(options "")(descr ""))
-  (lib (name nodemcu)(type Legacy)(uri ${KIPRJMOD}/kicad-NodeMCU-master/nodemcu.lib)(options "")(descr ""))
-  (lib (name teensy)(type Legacy)(uri "${KIPRJMOD}/Teensy KiCad/teensy.lib")(options "")(descr ""))
-  (lib (name C_THT_100nF_5.0mm_7.5mm)(type Legacy)(uri ${KIPRJMOD}/C_THT_100nF/C_THT_100nF_5.0mm_7.5mm.lib)(options "")(descr ""))
-)
