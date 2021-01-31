@@ -52,7 +52,7 @@ PCB Versions Historie:
 - DNMS-T4.0+NodeMCU V1.4 - einige Bauelemente wurden nach innen verschoben, damit der Einbau ins Gehäuse einfacher wird
 - DNMS-T4.0+NodeMCU V1.5 - Masseflächen auf der Ober- und Unterseite um die Abschirmung zwischen Teensy4.0 und WLAN der NodeMCU zu erhöhen
 
-<img src="images/DNMS-T4.0+NodeMCU-V1.4.jpg"><br>
+<img src="images/DNMS-T4.0+NodeMCU-V1.5.jpg"><br>
 
 
 ### DNMS-T4.0
