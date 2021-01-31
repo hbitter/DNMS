@@ -50,6 +50,7 @@ Kombiniertes Board für DNMS mit Teensy4.0 und NodeMCU V2 od. V3, neben der DNMS
 PCB Versions Historie:
 - DNMS-T4.0+NodeMCU V1.2 - erste veröffentlichte Version
 - DNMS-T4.0+NodeMCU V1.4 - einige Bauelemente wurden nach innen verschoben, damit der Einbau ins Gehäuse einfacher wird
+- DNMS-T4.0+NodeMCU V1.5 - Masseflächen auf der Ober- und Unterseite um die Abschirmung zwischen Teensy4.0 und WLAN der NodeMCU zu erhöhen
 
 <img src="images/DNMS-T4.0+NodeMCU-V1.4.jpg"><br>
 
@@ -115,6 +116,7 @@ This is a combination of a NodeMCU and a Teensy4.0, besides the DNMS functionali
 PCB revision history:
 - DNMS-T4.0+NodeMCU V1.2 - first version
 - DNMS-T4.0+NodeMCU V1.4 - some components were moved towards the inner side, so that everything fits better in a case (i.e. tube)
+- DNMS-T4.0+NodeMCU V1.5 - ground-planes on both sides to improve shielding between Teensy4.0 and WLAN of NodeMCU
 
 <img src="images/DNMS-T4.0+NodeMCU-V1.4.jpg"><br>
 
