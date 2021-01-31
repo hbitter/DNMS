@@ -14,6 +14,9 @@ Geplante Erweiterungen sind zusätzlich zur A-Bewertung eine C-Bewertung d.h. Bi
  
 ## Neuigkeiten
 
+### Achtung 
+Bei den Versionen DNMS-T4.0+NodeMCU-V1.x ist ein gleizeitger Betrieb von DNMS und dem Feinstaubsensor bei neueren Teensy4.0 Boards nicht möglich. Mit älteren Teensy4.0 Boards gibt es keine Probleme. Ältere Teensy4.0 Boards, bei denen der gemeinsame Betrieb funktioniert, haben auf der i.MX RT1062 CPU in der 4. Zeile die Markierung "C1AA1848H". Die neueren, mit denen es nicht funktioniert, haben die Markierung "CTBY1947B" oder "CTBU1942B" in der 4. Zeile. Die Ursache muss noch geklärt werden. Workaround bis zur Klärung: Ein getrenntes Airrohr PCB und DNMS-T4.0 PCB zu benutzen.
+
 ### Dezember 2020
 - Als Grundlage für die weitere Entwicklung erfolgt zur Zeit eine Umstellung von 16-Bit Integer Verarbeitung auf 32-Bit Floating Point. Teensy3.6 /4.0 sind dafür leistungsfähig genug, da sie über eine HW Floating Point Einheit verfügen, Teensy 4.0 sogar für 64-Bit Floating Point. Die volle 24-Bit Auflösung des Mikrofons wird dann auch ausgenutzt, was einen unteren Messbereich für den LAeq von ca. 31 dBA ermöglicht. Für Teensy3.6 ist diese Umstellung schon lauffähig. Die Filter für die A-Bewertung und Frequenzgangkorrektur des Mikrofons müssen aufgrund der Umstellung noch angepasst werden. Dies soll im Zeitraum Januar/Februar 2021 erfolgen.
 - Auf der neuen Basis wird danach das Thema Frequenzanalyse mittels FFT angegangen, was einige Zeit dauern wird.
@@ -51,6 +54,9 @@ Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and f
 
 
 ## News
+
+### Attention
+With newer Teensy4.0 boards the versions DNMS-T4.0+NodeMCU-V1.x will not allow simultaneous operation of DNMS and PM sensor SPS30. Using an older Teensy4.0 board there are no problems. On the older working Teensy4.0 boards the i.MX RT1062 CPU has the mark "C1AA1848H" in the 4. row, whereas on the newer not working Teensy4.0 boards the mark is "CTBY1947B" or "CTBU1942B" in the 4. row. The cause has to be investigated. In the meantime the workaround is using separated Airrohr PCB and DNMS-T4.0 PCB instead.
 
 ### December 2020
 - As a new basis processing of the audio signal will be changed from 16-Bit integer to 32-Bit floating point. Teensy 3.6 /4.0 are very capable, their processors have 32-Bit floating point in HW, Teensy 4.0 even 64-Bit. The full 24-Bit resolution of the microphone will be used as well, this will result in a lower limit of the measurement range for LAeq of around 31 dBA. For Teensy3.6 these changes are done. Still the filters for A-weighting and correction of the microphone frequency response needs some adaption. This work should happen in january/february 2021.
