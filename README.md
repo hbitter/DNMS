@@ -15,7 +15,7 @@ Geplante Erweiterungen sind zusätzlich zur A-Bewertung eine C-Bewertung d.h. Bi
 ## Neuigkeiten
 
 ### Achtung 
-Bei den Versionen DNMS-T4.0+NodeMCU-V1.x ist ein gleizeitger Betrieb von DNMS und dem Feinstaubsensor SPS30 bei neueren Teensy4.0 Boards nicht möglich. Mit älteren Teensy4.0 Boards gibt es keine Probleme. Ältere Teensy4.0 Boards, bei denen der gemeinsame Betrieb funktioniert, haben auf der i.MX RT1062 CPU in der 4. Zeile die Markierung "C1AA1848H". Die neueren, mit denen es nicht funktioniert, haben die Markierung "CTBY1947B" oder "CTBU1942B" in der 4. Zeile. Die Ursache muss noch geklärt werden. Workaround bis zur Klärung: Ein getrenntes Airrohr PCB und DNMS-T4.0 PCB zu benutzen.
+Bei den Versionen DNMS-T4.0+NodeMCU-V1.x ist ein gleichzeitger Betrieb von DNMS und dem Feinstaubsensor SPS30 bei neueren Teensy4.0 Boards nicht möglich. Mit älteren Teensy4.0 Boards gibt es keine Probleme. Ältere Teensy4.0 Boards, bei denen der gemeinsame Betrieb funktioniert, haben auf der i.MX RT1062 CPU in der 4. Zeile die Markierung "C1AA1848H". Die neueren, mit denen es nicht funktioniert, haben die Markierung "CTBY1947B" oder "CTBU1942B" in der 4. Zeile. Die Ursache muss noch geklärt werden. Workaround bis zur Klärung: Ein getrenntes Airrohr PCB und DNMS-T4.0 PCB zu benutzen.
 
 ### Januar 2021
 - Neues Layout DNMS-T4.0+NodeMCU-V1.5 - Masseflächen an Ober- und Unterseite des Boards um die Abschirmung zwischen Teensy4.0 und dem WLAN der NodeMCU zu verbessern
