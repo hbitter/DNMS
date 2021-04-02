@@ -19,7 +19,7 @@ Geplante Erweiterungen sind zusätzlich zur A-Bewertung eine C-Bewertung d.h. Bi
 Bei den Versionen DNMS-T4.0+NodeMCU-V1.x führt ein gleichzeitger Betrieb von DNMS und dem Feinstaubsensor SPS30 z.Zt. zu Problemen. Es gibt fehlerhafte DNMS Lärm Werte oder der gemeinsame Betrieb ist überhaupt nicht möglich. Die Ursache muss noch geklärt werden. Soll ein SPS30 eingesetzt werden ist der Workaround bis zur Klärung: Ein getrenntes Airrohr PCB und DNMS-T4.0 PCB benutzen.
 
 ### März 2021
-- 1. Release der Firmware Version 2 basierend auf 32-Bit Floating Point Verarbeitung für Teensy4.0 und Teensy3.6. Der untere Grenze des LAeq Messbereichs liegt mit dieser Version bei ca. 30 dBA beim Teensy4.0 und ca. 32 dBA beim Teensy3.6. Dies ist eine Verbesserung von 5 - 6 dBA im Vergleich zur Firmware Version 1. Einfach die entsprechende Firmware auf Teensy3.6 oder Teensy4.0 flashen. Die endgültigen Messungen und Auswertungen zu dieser Version erfolgen noch im Laufe des April. Dann werden wir auch die Messwerte veröffentlichen.
+- Erstes Release der Firmware Version 2 basierend auf 32-Bit Floating Point Verarbeitung für Teensy4.0 und Teensy3.6. Der untere Grenze des LAeq Messbereichs liegt mit dieser Version bei ca. 30 dBA beim Teensy4.0 und ca. 32 dBA beim Teensy3.6. Dies ist eine Verbesserung von 5 - 6 dBA im Vergleich zur Firmware Version 1. Einfach die entsprechende Firmware auf Teensy3.6 oder Teensy4.0 flashen. Die endgültigen Messungen und Auswertungen zu dieser Version erfolgen noch im Laufe des April. Dann werden wir auch die Messwerte veröffentlichen.
 
 ### Januar 2021
 - Neues Layout DNMS-T4.0+NodeMCU-V1.5 - Masseflächen an Ober- und Unterseite des Boards um die Abschirmung zwischen Teensy4.0 und dem WLAN der NodeMCU zu verbessern
@@ -66,7 +66,7 @@ Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and f
 With PCB versions DNMS-T4.0+NodeMCU-V1.x there is at the moment no simultaneous operation of DNMS and PM sensor SPS30 possible. Either wrong DNMS noise measurements readings occur or the simultaneous operation of DNMS and SPS30 is not possible at all. The cause has to be investigated. If you like to use a SPS30 PM sensor the workaround is: Use separated Airrohr PCB and DNMS-T4.0 PCB instead.
 
 ### March 2021
-- 1. release of firmware version 2, which is based on 32-Bit floating point processing. It's available for Teensy3.6 and Teensy4.0. The lower LAeq measurement limit for version 2 is araund 30 dBA for Teensy4.0 and around 32 dBA for Teensy3.6. This is an improvement of about 5 - 6 dBA compared to firmware version 1. To upgrade to version 2 you only need to flash the appropriate firmware on Teensy3.6 or Teensy4.0. The definite test and reporting will be done over April an the results will be published then. 
+- First release of firmware version 2, which is based on 32-Bit floating point processing. It's available for Teensy3.6 and Teensy4.0. The lower LAeq measurement limit for version 2 is araund 30 dBA for Teensy4.0 and around 32 dBA for Teensy3.6. This is an improvement of about 5 - 6 dBA compared to firmware version 1. To upgrade to version 2 you only need to flash the appropriate firmware on Teensy3.6 or Teensy4.0. The definite test and reporting will be done over April an the results will be published then. 
 
 ### January 2021
 - New layout of DNMS-T4.0+NodeMCU-V1.5 - ground-planes on both sides of the board to improve shielding between Teensy4.0 and WLAN of NodeMCU
