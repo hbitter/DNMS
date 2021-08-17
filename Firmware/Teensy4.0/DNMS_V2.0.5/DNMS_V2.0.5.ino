@@ -85,6 +85,15 @@
     __a[__w] = be16_to_cpu(__a[__w]); \
   }
 
+typedef enum {
+    E_I2C_IDLE = 0,
+    E_I2C_RESET = 1,
+    E_I2C_READ_VERSION = 2,
+    E_I2C_CALC_LEQ = 3,
+    E_I2C_DATA_READY = 4,
+    E_I2C_READ_LEQ = 5,
+} i2c_state_t;
+
 
 // Function prototypes
 void i2c_receive_from_master(int num_bytes);
@@ -113,7 +122,7 @@ int led = LED_BUILTIN;
 bool led_on;
 uint16_t led_count = 0;
 
-uint8_t i2c_state = 0;
+i2c_state_t i2c_state = E_I2C_IDLE;
 uint8_t buf[64];
 uint16_t data_ready = 0;
 bool calculate_leq = false;
@@ -261,7 +270,7 @@ void loop() {
     uint8_t b[4];
 
     switch (i2c_state) {
-      case 2: // Read DNMS Version
+      case E_I2C_READ_VERSION:
         idx = 0;
         for (i = 0; i < sizeof(SOFTWARE_VERSION); ++i) {
           buf[idx++] = SOFTWARE_VERSION[i++];
@@ -270,20 +279,20 @@ void loop() {
           buf[idx++] = crc;
         }
         i = Wire.write(buf, idx - 3);
-        i2c_state = 0;
+        i2c_state = E_I2C_IDLE;
         break;
 
-      case 4: // Read Data Ready
+      case E_I2C_DATA_READY:
         idx = 0;
         buf[idx++] = uint8_t ((data_ready >> 8) & 0xff);
         buf[idx++] = uint8_t (data_ready & 0xff);
         crc = dnms_common_generate_crc((uint8_t *)&buf[idx - 2], DNMS_WORD_SIZE);
         buf[idx++] = crc;
         Wire.write(buf, 3);
-        i2c_state = 0;
+        i2c_state = E_I2C_IDLE;
         break;
 
-      case 5: // Read Leq
+      case E_I2C_READ_LEQ:
         idx = 0;
 
         f2b(last_leq_g_A, &b[0]);
@@ -317,7 +326,7 @@ void loop() {
         buf[idx++] = crc;
         i = Wire.write(buf, idx);
         data_ready = 0;
-        i2c_state = 0;
+        i2c_state = E_I2C_IDLE;
         break;
 
       default: // sonst
@@ -329,7 +338,7 @@ void loop() {
   void i2c_receive_from_master(int num_bytes) {
     uint16_t i;
 
-    i2c_state = 0;
+    i2c_state = E_I2C_IDLE;
     i = 0;
     while (Wire.available()) {
       buf[i] = Wire.read();
@@ -343,23 +352,23 @@ void loop() {
         break;
 
       case 2: // Read DNMS Version
-        i2c_state = 2;
+        i2c_state = E_I2C_READ_VERSION;
 
         break;
 
       case 3: // Calculate Leq
-        i2c_state = 3;
+        i2c_state = E_I2C_CALC_LEQ;
         data_ready = 0;
         calculate_leq = true;
 
         break;
 
       case 4: // Read Data (Leq) Ready
-        i2c_state = 4;
+        i2c_state = E_I2C_DATA_READY;
         break;
 
       case 5: // Read Leq
-        i2c_state = 5;
+        i2c_state = E_I2C_READ_LEQ;
         break;
 
       default: // sonst
