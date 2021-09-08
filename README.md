@@ -21,6 +21,7 @@ Bitte in diesen Fällen Firmware Version 2.1.4 oder 2.1.5 probieren. Eine Rückm
 
 ### September 2021
 - Die Beta Firmware Version 2.1.4 und 2.1.5 versucht das I²C Kommunikation bei den Kombi Boards DNMS-T4.0+NodeMCU-V1.x zu beheben. Bitte probieren, wenn ein solches Problem aufgetreten ist. Eine Rückmeldung, ob es dann funktioniert oder nicht, wäre schön.
+- ICS-43434 Mikrofon PCB - ein rundes Mikrofon Board, das in ein 1/2" Plastikrohr (oder in 13mm Edelstahlrohr mit 12mm Innendurchmesser) eingebaut werden kann. Komplettes KiCAD Design im Ordner PCBs um das Board bei einem Platinenfertiger zu bestellen, enthält auch alle Informationen um bestückte Boards zu bestellen.
 
 ### Mai 2021
 - Die Firmware Version 2 ist nun zusammen mit der HFT (Hochschule für Technik, Stuttgart) im Akustik Labor überprüft worden mit gutem Ergebnis. Der detaillierte Bericht darüber ist unter Firmware zu finden.
@@ -75,6 +76,7 @@ Please try the beta firmware 2.1.4 or 2.1.5 in these cases. Feedback about the r
 
 ### September 2021
 - Beta firmware versions 2.1.4 and 2.1.5 tries to fix this I²C communication problem if you are using a combined board DNMS-T4.0+NodeMCU-V1.x. Please try the new beta firmware, if you had such problems. Feedback about the result would be appreciated.
+- ICS-43434 microphone board - a round microphone PCB, that fits into a 1/2" plastic tube (or into a 13mm stainless steel tube with 12mm inner diameter). Complete KiCAD design in folder PCBs to order PCBs, it includes all infos to order assembled PCBs.
 
 ### May 2021
 - Firmware version 2 was checked togehter with the HFT (Hochschule für Technik - University of Applied Sciences, Stuttgart) in the acoustic laboratories of the Centre for Building Physics (ZFB). You will find a detailed description about the tests under firmware.

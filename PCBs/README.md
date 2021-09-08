@@ -10,7 +10,7 @@ Ein rundes Mikrofon Board, das in ein 1/2" Plastikrohr (oder in 13mm Edelstahlro
 
 <img src="images/ICS-43434 V1.2 PCB bestückt.jpg"><br>
 
-Wer nicht selbst bestücken und löten kann und will, kann das Board auch bei [PCBWAY](https://www.pcbway.com/) bestellen und bestücken lassen oder mal bei Franz Hoefle fragen, ob er bestückte Boards hat.
+Wer nicht selbst bestücken und löten kann und will, kann das Board auch bei [PCBWAY](https://www.pcbway.com/) bestellen und bestücken lassen oder mal bei Franz Hoefle  <franz.hoefle (at) buergerforum-gladbeck.de>   fragen, ob er bestückte Boards hat.
 
 
 ### Airrohr PCB
@@ -85,7 +85,7 @@ A round microphone PCB, that fits into a 1/2" plastic tube (or into a 13mm stain
 
 <img src="images/ICS-43434 V1.2 PCB bestückt.jpg"><br>
 
-Who isn' t able or willing to do the board assembly and soldering can order e.g. at [PCBWAY](https://www.pcbway.com/) or may ask Franz Hoefle <franz.hoefle (at) buergerforum-gladbeck.de> if assembled boards are available.
+Who isn' t able or willing to do the board assembly and soldering can order e.g. at [PCBWAY](https://www.pcbway.com/) or may ask Franz Hoefle  <franz.hoefle (at) buergerforum-gladbeck.de>  if assembled boards are available.
 
 
 ### Airrohr PCB
