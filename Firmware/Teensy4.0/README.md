@@ -26,6 +26,39 @@ In der Audio Bibliothek sind einige Dateien mit dem Namen "control_xxx.cpp" vorh
 - Den unter Firmware vorhanden Zip-File "dnms_audio_lib-master.zip" herunterladen, entpacken und in den Arduino Library Ordner als Lib einfügen.
 
 
+### nur Versionen 2.1.4 und 2.1.5
+
+- Diese Versionen unterscheiden sich nur in der I²C Initialisierung des Teensy4 von den Versionen 2.0.4 und 2.0.5. Hintergrund sind die I²C Kommunikationsprobleme bei den Kombiboards (Teensy4 und NodeMCU auf einem Board), wenn parallel zum DNMS noch ein SPS30 Feinstaubsensor mit dem I²C Bus verbunden ist - bei den getrennten Boards giebt es diese Probleme nicht. Es wird für die beiden I²C Signale zusätzlich ein "Glitch"-Filter im Teensy4 aktiviert. 
+Wenn man die Firmware selbst übersetzen möchte, ist in der teensy4_i2c-master lib unter src->imx_rt1060 im File imx_rt1060_i2c_driver.cpp die Funktion IMX_RT1060_I2CSlave::listen(uint32_t samr, uint32_t address_config) wie folgt zu ersetzen:
+
+```
+void IMX_RT1060_I2CSlave::listen(uint32_t samr, uint32_t address_config) {
+    // Make sure slave mode is disabled before configuring it.
+    stop_listening();
+
+    // Halt and reset Slave Mode if it's running
+    port->SCR = (LPI2C_SCR_RST | LPI2C_SCR_RRF | LPI2C_SCR_RTF);
+    port->SCR = 0;
+
+    initialise_common(config, pad_control_config);
+
+    // Set the Slave Address
+    port->SAMR = samr;
+
+    // Enable clock stretching
+    port->SCFGR1 = (address_config | LPI2C_SCFGR1_TXDSTALL | LPI2C_SCFGR1_RXSTALL);
+    port->SCFGR2 = (LPI2C_SCFGR2_FILTSDA(15) | LPI2C_SCFGR2_FILTSCL(15));
+
+    // Set up interrupts
+    attachInterruptVector(config.irq, isr);
+    port->SIER = (LPI2C_SIER_RSIE | LPI2C_SIER_SDIE | LPI2C_SIER_TDIE | LPI2C_SIER_RDIE);
+    NVIC_ENABLE_IRQ(config.irq);
+
+    // Enable Slave Mode
+    port->SCR = LPI2C_SCR_SEN | LPI2C_SCR_FILTEN;
+}
+
+```
 ------------------------------------------------------------------------
 ## Note how to download the hex file
 
@@ -50,3 +83,36 @@ To compile the firmware by yourself you have to install the Arduino IDE (Version
 - In addition you have to download the zip-file "dnms_audio_lib-master.zip" from Firmware, unzip it and place it your Arduino library folder.
 
 
+### only versions 2.1.4 and 2.1.5
+
+- These versions differ only in I²C initialising of Teensy4 from the versions 2.0.4 and 2.0.5. Background are I²C communication problems of the combined boards (Teensy4 and NodeMCU on one board), if there is a SPS30 PM sensor in parallel connected to the I²C bus - using separated boards, there is no communication problem. For both I²C signals a "glitch" filter on the Teensy4 will be activated.
+If you want to compile the firmware yourself, you have to change in the teensy4_i2c-master lib under src->imx_rt1060 in the file imx_rt1060_i2c_driver.cpp the function IMX_RT1060_I2CSlave::listen(uint32_t samr, uint32_t address_config) as follows:
+
+```
+void IMX_RT1060_I2CSlave::listen(uint32_t samr, uint32_t address_config) {
+    // Make sure slave mode is disabled before configuring it.
+    stop_listening();
+
+    // Halt and reset Slave Mode if it's running
+    port->SCR = (LPI2C_SCR_RST | LPI2C_SCR_RRF | LPI2C_SCR_RTF);
+    port->SCR = 0;
+
+    initialise_common(config, pad_control_config);
+
+    // Set the Slave Address
+    port->SAMR = samr;
+
+    // Enable clock stretching
+    port->SCFGR1 = (address_config | LPI2C_SCFGR1_TXDSTALL | LPI2C_SCFGR1_RXSTALL);
+    port->SCFGR2 = (LPI2C_SCFGR2_FILTSDA(15) | LPI2C_SCFGR2_FILTSCL(15));
+
+    // Set up interrupts
+    attachInterruptVector(config.irq, isr);
+    port->SIER = (LPI2C_SIER_RSIE | LPI2C_SIER_SDIE | LPI2C_SIER_TDIE | LPI2C_SIER_RDIE);
+    NVIC_ENABLE_IRQ(config.irq);
+
+    // Enable Slave Mode
+    port->SCR = LPI2C_SCR_SEN | LPI2C_SCR_FILTEN;
+}
+
+```
