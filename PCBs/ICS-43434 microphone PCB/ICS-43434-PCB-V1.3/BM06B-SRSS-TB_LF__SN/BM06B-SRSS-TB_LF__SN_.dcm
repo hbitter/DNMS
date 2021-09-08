@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BM06B-SRSS-TB_LF__SN_
+D connector,multipole PCB use,BM06B-SRSS-T JST SH Series, 1mm Pitch 6 Way 1 Row Straight PCB Header, Solder Termination, 1A
+K
+F http://docs-emea.rs-online.com/webdocs/13ce/0900766b813ce45e.pdf
+$ENDCMP
+#
+#End Doc Library

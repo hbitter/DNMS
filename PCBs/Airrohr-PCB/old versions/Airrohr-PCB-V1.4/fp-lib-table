@@ -1,0 +1,10 @@
+(fp_lib_table
+  (lib (name ESP8266)(type KiCad)(uri ${KIPRJMOD}/kicad-ESP8266-master/ESP8266.pretty)(options "")(descr ""))
+  (lib (name nodemcu)(type KiCad)(uri ${KIPRJMOD}/kicad-NodeMCU-master/nodemcu.pretty)(options "")(descr ""))
+  (lib (name Connector_JST_ZH)(type KiCad)(uri ${KIPRJMOD}/Connector_JST_ZH.pretty)(options "")(descr ""))
+  (lib (name "logos eigene")(type KiCad)(uri ${KIPRJMOD}/logos)(options "")(descr ""))
+  (lib (name Connector_RJ)(type KiCad)(uri ${KISYSMOD}/Connector_RJ.pretty)(options "")(descr ""))
+  (lib (name P82B715)(type KiCad)(uri ${KIPRJMOD}/P82B715)(options "")(descr ""))
+  (lib (name C_THT_100nF)(type KiCad)(uri ${KIPRJMOD}/C_THT_100nF)(options "")(descr ""))
+  (lib (name ScrewTerminalBlock)(type KiCad)(uri ${KIPRJMOD}/ScrewTerminalBlock)(options "")(descr ""))
+)

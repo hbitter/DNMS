@@ -1,0 +1,13 @@
+(fp_lib_table
+  (lib (name Capacitor_THT)(type KiCad)(uri ${KISYSMOD}/Capacitor_THT.pretty)(options "")(descr ""))
+  (lib (name Connector)(type KiCad)(uri ${KISYSMOD}/Connector.pretty)(options "")(descr ""))
+  (lib (name Resistor_THT)(type KiCad)(uri ${KISYSMOD}/Resistor_THT.pretty)(options "")(descr ""))
+  (lib (name Connector_PinSocket_2.54mm)(type KiCad)(uri ${KISYSMOD}/Connector_PinSocket_2.54mm.pretty)(options "")(descr ""))
+  (lib (name Connector_Pin)(type KiCad)(uri ${KISYSMOD}/Connector_Pin.pretty)(options "")(descr ""))
+  (lib (name Connector_PinHeader_2.54mm)(type KiCad)(uri ${KISYSMOD}/Connector_PinHeader_2.54mm.pretty)(options "")(descr ""))
+  (lib (name Teensy)(type KiCad)(uri "${KIPRJMOD}/Teensy KiCad/Teensy.pretty")(options "")(descr ""))
+  (lib (name C_THT_100nF)(type KiCad)(uri ${KIPRJMOD}/C_THT_100nF)(options "")(descr ""))
+  (lib (name P82B715)(type KiCad)(uri ${KIPRJMOD}/P82B715)(options "")(descr ""))
+  (lib (name 54601906WPLF)(type KiCad)(uri "${KIPRJMOD}/RJ-12 6P-6C Amphenol u.a/54601906WPLF.pretty")(options "")(descr ""))
+  (lib (name E5566-Q0LK22-L)(type KiCad)(uri "${KIPRJMOD}/RJ-12 6P-6C Pulse/E5566-Q0LK22-L.pretty")(options "")(descr ""))
+)

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Ablage\sonstiges\Luftdaten.info Feinstaubsensor, Lärm u.a\Lärm\DNMS\PCBs\ICS-43434-PCB\ICS-43434-PCB-V1.1\ICS-43434-PCB.sch</source>
+    <date>30.05.2020 18:53:51</date>
+    <tool>Eeschema (5.1.5)-3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ICS-43434-PCB-V1.1</title>
+        <company/>
+        <rev>V1.1</rev>
+        <date>2020-05-28</date>
+        <source>ICS-43434-PCB.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="MK1">
+      <value>ICS-43434</value>
+      <footprint>ICS-43434:MIC_ICS-43434</footprint>
+      <datasheet>TDK InvenSense</datasheet>
+      <fields>
+        <field name="Feld4">Unavailable</field>
+        <field name="Feld5">None</field>
+        <field name="Feld6">ICS-43434</field>
+        <field name="Feld7">LGA-6 TDK-InvenSense</field>
+        <field name="Feld8">Multi-Mode Microphone with I2S Digital Output</field>
+      </fields>
+      <libsource lib="ICS-43434" part="ICS-43434" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DF5096A</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DF53C74</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DF5186C</tstamp>
+    </comp>
+    <comp ref="SP1">
+      <value>VDD</value>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E46F39E</tstamp>
+    </comp>
+    <comp ref="SP2">
+      <value>SCK</value>
+      <footprint>Solder_Pad:Solder_Pad_1.0x1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E46FCE6</tstamp>
+    </comp>
+    <comp ref="SP3">
+      <value>LR</value>
+      <footprint>Solder_Pad:Solder_Pad_1.0x1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E46FFF5</tstamp>
+    </comp>
+    <comp ref="SP4">
+      <value>WS</value>
+      <footprint>Solder_Pad:Solder_Pad_1.0x1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E470217</tstamp>
+    </comp>
+    <comp ref="SP5">
+      <value>SD</value>
+      <footprint>Solder_Pad:Solder_Pad_1.0x1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E4703FC</tstamp>
+    </comp>
+    <comp ref="SP6">
+      <value>GND</value>
+      <footprint>Solder_Pad:Solder_Pad_1.0x1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E470608</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ICS-43434" part="ICS-43434">
+      <fields>
+        <field name="Reference">MK</field>
+        <field name="Value">ICS-43434</field>
+        <field name="Footprint">MIC_ICS-43434</field>
+        <field name="Datasheet">TDK InvenSense</field>
+        <field name="Feld4">Unavailable</field>
+        <field name="Feld5">None</field>
+        <field name="Feld6">ICS-43434</field>
+        <field name="Feld7">LGA-6 TDK-InvenSense</field>
+        <field name="Feld8">Multi-Mode Microphone with I2S Digital Output</field>
+      </fields>
+      <pins>
+        <pin num="1" name="WS" type="input"/>
+        <pin num="2" name="LR" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="SCK" type="input"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="SD" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="ICS-43434">
+      <uri>C:\Ablage\sonstiges\Luftdaten.info Feinstaubsensor, Lärm u.a\Lärm\DNMS\PCBs\ICS-43434-PCB\ICS-43434-PCB-V1.1/ICS-43434.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="LR">
+      <node ref="MK1" pin="2"/>
+      <node ref="SP3" pin="1"/>
+    </net>
+    <net code="2" name="WS">
+      <node ref="MK1" pin="1"/>
+      <node ref="SP4" pin="1"/>
+    </net>
+    <net code="3" name="SD">
+      <node ref="MK1" pin="6"/>
+      <node ref="R1" pin="1"/>
+      <node ref="SP5" pin="1"/>
+    </net>
+    <net code="4" name="SCK">
+      <node ref="SP2" pin="1"/>
+      <node ref="MK1" pin="4"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="R1" pin="2"/>
+      <node ref="MK1" pin="3"/>
+      <node ref="SP6" pin="1"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="6" name="+3V3">
+      <node ref="C1" pin="1"/>
+      <node ref="MK1" pin="5"/>
+      <node ref="SP1" pin="1"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,33 @@
+"Source:","C:\Ablage\sonstiges\Luftdaten.info Feinstaubsensor, Lärm u.a\Lärm\DNMS\PCBs\ICS-43434-PCB\ICS-43434-PCB-V1.1\ICS-43434-PCB.sch"
+"Date:","30.05.2020 18:53:51"
+"Tool:","Eeschema (5.1.5)-3"
+"Generator:","C:\Program Files\KiCad\bin\scripting\plugins/bom_csv_grouped_by_value.py"
+"Component Count:","9"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Feld4","Feld5","Feld6","Feld7","Feld8"
+"","","C1","100nF","Device:C_Small","Capacitor_SMD:C_0603_1608Metric","~","","","","",""
+"","","MK1","ICS-43434","ICS-43434:ICS-43434","ICS-43434:MIC_ICS-43434","TDK InvenSense","Unavailable","None","ICS-43434","LGA-6 TDK-InvenSense","Multi-Mode Microphone with I2S Digital Output"
+"","","R1","100K","Device:R","Resistor_SMD:R_0603_1608Metric","~","","","","",""
+"","","SP1","VDD","Connector:TestPoint","","","","","","",""
+"","","SP2","SCK","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","","","","",""
+"","","SP3","LR","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","","","","",""
+"","","SP4","WS","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","","","","",""
+"","","SP5","SD","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","","","","",""
+"","","SP6","GND","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","","","","",""
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Feld4","Feld5","Feld6","Feld7","Feld8"
+"1","1","C1","100nF","Device:C_Small","Capacitor_SMD:C_0603_1608Metric","~","","","","",""
+"2","1","MK1","ICS-43434","ICS-43434:ICS-43434","ICS-43434:MIC_ICS-43434","TDK InvenSense","Unavailable","None","ICS-43434","LGA-6 TDK-InvenSense","Multi-Mode Microphone with I2S Digital Output"
+"3","1","R1","100K","Device:R","Resistor_SMD:R_0603_1608Metric","~","","","","",""
+"4","1","SP1","VDD","Connector:TestPoint","","","","","","",""
+"5","1","SP2","SCK","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","","","","",""
+"6","1","SP3","LR","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","","","","",""
+"7","1","SP4","WS","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","","","","",""
+"8","1","SP5","SD","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","","","","",""
+"9","1","SP6","GND","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","","","","",""

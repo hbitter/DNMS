@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name BM06B-SRSS-TB_LF__SN)(type KiCad)(uri ${KIPRJMOD}/BM06B-SRSS-TB_LF__SN/BM06B-SRSS-TB_LF__SN.pretty)(options "")(descr ""))
+  (lib (name ICS-43434)(type KiCad)(uri ${KIPRJMOD}/ICS-43434/ICS-43434.pretty)(options "")(descr ""))
+)

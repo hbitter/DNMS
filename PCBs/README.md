@@ -5,6 +5,14 @@
 
 ## Funktion der verschiedenen PCBs
 
+### ICS-43434 Mikrofon PCB
+Ein rundes Mikrofon Board, das in ein 1/2" Plastikrohr (oder in 13mm Edelstahlrohr mit 12mm Innendurchmesser) eingebaut werden kann. Auf dem Board ist eine JST SH Buchse, auf die ein Kabel mit JST SH Stecker aufgesteckt werden kann. Entsprechende Kabel sind z.B. bei [Aliexpress hier erhältlich](https://de.aliexpress.com/item/33013143346.html?spm=a2g0s.9042311.0.0.b4924c4dbhEWkt).
+
+<img src="images/ICS-43434 V1.2 PCB bestückt.jpg"><br>
+
+Wer nicht selbst bestücken und löten kann und will, kann das Board auch bei [PCBWAY](https://www.pcbway.com/) bestellen und bestücken lassen oder mal bei Franz Hoefle fragen, ob er bestückte Boards hat.
+
+
 ### Airrohr PCB
 Basis Board für eine NodeMCU V2 od. V3 mit Anschlüssen für die folgenden Sensoren:
 - Feinstaubsensor SDS011 über Steckverbinder
@@ -71,6 +79,14 @@ PCB Versions Historie:
 
 
 ## use of different PCBs
+
+### ICS-43434 microphone PCB
+A round microphone PCB, that fits into a 1/2" plastic tube (or into a 13mm stainless steel tube with 12mm inner diameter). A JST SH connector is on the board and a cable with JST SH connectors ca be used. Such cables are available e.g. at [Aliexpress](https://de.aliexpress.com/item/33013143346.html?spm=a2g0s.9042311.0.0.b4924c4dbhEWkt).
+
+<img src="images/ICS-43434 V1.2 PCB bestückt.jpg"><br>
+
+Who isn' t able or willing to do the board assembly and soldering can order e.g. at [PCBWAY](https://www.pcbway.com/) or may ask Franz Hoefle <franz.hoefle (at) buergerforum-gladbeck.de> if assembled boards are available.
+
 
 ### Airrohr PCB
 Basis board for NodeMCU V2 or V3 with possible connection of the following sensors:

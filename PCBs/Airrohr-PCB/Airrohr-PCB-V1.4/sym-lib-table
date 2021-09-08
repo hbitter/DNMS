@@ -1,8 +1,0 @@
-(sym_lib_table
-  (lib (name ESP8266)(type Legacy)(uri ${KIPRJMOD}/kicad-ESP8266-master/ESP8266.lib)(options "")(descr ""))
-  (lib (name nodemcu)(type Legacy)(uri ${KIPRJMOD}/kicad-NodeMCU-master/nodemcu.lib)(options "")(descr ""))
-  (lib (name E5566-Q0LK22-L)(type Legacy)(uri "${KIPRJMOD}/RJ-12 6P-6C Pulse/E5566-Q0LK22-L.lib")(options "")(descr ""))
-  (lib (name P82B715PN_112)(type Legacy)(uri ${KIPRJMOD}/P82B715/P82B715PN_112.lib)(options "")(descr ""))
-  (lib (name P82B715DR)(type Legacy)(uri ${KIPRJMOD}/P82B715/P82B715DR.lib)(options "")(descr ""))
-  (lib (name C_THT_100nF_5.0mm_7.5mm)(type Legacy)(uri ${KIPRJMOD}/C_THT_100nF/C_THT_100nF_5.0mm_7.5mm.lib)(options "")(descr ""))
-)

@@ -1,0 +1,10 @@
+(sym_lib_table
+  (lib (name teensy)(type Legacy)(uri "${KIPRJMOD}/Teensy KiCad/teensy.lib")(options "")(descr ""))
+  (lib (name C_THT_100nF_5.0mm_7.5mm_10.0mm)(type Legacy)(uri ${KIPRJMOD}/C_THT_100nF/C_THT_100nF_5.0mm_7.5mm_10.0mm.lib)(options "")(descr ""))
+  (lib (name C_THT_100nF_5.0mm_7.5mm)(type Legacy)(uri ${KIPRJMOD}/C_THT_100nF/C_THT_100nF_5.0mm_7.5mm.lib)(options "")(descr ""))
+  (lib (name P82B715PN_112)(type Legacy)(uri ${KIPRJMOD}/P82B715/P82B715PN_112.lib)(options "")(descr ""))
+  (lib (name P82B715DR)(type Legacy)(uri ${KIPRJMOD}/P82B715/P82B715DR.lib)(options "")(descr ""))
+  (lib (name 54601-906WPLF)(type Legacy)(uri "${KIPRJMOD}/RJ-12 6P-6C Amphenol u.a/54601-906WPLF.lib")(options "")(descr ""))
+  (lib (name E5566-Q0LK22-L)(type Legacy)(uri "${KIPRJMOD}/RJ-12 6P-6C Pulse/E5566-Q0LK22-L.lib")(options "")(descr ""))
+  (lib (name DNMS-rescue)(type Legacy)(uri ${KIPRJMOD}/DNMS-rescue.lib)(options "")(descr ""))
+)
