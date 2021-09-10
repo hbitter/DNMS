@@ -1,0 +1,11 @@
+(fp_lib_table
+  (lib (name ESP8266)(type KiCad)(uri ${KIPRJMOD}/kicad-ESP8266-master/ESP8266.pretty)(options "")(descr ""))
+  (lib (name nodemcu)(type KiCad)(uri ${KIPRJMOD}/kicad-NodeMCU-master/nodemcu.pretty)(options "")(descr ""))
+  (lib (name Connector_JST_ZH)(type KiCad)(uri ${KIPRJMOD}/Connector_JST_ZH.pretty)(options "")(descr ""))
+  (lib (name "logos eigene")(type KiCad)(uri ${KIPRJMOD}/logos)(options "")(descr ""))
+  (lib (name P82B715)(type KiCad)(uri ${KIPRJMOD}/P82B715)(options "")(descr ""))
+  (lib (name C_THT_100nF)(type KiCad)(uri ${KIPRJMOD}/C_THT_100nF)(options "")(descr ""))
+  (lib (name ScrewTerminalBlock)(type KiCad)(uri ${KIPRJMOD}/ScrewTerminalBlock)(options "")(descr ""))
+  (lib (name 54601906WPLF)(type KiCad)(uri "${KIPRJMOD}/RJ-12 6P-6C Amphenol u.a/54601906WPLF.pretty")(options "")(descr ""))
+  (lib (name E5566-Q0LK22-L)(type KiCad)(uri "${KIPRJMOD}/RJ-12 6P-6C Pulse/E5566-Q0LK22-L.pretty")(options "")(descr ""))
+)

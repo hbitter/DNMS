@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name E5566-Q0LK22-L)(type Legacy)(uri "${KIPRJMOD}/RJ-12 6P-6C Pulse/E5566-Q0LK22-L.lib")(options "")(descr ""))
+  (lib (name P82B715PN_112)(type Legacy)(uri ${KIPRJMOD}/P82B715/P82B715PN_112.lib)(options "")(descr ""))
+  (lib (name P82B715DR)(type Legacy)(uri ${KIPRJMOD}/P82B715/P82B715DR.lib)(options "")(descr ""))
+  (lib (name C_THT_100nF_5.0mm_7.5mm)(type Legacy)(uri ${KIPRJMOD}/C_THT_100nF/C_THT_100nF_5.0mm_7.5mm.lib)(options "")(descr ""))
+  (lib (name Heltec_WiFi_LoRa_32_V2)(type Legacy)(uri "${KIPRJMOD}/Heltec WIFI LoRa 32/Heltec_WiFi_LoRa_32_V2.lib")(options "")(descr ""))
+  (lib (name Airrohr_pcb-rescue)(type Legacy)(uri ${KIPRJMOD}/Airrohr_pcb-rescue.lib)(options "")(descr ""))
+)
