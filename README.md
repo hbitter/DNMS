@@ -17,7 +17,8 @@ Geplante Erweiterungen sind zusätzlich zur A-Bewertung eine C-Bewertung d.h. Bi
 
 ### Achtung
 Bei den Versionen DNMS-T4.0+NodeMCU-V1.x führt ein gleichzeitger Betrieb von DNMS und dem Feinstaubsensor SPS30 z.Zt. zu Problemen. Es gibt fehlerhafte DNMS Lärm Werte oder der gemeinsame Betrieb ist überhaupt nicht möglich. Die Ursache muss noch geklärt werden. Soll ein SPS30 eingesetzt werden ist der Workaround bis zur Klärung: Ein getrenntes Airrohr PCB und DNMS-T4.0 PCB benutzen.
-Bitte in diesen Fällen Firmware Version 2.1.4 oder 2.1.5 probieren. Eine Rückmeldung, ob die Probleme damit behoben sind, wäre schön.
+
+**Bitte in diesen Fällen Firmware Version 2.1.4 oder 2.1.5 probieren. Eine Rückmeldung, ob die Probleme damit behoben sind, wäre schön.**
 
 ### September 2021
 - Die Beta Firmware Version 2.1.4 und 2.1.5 versucht das I²C Kommunikation bei den Kombi Boards DNMS-T4.0+NodeMCU-V1.x zu beheben. Bitte probieren, wenn ein solches Problem aufgetreten ist. Eine Rückmeldung, ob es dann funktioniert oder nicht, wäre schön.
@@ -74,7 +75,8 @@ Planned extensions are an additional C-filter to get LCeq, LCmax and LCmin and f
 
 ### Attention
 With PCB versions DNMS-T4.0+NodeMCU-V1.x there is at the moment no simultaneous operation of DNMS and PM sensor SPS30 possible. Either wrong DNMS noise measurements readings occur or the simultaneous operation of DNMS and SPS30 is not possible at all. The cause has to be investigated. If you like to use a SPS30 PM sensor the workaround is: Use separated Airrohr PCB and DNMS-T4.0 PCB instead.
-Please try the beta firmware 2.1.4 or 2.1.5 in these cases. Feedback about the result would be appreciated.
+
+**Please try the beta firmware 2.1.4 or 2.1.5 in these cases. Feedback about the result would be appreciated.**
 
 ### September 2021
 - Beta firmware versions 2.1.4 and 2.1.5 tries to fix this I²C communication problem if you are using a combined board DNMS-T4.0+NodeMCU-V1.x. Please try the new beta firmware, if you had such problems. Feedback about the result would be appreciated.
