@@ -1,0 +1,1 @@
+gcc dnms+more.c dnms_rpi_i2c.c scd30_rpi_i2c.c sht3x_rpi_i2c.c sps30_rpi_i2c.c -o dnms+more

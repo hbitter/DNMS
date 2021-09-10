@@ -45,6 +45,18 @@ PCB Versions Historie:
 <img src="images/Airrohr-ESP32-V1.0.jpg"><br>
 
 
+### DNMS-RPI-HAT
+Aufsatzboard für den Raspberry Pi um einen DNMS Sensor und andere I²C Sensoren mit dem Raspberry Pi zu verbinden. Das Board hat die gleich Größe wie ein RPI Zero W. Die folgenden Anschlüsse sind vorhanden:
+- I²C-Bus Verlängerung mit 5V Versorgungsspannung für einen DNMS Sensor und Kabellängen > 250mm mittels RJ12 (Modular Jack) 6P/6C Buchse
+- Feinstaubsensor SPS30 (Sensirion) mittels JST ZH Buchse
+- 2 x I²C Anschlüsse über Stiftleiste mit 3,3V Versorgungsspannung für weitere Sensoren
+
+PCB Versions Historie:
+- DNMS-RPI-HAT-V1.0 - erste Version
+
+<img src="images/DNMS-RPI-HAT-V1.0 Bild 1.jpg"><br>
+
+
 ### DNMS-T3.6+NodeMCU
 Kombiniertes Board für DNMS mit Teensy3.6 und NodeMCU V2 od. V3, neben der DNMS Funktion sind noch Anschlüsse für die die folgenden Sensoren vorhanden:
 - Feinstaubsensor SPS30 (Sensirion) über Steckverbiner
@@ -133,6 +145,18 @@ PCB revision history:
 - Airrohr-ESP32-PCB-V1.1 - first version
 
 <img src="images/Airrohr-ESP32-V1.0.jpg"><br>
+
+
+### DNMS-RPI-HAT
+Addon board for Raspberry Pi to connect the DNMS sensor to the RPI as well as other I²C sensors. Board has the same size as the RPI Zero W. The following connections are available:
+- I²C-bus-extension with 5V power for DNMS sensor with connection lenght > 250mm via RJ12 (Modular Jack) 6P/6C connector
+- PM sensor SPS30 (Sensirion) via JST ZH connector
+- 2 x I²C connection via pin header with 3.3V power for other sensors (i.e. SCD30 and/or SHT3x) 
+
+PCB revision history:
+- DNMS-RPI-HAT-V1.0 - first version
+
+<img src="images/DNMS-RPI-HAT-V1.0 Bild 1.jpg"><br>
 
 
 ### DNMS-T3.6+NodeMCU
