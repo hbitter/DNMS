@@ -12,7 +12,7 @@ PCB Versions Historie:
 - ICS-43434-PCB-V1.3 - erste veröffentlichte Version
 - ICS-43434-PCB-V1.4 - Durchmesser für die akustische Öffnung geändert con 0,6mm auf 0,7mm
 
-<img src="images/ICS-43434 V1.4 PCB bestückt.jpg"><br>
+![](images/ICS-43434 V1.4 PCB bestückt.jpg)<br>
 
 
 ### Airrohr PCB
@@ -109,7 +109,7 @@ PCB Versions Historie:
 ## PCBs
 
 
-## use of different PCBs
+## What are the different PCBs for
 
 ### ICS-43434 microphone PCB
 A round microphone PCB, that fits into a 1/2" plastic tube (or into a 13mm stainless steel tube with 12mm inner diameter). A JST SH connector is on the board and a cable with JST SH connectors ca be used. Such cables are available e.g. at [Aliexpress](https://de.aliexpress.com/item/33013143346.html?spm=a2g0s.9042311.0.0.b4924c4dbhEWkt).
@@ -118,7 +118,7 @@ PCB revision history:
 - ICS-43434-PCB-V1.3 - first version in GitHub
 - ICS-43434-PCB-V1.4 - diameter of acoustic port changed from 0,6mm to 0,7mm
 
-<img src="images/ICS-43434 V1.7 PCB bestückt.jpg"><br>
+![](images/ICS-43434 V1.4 PCB bestückt.jpg)<br>
 
 
 ### Airrohr PCB
