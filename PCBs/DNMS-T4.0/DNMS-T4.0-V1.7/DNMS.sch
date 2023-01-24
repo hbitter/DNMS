@@ -1,0 +1,800 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "DNMS-T4.0"
+Date "2021-12-15"
+Rev "V1.7"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DNMS-rescue:Conn_01x02-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue J1
+U 1 1 5CFAEAE7
+P 5800 3350
+F 0 "J1" H 5880 3342 50  0000 L CNN
+F 1 "Conn_01x02" H 5880 3251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 5800 3350 50  0001 R CNN
+F 3 "~" H 5800 3350 50  0001 C CNN
+	1    5800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:Conn_01x04-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue J3
+U 1 1 5CFB9C02
+P 10150 1550
+F 0 "J3" H 10230 1542 50  0000 L CNN
+F 1 "Conn_01x04" H 10230 1451 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10150 1550 50  0001 C CNN
+F 3 "~" H 10150 1550 50  0001 C CNN
+	1    10150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0105
+U 1 1 5CFBE0E7
+P 9400 1550
+F 0 "#PWR0105" H 9400 1300 50  0001 C CNN
+F 1 "GND" H 9405 1377 50  0000 C CNN
+F 2 "" H 9400 1550 50  0001 C CNN
+F 3 "" H 9400 1550 50  0001 C CNN
+	1    9400 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:+5V-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0107
+U 1 1 5CFC4F29
+P 9800 1450
+F 0 "#PWR0107" H 9800 1300 50  0001 C CNN
+F 1 "+5V" H 9815 1623 50  0000 C CNN
+F 2 "" H 9800 1450 50  0001 C CNN
+F 3 "" H 9800 1450 50  0001 C CNN
+	1    9800 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1450 9950 1450
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0109
+U 1 1 5CFC8221
+P 7100 1850
+F 0 "#PWR0109" H 7100 1600 50  0001 C CNN
+F 1 "GND" H 7105 1677 50  0000 C CNN
+F 2 "" H 7100 1850 50  0001 C CNN
+F 3 "" H 7100 1850 50  0001 C CNN
+	1    7100 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:C-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue C2
+U 1 1 5CFC928F
+P 10100 2850
+F 0 "C2" H 10215 2896 50  0000 L CNN
+F 1 "100nF" H 10215 2805 50  0000 L CNN
+F 2 "C_THT_100nF:C_THT_100nF_L9.0mm_W2.0mm_P5.00mm_P7.50mm" H 10138 2700 50  0001 C CNN
+F 3 "~" H 10100 2850 50  0001 C CNN
+	1    10100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0110
+U 1 1 5CFCB66A
+P 10100 3000
+F 0 "#PWR0110" H 10100 2750 50  0001 C CNN
+F 1 "GND" H 10105 2827 50  0000 C CNN
+F 2 "" H 10100 3000 50  0001 C CNN
+F 3 "" H 10100 3000 50  0001 C CNN
+	1    10100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1050 7350 1050
+$Comp
+L DNMS-rescue:+3V3-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0112
+U 1 1 5CFD6545
+P 7100 1050
+F 0 "#PWR0112" H 7100 900 50  0001 C CNN
+F 1 "+3V3" H 7115 1223 50  0000 C CNN
+F 2 "" H 7100 1050 50  0001 C CNN
+F 3 "" H 7100 1050 50  0001 C CNN
+	1    7100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:+3V3-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0113
+U 1 1 5CFD6C3D
+P 10100 2700
+F 0 "#PWR0113" H 10100 2550 50  0001 C CNN
+F 1 "+3V3" H 10115 2873 50  0000 C CNN
+F 2 "" H 10100 2700 50  0001 C CNN
+F 3 "" H 10100 2700 50  0001 C CNN
+	1    10100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:R-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue R1
+U 1 1 5CFD9CEC
+P 6050 1800
+F 0 "R1" H 6120 1846 50  0000 L CNN
+F 1 "4k7" H 6120 1755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5980 1800 50  0001 C CNN
+F 3 "~" H 6050 1800 50  0001 C CNN
+	1    6050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:R-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue R2
+U 1 1 5CFDA5E9
+P 6450 1800
+F 0 "R2" H 6520 1846 50  0000 L CNN
+F 1 "4k7" H 6520 1755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6380 1800 50  0001 C CNN
+F 3 "~" H 6450 1800 50  0001 C CNN
+	1    6450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:+3V3-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0114
+U 1 1 5CFDB5C3
+P 6450 1650
+F 0 "#PWR0114" H 6450 1500 50  0001 C CNN
+F 1 "+3V3" H 6465 1823 50  0000 C CNN
+F 2 "" H 6450 1650 50  0001 C CNN
+F 3 "" H 6450 1650 50  0001 C CNN
+	1    6450 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1650 6050 1650
+Connection ~ 6450 1650
+Text GLabel 5900 1950 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	6050 1950 5900 1950
+Text GLabel 6300 2050 0    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	6300 2050 6450 2050
+Wire Wire Line
+	6450 2050 6450 1950
+Text GLabel 7350 1350 0    50   Output ~ 0
+SCL
+Text GLabel 9950 1650 0    50   Output ~ 0
+SCL
+Text GLabel 9950 1750 0    50   BiDi ~ 0
+SDA
+Text GLabel 8750 1050 2    50   BiDi ~ 0
+SDA
+Text GLabel 8750 1150 2    50   BiDi ~ 0
+SDA_Ex
+Wire Wire Line
+	9400 1550 9950 1550
+Text Notes 10250 1500 0    50   ~ 0
+I²C\nconnection
+Text Notes 4850 4800 0    50   ~ 0
+connection of\nICS-43434\nmicrophone board
+Wire Wire Line
+	7100 1850 7350 1850
+$Comp
+L DNMS-rescue:PWR_FLAG-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #FLG0101
+U 1 1 5CFE3E74
+P 1800 7150
+F 0 "#FLG0101" H 1800 7225 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 7323 50  0000 C CNN
+F 2 "" H 1800 7150 50  0001 C CNN
+F 3 "~" H 1800 7150 50  0001 C CNN
+	1    1800 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:PWR_FLAG-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #FLG0102
+U 1 1 5CFE445F
+P 3000 7150
+F 0 "#FLG0102" H 3000 7225 50  0001 C CNN
+F 1 "PWR_FLAG" H 3000 7323 50  0000 C CNN
+F 2 "" H 3000 7150 50  0001 C CNN
+F 3 "~" H 3000 7150 50  0001 C CNN
+	1    3000 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0116
+U 1 1 5CFE6E5F
+P 1800 7300
+F 0 "#PWR0116" H 1800 7050 50  0001 C CNN
+F 1 "GND" H 1805 7127 50  0000 C CNN
+F 2 "" H 1800 7300 50  0001 C CNN
+F 3 "" H 1800 7300 50  0001 C CNN
+	1    1800 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:+5V-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0117
+U 1 1 5CFE739F
+P 3000 7300
+F 0 "#PWR0117" H 3000 7150 50  0001 C CNN
+F 1 "+5V" H 3015 7473 50  0000 C CNN
+F 2 "" H 3000 7300 50  0001 C CNN
+F 3 "" H 3000 7300 50  0001 C CNN
+	1    3000 7300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1800 7150 1800 7300
+Wire Wire Line
+	3000 7150 3000 7300
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0101
+U 1 1 5D723B42
+P 1550 1150
+F 0 "#PWR0101" H 1550 900 50  0001 C CNN
+F 1 "GND" H 1555 977 50  0000 C CNN
+F 2 "" H 1550 1150 50  0001 C CNN
+F 3 "" H 1550 1150 50  0001 C CNN
+	1    1550 1150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2050 1250
+NoConn ~ 2050 1350
+NoConn ~ 2050 1450
+NoConn ~ 2050 1550
+NoConn ~ 2050 1650
+NoConn ~ 2050 1750
+NoConn ~ 2050 1850
+Text GLabel 2050 2050 0    50   Input ~ 0
+SD
+NoConn ~ 2050 2150
+NoConn ~ 2050 2250
+NoConn ~ 2050 2350
+NoConn ~ 2050 2450
+NoConn ~ 2050 2550
+Wire Wire Line
+	1550 1150 2050 1150
+Wire Wire Line
+	2050 2750 1600 2750
+Wire Wire Line
+	4250 3450 5250 3450
+Wire Wire Line
+	5250 3450 5250 3550
+Connection ~ 5250 3450
+Wire Wire Line
+	5250 3450 5600 3450
+$Comp
+L DNMS-rescue:+5V-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0102
+U 1 1 5D731E50
+P 5250 3550
+F 0 "#PWR0102" H 5250 3400 50  0001 C CNN
+F 1 "+5V" H 5265 3723 50  0000 C CNN
+F 2 "" H 5250 3550 50  0001 C CNN
+F 3 "" H 5250 3550 50  0001 C CNN
+	1    5250 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 3550 4800 3550
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0103
+U 1 1 5D733C7E
+P 4800 3550
+F 0 "#PWR0103" H 4800 3300 50  0001 C CNN
+F 1 "GND" H 4805 3377 50  0000 C CNN
+F 2 "" H 4800 3550 50  0001 C CNN
+F 3 "" H 4800 3550 50  0001 C CNN
+	1    4800 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 2050 3550 0    50   BiDi ~ 0
+SDA
+Text GLabel 2050 3650 0    50   Input ~ 0
+SCL
+Text GLabel 2050 3750 0    50   Output ~ 0
+WS
+Text GLabel 2050 3850 0    50   Output ~ 0
+SCK
+NoConn ~ 2050 1950
+NoConn ~ 2050 2850
+NoConn ~ 2050 2950
+NoConn ~ 2050 3050
+NoConn ~ 2050 3150
+NoConn ~ 2050 3250
+NoConn ~ 2050 3350
+NoConn ~ 2050 3450
+NoConn ~ 4250 3750
+NoConn ~ 4250 3850
+Wire Wire Line
+	4250 3650 4500 3650
+$Comp
+L DNMS-rescue:+3V3-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0115
+U 1 1 5D740066
+P 4500 3650
+F 0 "#PWR0115" H 4500 3500 50  0001 C CNN
+F 1 "+3V3" H 4515 3823 50  0000 C CNN
+F 2 "" H 4500 3650 50  0001 C CNN
+F 3 "" H 4500 3650 50  0001 C CNN
+	1    4500 3650
+	-1   0    0    1   
+$EndComp
+Text GLabel 3450 4550 0    50   Input ~ 0
+WS
+Text GLabel 3450 4650 0    50   Output ~ 0
+SD
+Text GLabel 3950 4550 2    50   Input ~ 0
+SCK
+$Comp
+L DNMS-rescue:C-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue C1
+U 1 1 5D744AD1
+P 1550 4900
+F 0 "C1" H 1665 4946 50  0000 L CNN
+F 1 "100nF" H 1665 4855 50  0000 L CNN
+F 2 "C_THT_100nF:C_THT_100nF_L9.0mm_W2.0mm_P5.00mm_P7.50mm" H 1588 4750 50  0001 C CNN
+F 3 "~" H 1550 4900 50  0001 C CNN
+	1    1550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0119
+U 1 1 5D744ADB
+P 1550 5050
+F 0 "#PWR0119" H 1550 4800 50  0001 C CNN
+F 1 "GND" H 1555 4877 50  0000 C CNN
+F 2 "" H 1550 5050 50  0001 C CNN
+F 3 "" H 1550 5050 50  0001 C CNN
+	1    1550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:+3V3-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0120
+U 1 1 5D744AE5
+P 1550 4750
+F 0 "#PWR0120" H 1550 4600 50  0001 C CNN
+F 1 "+3V3" H 1565 4923 50  0000 C CNN
+F 2 "" H 1550 4750 50  0001 C CNN
+F 3 "" H 1550 4750 50  0001 C CNN
+	1    1550 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0121
+U 1 1 5D748F76
+P 4350 4450
+F 0 "#PWR0121" H 4350 4200 50  0001 C CNN
+F 1 "GND" H 4355 4277 50  0000 C CNN
+F 2 "" H 4350 4450 50  0001 C CNN
+F 3 "" H 4350 4450 50  0001 C CNN
+	1    4350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0122
+U 1 1 5D749AF9
+P 3050 4450
+F 0 "#PWR0122" H 3050 4200 50  0001 C CNN
+F 1 "GND" H 3055 4277 50  0000 C CNN
+F 2 "" H 3050 4450 50  0001 C CNN
+F 3 "" H 3050 4450 50  0001 C CNN
+	1    3050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4450 3450 4450
+Wire Wire Line
+	3950 4450 4350 4450
+Wire Wire Line
+	3950 4650 4100 4650
+Wire Wire Line
+	4100 4650 4100 4850
+Wire Wire Line
+	4100 4850 4550 4850
+Wire Wire Line
+	4550 4850 4550 4650
+$Comp
+L DNMS-rescue:+3V3-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0123
+U 1 1 5D74C224
+P 4550 4650
+F 0 "#PWR0123" H 4550 4500 50  0001 C CNN
+F 1 "+3V3" H 4565 4823 50  0000 C CNN
+F 2 "" H 4550 4650 50  0001 C CNN
+F 3 "" H 4550 4650 50  0001 C CNN
+	1    4550 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0104
+U 1 1 5D7252BF
+P 5250 7300
+F 0 "#PWR0104" H 5250 7050 50  0001 C CNN
+F 1 "GND" H 5255 7127 50  0000 C CNN
+F 2 "" H 5250 7300 50  0001 C CNN
+F 3 "" H 5250 7300 50  0001 C CNN
+	1    5250 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:C-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue C3
+U 1 1 5D7252B5
+P 5250 7150
+F 0 "C3" H 5365 7196 50  0000 L CNN
+F 1 "100nF" H 5365 7105 50  0000 L CNN
+F 2 "C_THT_100nF:C_THT_100nF_L9.0mm_W2.0mm_P5.00mm_P7.50mm" H 5288 7000 50  0001 C CNN
+F 3 "~" H 5250 7150 50  0001 C CNN
+	1    5250 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:+5V-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0106
+U 1 1 5D727D35
+P 5250 7000
+F 0 "#PWR0106" H 5250 6850 50  0001 C CNN
+F 1 "+5V" H 5265 7173 50  0000 C CNN
+F 2 "" H 5250 7000 50  0001 C CNN
+F 3 "" H 5250 7000 50  0001 C CNN
+	1    5250 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:Conn_02x03_Odd_Even-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue J2
+U 1 1 5E810B8F
+P 3650 4550
+F 0 "J2" H 3700 4867 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 3700 4776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3650 4550 50  0001 C CNN
+F 3 "~" H 3650 4550 50  0001 C CNN
+	1    3650 4550
+	1    0    0    -1  
+$EndComp
+Text Notes 5900 3300 0    50   ~ 0
+Jumper\nVUSB to VIN
+$Comp
+L teensy:Teensy4.0 U1
+U 1 1 5E811AB3
+P 3150 2500
+F 0 "U1" H 3150 4115 50  0000 C CNN
+F 1 "Teensy4.0" H 3150 4024 50  0000 C CNN
+F 2 "Teensy:Teensy40" H 2750 2700 50  0001 C CNN
+F 3 "" H 2750 2700 50  0001 C CNN
+	1    3150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2700 8500 2700
+$Comp
+L DNMS-rescue:+3V3-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0108
+U 1 1 5EC12774
+P 8500 2700
+F 0 "#PWR0108" H 8500 2550 50  0001 C CNN
+F 1 "+3V3" H 8515 2873 50  0000 C CNN
+F 2 "" H 8500 2700 50  0001 C CNN
+F 3 "" H 8500 2700 50  0001 C CNN
+	1    8500 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 7350 1250 0    50   Input ~ 0
+SCL_Ex
+$Comp
+L P82B715PN_112:P82B715PN,112 U2
+U 1 1 5CFB6659
+P 8050 1350
+F 0 "U2" H 8050 2020 50  0000 C CNN
+F 1 "P82B715PN,112" H 8050 1929 50  0000 C CNN
+F 2 "P82B715PN_112:DIP254P762X420-8" V 8050 1350 50  0001 C BNN
+F 3 "" H 8050 1350 50  0001 L BNN
+F 4 "None" H 8050 1350 50  0001 L BNN "Feld4"
+F 5 "NXP USA" H 8050 1350 50  0001 L BNN "Feld5"
+F 6 "Unavailable" H 8050 1350 50  0001 L BNN "Feld6"
+F 7 "DIP-8 NXP Semiconductors" H 8050 1350 50  0001 L BNN "Feld7"
+F 8 "I2C Bus Extender 8-Pin PDIP Tube" H 8050 1350 50  0001 L BNN "Feld8"
+	1    8050 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 3200 0    50   Input ~ 0
+SCL_Ex
+Text GLabel 7500 3300 0    50   Output ~ 0
+SCL
+Text GLabel 8700 3200 2    50   BiDi ~ 0
+SDA_Ex
+Text GLabel 8700 3300 2    50   BiDi ~ 0
+SDA
+$Comp
+L DNMS-rescue:Conn_01x01-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue J4
+U 1 1 5EC540E4
+P 10150 2150
+F 0 "J4" H 10230 2192 50  0000 L CNN
+F 1 "Conn_01x01" H 10230 2101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10150 2150 50  0001 C CNN
+F 3 "~" H 10150 2150 50  0001 C CNN
+	1    10150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:+3V3-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0126
+U 1 1 5EC54242
+P 9950 2150
+F 0 "#PWR0126" H 9950 2000 50  0001 C CNN
+F 1 "+3V3" H 9965 2323 50  0000 C CNN
+F 2 "" H 9950 2150 50  0001 C CNN
+F 3 "" H 9950 2150 50  0001 C CNN
+	1    9950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:RJ12-Connector-DNMS-rescue-DNMS-rescue-DNMS-rescue J6
+U 1 1 5F0DB5D1
+P 7350 5850
+F 0 "J6" H 7407 6417 50  0000 C CNN
+F 1 "RJ12" H 7407 6326 50  0000 C CNN
+F 2 "E5566-Q0LK22-L:E5566Q0LK22L" V 7350 5875 50  0001 C CNN
+F 3 "~" V 7350 5875 50  0001 C CNN
+	1    7350 5850
+	1    0    0    -1  
+$EndComp
+Text Notes 7050 6400 0    50   ~ 0
+I²C-Bus-Extended connection\nvia RJ12 connector
+Wire Wire Line
+	7750 5650 8950 5650
+Wire Wire Line
+	7750 5550 8950 5550
+Connection ~ 8950 5650
+Connection ~ 8400 5950
+$Comp
+L DNMS-rescue:+5V-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0127
+U 1 1 5F0DB5C2
+P 8400 5950
+F 0 "#PWR0127" H 8400 5800 50  0001 C CNN
+F 1 "+5V" H 8415 6123 50  0000 C CNN
+F 2 "" H 8400 5950 50  0001 C CNN
+F 3 "" H 8400 5950 50  0001 C CNN
+	1    8400 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5950 7750 5950
+Wire Wire Line
+	8400 6050 8400 5950
+Wire Wire Line
+	7750 6050 8400 6050
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0128
+U 1 1 5F0DB5B5
+P 8950 5650
+F 0 "#PWR0128" H 8950 5400 50  0001 C CNN
+F 1 "GND" H 8955 5477 50  0000 C CNN
+F 2 "" H 8950 5650 50  0001 C CNN
+F 3 "" H 8950 5650 50  0001 C CNN
+	1    8950 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 5550 8950 5650
+Text GLabel 7750 5850 2    50   Output ~ 0
+SCL_Ex
+Text GLabel 7750 5750 2    50   BiDi ~ 0
+SDA_Ex
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0111
+U 1 1 5EC12EF1
+P 8100 3800
+F 0 "#PWR0111" H 8100 3550 50  0001 C CNN
+F 1 "GND" H 8105 3627 50  0000 C CNN
+F 2 "" H 8100 3800 50  0001 C CNN
+F 3 "" H 8100 3800 50  0001 C CNN
+	1    8100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L P82B715DR:P82B715DR U3
+U 1 1 5EC1071E
+P 8100 3300
+F 0 "U3" H 8100 4081 50  0000 C CNN
+F 1 "P82B715DR" H 8100 3990 50  0000 C CNN
+F 2 "P82B715:SOIC8" H 8100 3300 50  0001 L BNN
+F 3 "" H 8100 3300 50  0001 C CNN
+	1    8100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:RJ12-Connector-DNMS-rescue-DNMS-rescue-DNMS-rescue J5
+U 1 1 5E7FD347
+P 7350 4650
+F 0 "J5" H 7407 5217 50  0000 C CNN
+F 1 "RJ12" H 7407 5126 50  0000 C CNN
+F 2 "54601906WPLF:54601906WPLF" V 7350 4675 50  0001 C CNN
+F 3 "~" V 7350 4675 50  0001 C CNN
+	1    7350 4650
+	1    0    0    -1  
+$EndComp
+Text Notes 7050 5200 0    50   ~ 0
+I²C-Bus-Extended connection\nvia RJ12 connector
+Wire Wire Line
+	7750 4450 8950 4450
+Wire Wire Line
+	7750 4350 8950 4350
+Connection ~ 8950 4450
+Connection ~ 8400 4750
+$Comp
+L DNMS-rescue:+5V-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0125
+U 1 1 5E800639
+P 8400 4750
+F 0 "#PWR0125" H 8400 4600 50  0001 C CNN
+F 1 "+5V" H 8415 4923 50  0000 C CNN
+F 2 "" H 8400 4750 50  0001 C CNN
+F 3 "" H 8400 4750 50  0001 C CNN
+	1    8400 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4750 7750 4750
+Wire Wire Line
+	8400 4850 8400 4750
+Wire Wire Line
+	7750 4850 8400 4850
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR0124
+U 1 1 5E7FF7F9
+P 8950 4450
+F 0 "#PWR0124" H 8950 4200 50  0001 C CNN
+F 1 "GND" H 8955 4277 50  0000 C CNN
+F 2 "" H 8950 4450 50  0001 C CNN
+F 3 "" H 8950 4450 50  0001 C CNN
+	1    8950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4350 8950 4450
+Text GLabel 7750 4650 2    50   Output ~ 0
+SCL_Ex
+Text GLabel 7750 4550 2    50   BiDi ~ 0
+SDA_Ex
+Text Notes 8200 5400 0    50   ~ 0
+RJ12 connectors with two different\nfootprints are supported
+Wire Wire Line
+	4250 3350 5600 3350
+$Comp
+L power:GND #PWR0133
+U 1 1 61A09F9F
+P 1600 2750
+F 0 "#PWR0133" H 1600 2500 50  0001 C CNN
+F 1 "GND" H 1605 2577 50  0000 C CNN
+F 2 "" H 1600 2750 50  0001 C CNN
+F 3 "" H 1600 2750 50  0001 C CNN
+	1    1600 2750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2050 2650
+NoConn ~ 5850 8050
+$Comp
+L power:GND #PWR0118
+U 1 1 61A3ABF3
+P 2250 6500
+F 0 "#PWR0118" H 2250 6250 50  0001 C CNN
+F 1 "GND" H 2255 6327 50  0000 C CNN
+F 2 "" H 2250 6500 50  0001 C CNN
+F 3 "" H 2250 6500 50  0001 C CNN
+	1    2250 6500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 5800 0    50   Output ~ 0
+SD
+Text GLabel 2250 5900 0    50   Input ~ 0
+WS
+Text GLabel 2250 6100 0    50   Input ~ 0
+SCK
+Wire Wire Line
+	2250 6200 1800 6200
+$Comp
+L power:+3.3V #PWR0129
+U 1 1 61A3ECF6
+P 1800 6200
+F 0 "#PWR0129" H 1800 6050 50  0001 C CNN
+F 1 "+3.3V" H 1815 6373 50  0000 C CNN
+F 2 "" H 1800 6200 50  0001 C CNN
+F 3 "" H 1800 6200 50  0001 C CNN
+	1    1800 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6000 2000 6000
+Wire Wire Line
+	2000 6000 2000 5850
+Wire Wire Line
+	2000 5850 1500 5850
+$Comp
+L power:GND #PWR0130
+U 1 1 61A4080B
+P 1500 5850
+F 0 "#PWR0130" H 1500 5600 50  0001 C CNN
+F 1 "GND" H 1505 5677 50  0000 C CNN
+F 2 "" H 1500 5850 50  0001 C CNN
+F 3 "" H 1500 5850 50  0001 C CNN
+	1    1500 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SM06B-SRSS-TB_LF__SN_:SM06B-SRSS-TB(LF)(SN) J7
+U 1 1 61A25953
+P 2650 6200
+F 0 "J7" H 2880 6296 50  0000 L CNN
+F 1 "SM06B-SRSS-TB(LF)(SN)" H 2880 6205 50  0000 L CNN
+F 2 "SM06B-SRSS-TB_LF_SN:JST_SM06B-SRSS-TB(LF)(SN)" H 2650 6200 50  0001 L BNN
+F 3 "" H 2650 6200 50  0001 L BNN
+F 4 "Manufacturer Recommendation" H 2650 6200 50  0001 L BNN "STANDARD"
+F 5 "JST" H 2650 6200 50  0001 L BNN "MANUFACTURER"
+	1    2650 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6300 1800 6300
+$Comp
+L power:GND #PWR0131
+U 1 1 61A45E85
+P 1800 6300
+F 0 "#PWR0131" H 1800 6050 50  0001 C CNN
+F 1 "GND" H 1805 6127 50  0000 C CNN
+F 2 "" H 1800 6300 50  0001 C CNN
+F 3 "" H 1800 6300 50  0001 C CNN
+	1    1800 6300
+	1    0    0    -1  
+$EndComp
+Text Notes 4800 5550 0    50   ~ 0
+connection of\nICS-43434\nmicrophone board
+Text GLabel 3900 5300 2    50   Input ~ 0
+WS
+Text GLabel 3900 5200 2    50   Output ~ 0
+SD
+Text GLabel 3400 5300 0    50   Input ~ 0
+SCK
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR?
+U 1 1 61BEF44B
+P 4300 5400
+F 0 "#PWR?" H 4300 5150 50  0001 C CNN
+F 1 "GND" H 4305 5227 50  0000 C CNN
+F 2 "" H 4300 5400 50  0001 C CNN
+F 3 "" H 4300 5400 50  0001 C CNN
+	1    4300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L DNMS-rescue:GND-power-DNMS-rescue-DNMS-rescue-DNMS-rescue #PWR?
+U 1 1 61BEF455
+P 3000 5400
+F 0 "#PWR?" H 3000 5150 50  0001 C CNN
+F 1 "GND" H 3005 5227 50  0000 C CNN
+F 2 "" H 3000 5400 50  0001 C CNN
+F 3 "" H 3000 5400 50  0001 C CNN
+	1    3000 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5400 3400 5400
+Wire Wire Line
+	3900 5400 4300 5400
+$Comp
+L DNMS-rescue:Conn_02x03_Odd_Even-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue J7
+U 1 1 61BEF46F
+P 3600 5300
+F 0 "J7" H 3650 5617 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 3650 5526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3600 5300 50  0001 C CNN
+F 3 "~" H 3600 5300 50  0001 C CNN
+	1    3600 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5200 3400 5200
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61C887D8
+P 3000 5200
+F 0 "#PWR?" H 3000 5050 50  0001 C CNN
+F 1 "+3.3V" H 3015 5373 50  0000 C CNN
+F 2 "" H 3000 5200 50  0001 C CNN
+F 3 "" H 3000 5200 50  0001 C CNN
+	1    3000 5200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

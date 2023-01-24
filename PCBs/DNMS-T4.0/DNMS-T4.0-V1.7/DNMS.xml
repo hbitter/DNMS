@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/helmut/Ablage/sonstiges/Luftdaten.info Feinstaubsensor, Lärm u.a/Lärm/DNMS/PCBs/DNMS-T4.0/DNMS-T4.0-V1.7/DNMS.kicad_sch</source>
+    <date>So 16 Jan 2022 19:10:38 CET</date>
+    <tool>Eeschema 6.0.1-79c1e3a40b~116~ubuntu20.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>DNMS-T4.0</title>
+        <company/>
+        <rev>V1.7</rev>
+        <date>2021-12-15</date>
+        <source>DNMS.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>C_THT_100nF:C_THT_100nF_L9.0mm_W2.0mm_P5.00mm_P7.50mm</footprint>
+      <libsource lib="DNMS-rescue" part="C-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005d744ad1</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>C_THT_100nF:C_THT_100nF_L9.0mm_W2.0mm_P5.00mm_P7.50mm</footprint>
+      <libsource lib="DNMS-rescue" part="C-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005cfc928f</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>C_THT_100nF:C_THT_100nF_L9.0mm_W2.0mm_P5.00mm_P7.50mm</footprint>
+      <libsource lib="DNMS-rescue" part="C-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005d7252b5</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="DNMS-rescue" part="Conn_01x02-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005cfaeae7</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_02x03_Odd_Even</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical</footprint>
+      <libsource lib="DNMS-rescue" part="Conn_02x03_Odd_Even-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e810b8f</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x04</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="DNMS-rescue" part="Conn_01x04-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005cfb9c02</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x01</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <libsource lib="DNMS-rescue" part="Conn_01x01-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ec540e4</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>RJ12</value>
+      <footprint>54601906WPLF:54601906WPLF</footprint>
+      <libsource lib="DNMS-rescue" part="RJ12-Connector-DNMS-rescue-DNMS-rescue-DNMS-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e7fd347</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>RJ12</value>
+      <footprint>E5566-Q0LK22-L:E5566Q0LK22L</footprint>
+      <libsource lib="DNMS-rescue" part="RJ12-Connector-DNMS-rescue-DNMS-rescue-DNMS-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f0db5d1</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>SM06B-SRSS-TB(LF)(SN)</value>
+      <footprint>SM06B-SRSS-TB_LF_SN:JST_SM06B-SRSS-TB(LF)(SN)</footprint>
+      <fields>
+        <field name="MANUFACTURER">JST</field>
+        <field name="STANDARD">Manufacturer Recommendation</field>
+      </fields>
+      <libsource lib="SM06B-SRSS-TB_LF__SN_" part="SM06B-SRSS-TB(LF)(SN)" description=""/>
+      <property name="STANDARD" value="Manufacturer Recommendation"/>
+      <property name="MANUFACTURER" value="JST"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000061a25953</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>SM06B-SRSS-TB(LF)(SN)</value>
+      <footprint>SM06B-SRSS-TB_LF_SN:JST_SM06B-SRSS-TB(LF)(SN)</footprint>
+      <fields>
+        <field name="MANUFACTURER">JST</field>
+        <field name="STANDARD">Manufacturer Recommendation</field>
+      </fields>
+      <libsource lib="SM06B-SRSS-TB_LF__SN_" part="SM06B-SRSS-TB(LF)(SN)" description=""/>
+      <property name="STANDARD" value="Manufacturer Recommendation"/>
+      <property name="MANUFACTURER" value="JST"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68bd9244-ad41-43e6-b7c7-8d19b53f9a7a</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>4k7</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="DNMS-rescue" part="R-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005cfd9cec</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>4k7</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="DNMS-rescue" part="R-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005cfda5e9</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>Teensy4.0</value>
+      <footprint>Teensy:Teensy40</footprint>
+      <libsource lib="teensy" part="Teensy4.0" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e811ab3</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>P82B715PN,112</value>
+      <footprint>P82B715PN_112:DIP254P762X420-8</footprint>
+      <fields>
+        <field name="Feld4">None</field>
+        <field name="Feld5">NXP USA</field>
+        <field name="Feld6">Unavailable</field>
+        <field name="Feld7">DIP-8 NXP Semiconductors</field>
+        <field name="Feld8">I2C Bus Extender 8-Pin PDIP Tube</field>
+      </fields>
+      <libsource lib="P82B715PN_112" part="P82B715PN,112" description=""/>
+      <property name="Feld4" value="None"/>
+      <property name="Feld5" value="NXP USA"/>
+      <property name="Feld6" value="Unavailable"/>
+      <property name="Feld7" value="DIP-8 NXP Semiconductors"/>
+      <property name="Feld8" value="I2C Bus Extender 8-Pin PDIP Tube"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005cfb6659</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>P82B715DR</value>
+      <footprint>P82B715:SOIC8</footprint>
+      <libsource lib="P82B715DR" part="P82B715DR" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DNMS.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ec1071e</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="DNMS-rescue" part="C-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DNMS-rescue" part="Conn_01x01-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue">
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DNMS-rescue" part="Conn_01x02-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue">
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DNMS-rescue" part="Conn_01x04-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue">
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DNMS-rescue" part="Conn_02x03_Odd_Even-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue">
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x03_Odd_Even-Connector_Generic-DNMS-rescue-DNMS-rescue-DNMS-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DNMS-rescue" part="R-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue">
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-Device-DNMS-rescue-DNMS-rescue-DNMS-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DNMS-rescue" part="RJ12-Connector-DNMS-rescue-DNMS-rescue-DNMS-rescue">
+      <footprints>
+        <fp>6P6C*</fp>
+        <fp>RJ12*</fp>
+        <fp>RJ18*</fp>
+        <fp>RJ25*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">RJ12-Connector-DNMS-rescue-DNMS-rescue-DNMS-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5" name="" type="passive"/>
+        <pin num="6" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P82B715DR" part="P82B715DR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">P82B715DR</field>
+        <field name="Footprint">SOIC8</field>
+      </fields>
+      <pins>
+        <pin num="2" name="LX" type="passive"/>
+        <pin num="3" name="SX" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="6" name="SY" type="passive"/>
+        <pin num="7" name="LY" type="passive"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="P82B715PN_112" part="P82B715PN,112">
+      <docs>P82B715PN,112</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">P82B715PN,112</field>
+        <field name="Footprint">DIP254P762X420-8</field>
+        <field name="Datasheet">P82B715PN,112</field>
+        <field name="Feld4">None</field>
+        <field name="Feld5">NXP USA</field>
+        <field name="Feld6">Unavailable</field>
+        <field name="Feld7">DIP-8 NXP Semiconductors</field>
+        <field name="Feld8">I2C Bus Extender 8-Pin PDIP Tube</field>
+      </fields>
+      <pins>
+        <pin num="1" name="N.C._2" type="no_connect"/>
+        <pin num="2" name="LX" type="bidirectional"/>
+        <pin num="3" name="SX" type="bidirectional"/>
+        <pin num="4" name="GND" type="passive"/>
+        <pin num="5" name="N.C." type="no_connect"/>
+        <pin num="6" name="SY" type="bidirectional"/>
+        <pin num="7" name="LY" type="bidirectional"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SM06B-SRSS-TB_LF__SN_" part="SM06B-SRSS-TB(LF)(SN)">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SM06B-SRSS-TB(LF)(SN)</field>
+        <field name="Footprint">JST_SM06B-SRSS-TB(LF)(SN)</field>
+        <field name="STANDARD">Manufacturer Recommendation</field>
+        <field name="MANUFACTURER">JST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+        <pin num="S2" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="teensy" part="Teensy4.0">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Teensy4.0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="0_RX1_CRX2" type="bidirectional"/>
+        <pin num="3" name="1_TX1_CTX2" type="bidirectional"/>
+        <pin num="4" name="2_OUT2" type="bidirectional"/>
+        <pin num="5" name="3_LRCLK2" type="bidirectional"/>
+        <pin num="6" name="4_BCLK2" type="bidirectional"/>
+        <pin num="7" name="5_IN2" type="bidirectional"/>
+        <pin num="8" name="6_OUT1D" type="bidirectional"/>
+        <pin num="9" name="7_RX2_OUT1A" type="bidirectional"/>
+        <pin num="10" name="8_TX2_IN1" type="bidirectional"/>
+        <pin num="11" name="9_OUT1C" type="bidirectional"/>
+        <pin num="12" name="10_CS_MQSR" type="bidirectional"/>
+        <pin num="13" name="11_MOSI_CTX1" type="bidirectional"/>
+        <pin num="14" name="12_MISO_MQSL" type="bidirectional"/>
+        <pin num="15" name="VBAT" type="power_in"/>
+        <pin num="16" name="3V3" type="power_out"/>
+        <pin num="17" name="GND" type="power_in"/>
+        <pin num="18" name="PROGRAM" type="input"/>
+        <pin num="19" name="ON_OFF" type="input"/>
+        <pin num="20" name="13_SCK_CRX1_LED" type="bidirectional"/>
+        <pin num="21" name="14_A0_TX3_SPDIF_OUT" type="bidirectional"/>
+        <pin num="22" name="15_A1_RX3_SPDIF_IN" type="bidirectional"/>
+        <pin num="23" name="16_A2_RX4_SCL1" type="bidirectional"/>
+        <pin num="24" name="17_A3_TX4_SDA1" type="bidirectional"/>
+        <pin num="25" name="18_A4_SDA0" type="bidirectional"/>
+        <pin num="26" name="19_A5_SCL0" type="bidirectional"/>
+        <pin num="27" name="20_A6_TX5_LRCLK1" type="bidirectional"/>
+        <pin num="28" name="21_A7_RX5_BCLK1" type="bidirectional"/>
+        <pin num="29" name="22_A8_CTX1" type="bidirectional"/>
+        <pin num="30" name="23_A9_CRX1_MCLK1" type="bidirectional"/>
+        <pin num="31" name="3V3" type="power_out"/>
+        <pin num="32" name="GND" type="power_in"/>
+        <pin num="33" name="VIN" type="power_in"/>
+        <pin num="34" name="VUSB" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="DNMS-rescue">
+      <uri>/home/helmut/Ablage/sonstiges/Luftdaten.info Feinstaubsensor, Lärm u.a/Lärm/DNMS/PCBs/DNMS-T4.0/DNMS-T4.0-V1.7/DNMS-rescue.lib</uri>
+    </library>
+    <library logical="P82B715DR">
+      <uri>/home/helmut/Ablage/sonstiges/Luftdaten.info Feinstaubsensor, Lärm u.a/Lärm/DNMS/PCBs/DNMS-T4.0/DNMS-T4.0-V1.7/P82B715/P82B715DR.lib</uri>
+    </library>
+    <library logical="P82B715PN_112">
+      <uri>/home/helmut/Ablage/sonstiges/Luftdaten.info Feinstaubsensor, Lärm u.a/Lärm/DNMS/PCBs/DNMS-T4.0/DNMS-T4.0-V1.7/P82B715/P82B715PN_112.lib</uri>
+    </library>
+    <library logical="SM06B-SRSS-TB_LF__SN_">
+      <uri>/home/helmut/Ablage/sonstiges/Luftdaten.info Feinstaubsensor, Lärm u.a/Lärm/DNMS/PCBs/DNMS-T4.0/DNMS-T4.0-V1.7/SM06B-SRSS-TB_LF_SN/SM06B-SRSS-TB_LF__SN_.lib</uri>
+    </library>
+    <library logical="teensy">
+      <uri>/home/helmut/Ablage/sonstiges/Luftdaten.info Feinstaubsensor, Lärm u.a/Lärm/DNMS/PCBs/DNMS-T4.0/DNMS-T4.0-V1.7/Teensy KiCad/teensy.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J7" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="J8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="31" pinfunction="3V3" pintype="power_out"/>
+      <node ref="U2" pin="8" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U3" pin="8" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J5" pin="1" pintype="passive"/>
+      <node ref="J5" pin="2" pintype="passive"/>
+      <node ref="J6" pin="1" pintype="passive"/>
+      <node ref="J6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="33" pinfunction="VIN" pintype="power_in"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J5" pin="5" pintype="passive"/>
+      <node ref="J5" pin="6" pintype="passive"/>
+      <node ref="J6" pin="5" pintype="passive"/>
+      <node ref="J6" pin="6" pintype="passive"/>
+      <node ref="J7" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="J7" pin="6" pinfunction="6" pintype="passive"/>
+      <node ref="J7" pin="S1" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J7" pin="S2" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J8" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="J8" pin="S1" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J8" pin="S2" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="17" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="32" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="4" pinfunction="GND" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="4" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U1" pin="34" pinfunction="VUSB" pintype="power_out"/>
+    </net>
+    <net code="5" name="SCK">
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J7" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="J8" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U1" pin="28" pinfunction="21_A7_RX5_BCLK1" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="SCL">
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="26" pinfunction="19_A5_SCL0" pintype="bidirectional"/>
+      <node ref="U2" pin="3" pinfunction="SX" pintype="bidirectional"/>
+      <node ref="U3" pin="3" pinfunction="SX" pintype="passive"/>
+    </net>
+    <net code="7" name="SCL_Ex">
+      <node ref="J5" pin="3" pintype="passive"/>
+      <node ref="J6" pin="3" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="LX" pintype="bidirectional"/>
+      <node ref="U3" pin="2" pinfunction="LX" pintype="passive"/>
+    </net>
+    <net code="8" name="SD">
+      <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J8" pin="6" pinfunction="6" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="8_TX2_IN1" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="SDA">
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="25" pinfunction="18_A4_SDA0" pintype="bidirectional"/>
+      <node ref="U2" pin="6" pinfunction="SY" pintype="bidirectional"/>
+      <node ref="U3" pin="6" pinfunction="SY" pintype="passive"/>
+    </net>
+    <net code="10" name="SDA_Ex">
+      <node ref="J5" pin="4" pintype="passive"/>
+      <node ref="J6" pin="4" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="LY" pintype="bidirectional"/>
+      <node ref="U3" pin="7" pinfunction="LY" pintype="passive"/>
+    </net>
+    <net code="11" name="WS">
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="J8" pin="5" pinfunction="5" pintype="passive"/>
+      <node ref="U1" pin="27" pinfunction="20_A6_TX5_LRCLK1" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="unconnected-(U1-Pad2)">
+      <node ref="U1" pin="2" pinfunction="0_RX1_CRX2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="13" name="unconnected-(U1-Pad3)">
+      <node ref="U1" pin="3" pinfunction="1_TX1_CTX2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="14" name="unconnected-(U1-Pad4)">
+      <node ref="U1" pin="4" pinfunction="2_OUT2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(U1-Pad5)">
+      <node ref="U1" pin="5" pinfunction="3_LRCLK2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(U1-Pad6)">
+      <node ref="U1" pin="6" pinfunction="4_BCLK2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(U1-Pad7)">
+      <node ref="U1" pin="7" pinfunction="5_IN2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(U1-Pad8)">
+      <node ref="U1" pin="8" pinfunction="6_OUT1D" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(U1-Pad9)">
+      <node ref="U1" pin="9" pinfunction="7_RX2_OUT1A" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(U1-Pad11)">
+      <node ref="U1" pin="11" pinfunction="9_OUT1C" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U1-Pad12)">
+      <node ref="U1" pin="12" pinfunction="10_CS_MQSR" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U1-Pad13)">
+      <node ref="U1" pin="13" pinfunction="11_MOSI_CTX1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U1-Pad14)">
+      <node ref="U1" pin="14" pinfunction="12_MISO_MQSL" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U1-Pad15)">
+      <node ref="U1" pin="15" pinfunction="VBAT" pintype="power_in+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U1-Pad16)">
+      <node ref="U1" pin="16" pinfunction="3V3" pintype="power_out+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U1-Pad18)">
+      <node ref="U1" pin="18" pinfunction="PROGRAM" pintype="input+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U1-Pad19)">
+      <node ref="U1" pin="19" pinfunction="ON_OFF" pintype="input+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U1-Pad20)">
+      <node ref="U1" pin="20" pinfunction="13_SCK_CRX1_LED" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U1-Pad21)">
+      <node ref="U1" pin="21" pinfunction="14_A0_TX3_SPDIF_OUT" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U1-Pad22)">
+      <node ref="U1" pin="22" pinfunction="15_A1_RX3_SPDIF_IN" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U1-Pad23)">
+      <node ref="U1" pin="23" pinfunction="16_A2_RX4_SCL1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U1-Pad24)">
+      <node ref="U1" pin="24" pinfunction="17_A3_TX4_SDA1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U1-Pad29)">
+      <node ref="U1" pin="29" pinfunction="22_A8_CTX1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U1-Pad30)">
+      <node ref="U1" pin="30" pinfunction="23_A9_CRX1_MCLK1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U2-Pad1)">
+      <node ref="U2" pin="1" pinfunction="N.C._2" pintype="no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U2-Pad5)">
+      <node ref="U2" pin="5" pinfunction="N.C." pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

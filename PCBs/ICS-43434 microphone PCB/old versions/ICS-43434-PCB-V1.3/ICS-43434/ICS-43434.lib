@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# ICS-43434
+#
+DEF ICS-43434 MK 0 40 Y Y 1 L N
+F0 "MK" -302 503 50 H V L BNN
+F1 "ICS-43434" -302 -604 50 H V L BNN
+F2 "MIC_ICS-43434" 0 0 50 H I L BNN
+F3 "TDK InvenSense" 0 0 50 H I L BNN
+F4 "Unavailable" 0 0 50 H I L BNN
+F5 "None" 0 0 50 H I L BNN
+F6 "ICS-43434" 0 0 50 H I L BNN
+F7 "LGA-6 TDK-InvenSense" 0 0 50 H I L BNN
+F8 "Multi-Mode Microphone with I2S Digital Output" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 300 500 300 -500 N
+P 2 0 0 10 300 -500 -300 -500 N
+P 2 0 0 10 -300 -500 -300 500 N
+P 2 0 0 10 -300 500 300 500 N
+X VDD 5 500 400 200 L 40 40 0 0 W 
+X GND 3 500 -400 200 L 40 40 0 0 W 
+X SCK 4 -500 -100 200 R 40 40 0 0 I 
+X WS 1 -500 0 200 R 40 40 0 0 I 
+X LR 2 -500 200 200 R 40 40 0 0 I 
+X SD 6 -500 -200 200 R 40 40 0 0 O 
+ENDDRAW
+ENDDEF
+#
+# End Library

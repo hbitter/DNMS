@@ -10,10 +10,9 @@ Ein rundes Mikrofon Board, das in ein 1/2" Plastikrohr (oder in 13mm Edelstahlro
 
 PCB Versions Historie:
 - ICS-43434-PCB-V1.3 - erste veröffentlichte Version
+- ICS-43434-PCB-V1.4 - Durchmesser für die akustische Öffnung geändert con 0,6mm auf 0,7mm
 
-<img src="images/ICS-43434 V1.2 PCB bestückt.jpg"><br>
-
-Wer nicht selbst bestücken und löten kann und will, kann das Board auch bei [PCBWAY](https://www.pcbway.com/) bestellen und bestücken lassen oder mal bei Franz Hoefle  <franz.hoefle (at) buergerforum-gladbeck.de>   fragen, ob er bestückte Boards hat.
+<img src="images/ICS-43434 V1.4 PCB bestückt.jpg"><br>
 
 
 ### Airrohr PCB
@@ -97,8 +96,13 @@ PCB Versions Historie:
 - DNMS-T4.0-V1.4 - P82B715 (I²C-bus Extender IC) kann im DIP8 Gehäuse oder im SO8 Gehäuse bestückt werden
 				 - RJ12 Buchse für I²C-Bus-Verlängerung mit zwei unterschiedlichen "Footprints"
 - DNMS-T4.0-V1.5 - Masseflächen an Ober- und Unterseite
+- DNMS-T4.0-V1.7 - Zusätzliche JST SR/SZ Buchsen für die Verbindung zum Mikrofon, wahlweise für 1:1 Kabel (Bezeichnung straight auf der Unterseite) oder "verdrehte" Kabel (Bezeichnung reverse auf der Unterseite). Achtung: Das Löten dieser JST Buchsen ist nicht ganz einfach.
 
-<img src="images/DNMS.T4.0-V1.4.jpg"><br>
+<img src="images/DNMS-T4.0-V1.7-Bild2.jpg"><br>
+
+<img src="images/DNMS-T4.0-V1.7-reverse.jpg"><br>
+
+<img src="images/DNMS-T4.0-V1.7-straight.jpg"><br>
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -112,10 +116,9 @@ A round microphone PCB, that fits into a 1/2" plastic tube (or into a 13mm stain
 
 PCB revision history:
 - ICS-43434-PCB-V1.3 - first version in GitHub
+- ICS-43434-PCB-V1.4 - diameter of acoustic port changed from 0,6mm to 0,7mm
 
-<img src="images/ICS-43434 V1.2 PCB bestückt.jpg"><br>
-
-Who isn' t able or willing to do the board assembly and soldering can order e.g. at [PCBWAY](https://www.pcbway.com/) or may ask Franz Hoefle  <franz.hoefle (at) buergerforum-gladbeck.de>  if assembled boards are available.
+<img src="images/ICS-43434 V1.7 PCB bestückt.jpg"><br>
 
 
 ### Airrohr PCB
@@ -200,5 +203,12 @@ PCB revision history:
 - DNMS-T4.0-V1.4 - P82B715 (I²C-bus Extender IC) layout allows assembly of DIP8 or SO8 package
 				 - support for two different footprints for RJ12 connector
 - DNMS-T4.0-V1.5 - ground-planes on top and bottom side
+- DNMS-T4.0-V1.7 - additional JST SR/SZ connectors possible for connection to microphone, can be 1:1 straight cable (on back side) or reverse cable (on top side). Attention: Soldering of these JST connectors is a bit difficult.
 
-<img src="images/DNMS.T4.0-V1.4.jpg"><br>
+<img src="images/DNMS-T4.0-V1.7-Bild2.jpg"><br>
+
+<img src="images/DNMS-T4.0-V1.7-reverse.jpg"><br>
+
+<img src="images/DNMS-T4.0-V1.7-straight.jpg"><br>
+
+
