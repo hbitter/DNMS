@@ -12,7 +12,8 @@ PCB Versions Historie:
 - ICS-43434-PCB-V1.3 - erste veröffentlichte Version
 - ICS-43434-PCB-V1.4 - Durchmesser für die akustische Öffnung geändert con 0,6mm auf 0,7mm
 
-![](images/ICS-43434 V1.4 PCB bestückt.jpg)<br>
+
+<img src="images/ICS-43434 V1.4 PCB bestückt.jpg"><br>
 
 
 ### Airrohr PCB
@@ -118,7 +119,7 @@ PCB revision history:
 - ICS-43434-PCB-V1.3 - first version in GitHub
 - ICS-43434-PCB-V1.4 - diameter of acoustic port changed from 0,6mm to 0,7mm
 
-![](images/ICS-43434 V1.4 PCB bestückt.jpg)<br>
+<img src="images/ICS-43434 V1.4 PCB bestückt.jpg"><br>
 
 
 ### Airrohr PCB
