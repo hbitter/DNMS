@@ -14,6 +14,9 @@ Weitere Entwicklungen wie die Berechnung und Ausgabe von Z-Werten und C-Werten s
 ## Neuigkeiten
 
 ### Januar 2023
+- Fehlerkorrektur Teensy3.6 Firmware, die neuen Versionen DNMS_V2.5.0 und DNMS_V2.5.1 beseitigen eine Fehler bei der Initialisierung.
+- Korrektur der NodeMCU Firmware, die neuen Versionen NRZ-2020-134-DNMS-3.3, NRZ-2020-134-DNMS-3.3-en, NRZ-2020-134-DNMS-4.3 und NRZ-2020-134-DNMS-4.3-en korrigieren die I²C Takt Frequenz, jetzt näher bei 100kHz.<br><br>
+
 - Es gibt nun drei aktuelle Versionen der Teensy Firmware, die sich im Funktionsumfang unterscheiden:
 	- V2 - Funktionsumfang wie bisher d.h. LAeq, LAmin und LAmax werden berechnet und ausgegeben.
 	- V3 (nur für Teensy4.0) - zusätzlich zum Funktionsumfang von V2 werden zur Auswertung des Frequenzspektrums die Terzwerte (A-bewertet) von 20Hz - 20000Hz ausgegeben. Die Terzwerte werden nicht zu Sensor.Community übertragen sondern nur auf die lokale Webseite der NodeMCU und zu weiteren APIs übertragen (z.B. zu einer InfluxDB). Zur Nutzung dieser Teensy Version V3 muss die korrespondierende Firmware Version für die NodeMCU (z.Zt. NRZ-2020-134-DNMS-3.2 bzw. die englische Version NRZ-2020-134-DNMS-3.2/EN) benutzt werden. 
@@ -48,6 +51,10 @@ Further development for generating Z-values and C-values are under consideration
 ## News
 
 ### January 2023
+
+- Correction of a bug in Teensy3.6 firmware, the new versions DNMS_V2.5.0 and DNMS_V2.5.1 correcting a wrong initialization at startup.
+- Correction of NodeMCU firmware, the new versions NRZ-2020-134-DNMS-3.3, NRZ-2020-134-DNMS-3.3-en, NRZ-2020-134-DNMS-4.3 and NRZ-2020-134-DNMS-4.3-en correcting the I²C clock frequency, it is now closer to 100kHz.<br><br>
+
 - There are now three different versions of the Teensy firmware, which differ in functionality:
 	- V2 - with the functionality as up to now e.g. calculation of LAeq, LAmin and LAmax
 	- V3 (only for Teensy4.0) - in addition to V2 supports frequency spectrum and calculates 1/3 octave values from 20Hz - 20000Hz. 1/3 octave values are not transmitted to Sensor.Community. They are available on the local webpage of the NodeMCU and can be transmitted to an InfluxDB. To use these features of Teensy V3 version a corresponding firmware version for the NodeMCU has to be used (at the moment that is NRZ-2020-134-DNMS-3.2 or the english version NRZ-2020-134-DNMS-3.2/EN).

@@ -7,6 +7,10 @@
 
 ### Versions Historie NRZ-2020-134-DNMS:
 
+ - NRZ-2020-134-DNMS-3.3 - Korrektur der I²C Clock Frequenz
+ 
+ - NRZ-2020-134-DNMS-3.3-en - Korrektur der I²C Clock Frequenz<br><br>
+
  - NRZ-2020-134-DNMS-3.2
 	- Abfrage Terzwerte vom DNMS - Vorausetzung Firmware V3 oder V4 auf dem Teensy
 	- Terzwerte werden **nicht** an Sensor.Community übertragen
@@ -83,6 +87,10 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Node
 
 ### Version history NRZ-2020-134-DNMS:
 
+ - NRZ-2020-134-DNMS-3.3 - correction of I²C clock frequency
+ 
+ - NRZ-2020-134-DNMS-3.3-en - correction of I²C clock frequency<br><br>
+ 
  - NRZ-2020-134-DNMS-3.2
 	- Reading of 1/3 octave values from DNMS - prerequisite using firmware V3 or V4 on Teensy
 	- 1/3 octave values are **not** transmitted to Sensor.Community
