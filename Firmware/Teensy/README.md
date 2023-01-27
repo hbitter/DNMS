@@ -34,8 +34,10 @@
 
   - DNMS_V2.0.0 und DNMS_V2.0.1 - Version 2 der Firmware basierend auf 32-Bit Floating Point Verarbeitung
 
+- DNMS_V2.4.0 und DNMS_2.4.1 - Änderung der Zeitgewichtung von I (Impuls) auf F (Fast 125ms)
+
 - aktuelle Versionen:
-	- DNMS_V2.4.0 und DNMS_2.4.1 - Änderung der Zeitgewichtung von I (Impuls) auf F (Fast 125ms)
+	- DNMS_V2.5.0 und DNMS_2.5.1 - Korrektur eines Fehlers bei der Initialisierung
 
 ### Testprogramm für Teensy3.6 Board und angeschlossenem Mikrofon: DNMS_Vt.2.0
 
@@ -92,9 +94,11 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Teen
   - DNMS_V1.1.0 and DNMS_V1.1.1 - change of I²C library, now the i2c_t3 lib (https://github.com/nox771/i2c_t3) is used,  which is more stable
 
   - DNMS_V2.0.0 and DNMS_V2.0.1 - firmware version 2 based on 32-Bit floating point processing 
+ 
+ - DNMS_V2.4.0 and DNMS_V2.4.1 - change of time weighting from I (Impuls) to F (Fast 125ms)
 
 - current versions:
-	- DNMS_V2.4.0 and DNMS_V2.4.1 - Change of time weighting from I (Impuls) to F (Fast 125ms)
+	- DNMS_V2.5.0 and DNMS_V2.5.1 - correction of a bug at startup
 
 
 ## Naming convention of the versions:
