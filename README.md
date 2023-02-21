@@ -14,7 +14,7 @@ Weitere Entwicklungen wie die Berechnung und Ausgabe von Z-Werten und C-Werten s
 ## Neuigkeiten
 
 ### Achtung
-Der Feinstaubsensor SDS011 läuft nicht mit den Firmware Versionen NRZ-2020-134-DNMS-3.3,  NRZ-2020-134-DNMS-3.3-en, NRZ-2020-134-DNMS-4.3 und NRZ-2020-134-DNMS-4.3-en.
+Der Feinstaubsensor SDS011 läuft nicht stabil mit den Firmware Versionen NRZ-2020-134-DNMS-3.3,  NRZ-2020-134-DNMS-3.3-en, NRZ-2020-134-DNMS-4.3 und NRZ-2020-134-DNMS-4.3-en für die NodeMCU.
 
 ### Januar 2023
 - Fehlerkorrektur Teensy3.6 Firmware, die neuen Versionen DNMS_V2.5.0 und DNMS_V2.5.1 beseitigen eine Fehler bei der Initialisierung.
@@ -55,7 +55,7 @@ Further development for generating Z-values and C-values are under consideration
 
 ### Attention
 PM sensor SD011 doesn't work reliable with firmware versions 
-Der Feinstaubsensor SDS011 läuft nicht mit den Firmware Versionen NRZ-2020-134-DNMS-3.3,  NRZ-2020-134-DNMS-3.3-en, NRZ-2020-134-DNMS-4.3 und NRZ-2020-134-DNMS-4.3-en.
+NRZ-2020-134-DNMS-3.3,  NRZ-2020-134-DNMS-3.3-en, NRZ-2020-134-DNMS-4.3 und NRZ-2020-134-DNMS-4.3-en for NodeMCU.
 
 ### January 2023
 
