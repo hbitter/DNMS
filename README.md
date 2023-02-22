@@ -54,7 +54,7 @@ Further development for generating Z-values and C-values are under consideration
 ## News
 
 ### Attention
-PM sensor SD011 doesn't work reliable with firmware versions 
+PM sensor SDS011 doesn't work reliable with firmware versions 
 NRZ-2020-134-DNMS-3.3,  NRZ-2020-134-DNMS-3.3-en, NRZ-2020-134-DNMS-4.3 und NRZ-2020-134-DNMS-4.3-en for NodeMCU.
 
 ### January 2023
