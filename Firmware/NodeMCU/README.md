@@ -9,7 +9,9 @@
 
  - NRZ-2020-134-DNMS-4.4
    - Stabileres Verhalten des lokalen Webservers auf der NodeMCU durch Übersetzung mit der Version 3.1.1 der ESP8266 Library
-   - Ein zyklischer Restart der NodeMCU kann unter Konfiguration -> Weitere Einstellungen angegeben werden mit einer Zeitangabe für den Restart in Stunden. Dies kann bei Problemen mit Routern und Proxys helfen, die nach einer festen Zeit die WLAN Verbindung unterbrechen.  ![](images/Zyklischer_Restart.jpg)
+   - Ein zyklischer Restart der NodeMCU kann unter Konfiguration -> Weitere Einstellungen angegeben werden mit einer Zeitangabe für den Restart in Stunden. Dies kann bei Problemen mit Routern und Proxys helfen, die nach einer festen Zeit die WLAN Verbindung unterbrechen.  
+   
+   		![](images/Zyklischer_Restart.jpg)
    - Unterstützung weiterer Sensoren:<br>
    -- SEN5X Feinstaub, Temperatur u. Feuchtigkeitssensor sowie je nach Version Index für VOC und NOx<br>
    -- SCD30 CO2 Sensor<br>
