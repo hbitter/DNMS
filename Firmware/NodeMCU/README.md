@@ -203,6 +203,10 @@ Is the Arduino IDE installed then flashing of the NodeMCU takes place as the nex
 - Compilation can be done using the Arduino IDE. All libs, which are used by the Sensor.Community firmware have to be installed as well. Only the files 
 which are relevant for the Arduino IDE are within the source folder. PlatformIO is not used and there are no PlatformIO files in the source folder. For the Arduino IDE a file with the name platform.local.txt has to be generated and placed at the right position with the following content:
 
-	compiler.c.extra_flags=-fpermissive
-	compiler.cpp.extra_flags=-fpermissive
+	compiler.c.extra_flags=-fpermissive<br>
+	compiler.cpp.extra_flags=-fpermissive<br>
 	
+	
+
+
+
