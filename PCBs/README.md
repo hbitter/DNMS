@@ -5,6 +5,17 @@
 
 ## Funktion der verschiedenen PCBs
 
+### IM72D128 Mikrofon PCBs
+Das IM72D128 Mikrofon benötigt zwei PCBs: Ein rundes Mikrofon Board, auf dem neben dem IM72D128 noch ein Widerstand und ein Kondensator montiert sind. Ein zweites längliches Board, dass in ein 1/2" Rohr zusammen mit dem Mikrofon eingebaut (eingegossen) wird, ist für die Umsetzung der PDM Schnittstelle des Mikrofons auf die I²S Schnittstelle des DNMS Teensy4.0 Boards notwendig. Dadurch wird die Anschlusskompatibilität zum ICS-43434 bewahrt.
+PCB Versions Historie:
+- IM72D128-PCB-V1.0 - erste veröffentlichte Version rundes Mikrofon Board
+- IM72D128-Tube-PCB-V1.0 - erste veröffentlichte Version längliches Interface Board
+
+
+<img src="images/IM72D128-PCB_picture_1.jpg"><br>
+<img src="images/IM72D128-Tube-PCB_picture_1.jpg"><br>
+
+
 ### ICS-43434 Mikrofon PCB
 Ein rundes Mikrofon Board, das in ein 1/2" Plastikrohr (oder in 13mm Edelstahlrohr mit 12mm Innendurchmesser) eingebaut werden kann. Auf dem Board ist eine JST SH Buchse, auf die ein Kabel mit JST SH Stecker aufgesteckt werden kann. Entsprechende Kabel sind z.B. bei [Aliexpress hier erhältlich](https://de.aliexpress.com/item/33013143346.html?spm=a2g0s.9042311.0.0.b4924c4dbhEWkt).
 
@@ -111,6 +122,18 @@ PCB Versions Historie:
 
 
 ## What are the different PCBs for
+
+### IM72D128 microphone PCBs
+Using the IM72D128 microphone is done by a set of two PCBs. A small round PCB holding the microphone itself and in addition one resistor and one capacitor. A second longish PCB is used holding the necessary circuitry for converting the microphones PDM interface to the Teensy4.0 I²S interface. Thus  compatibility with the former ICS-43434 microphone is preserved. Both boards can be mounted in 1/2" tube and sealed with a compound.
+
+PCB revision history:
+- IM72D128-PCB-V1.0 - first version round microphone board on GitHub
+- IM72D128-Tube-PCB-V1.0 - first version longish interface board on GitHub
+
+
+<img src="images/IM72D128-PCB_picture_1.jpg"><br>
+<img src="images/IM72D128-Tube-PCB_picture_1.jpg"><br>
+
 
 ### ICS-43434 microphone PCB
 A round microphone PCB, that fits into a 1/2" plastic tube (or into a 13mm stainless steel tube with 12mm inner diameter). A JST SH connector is on the board and a cable with JST SH connectors ca be used. Such cables are available e.g. at [Aliexpress](https://de.aliexpress.com/item/33013143346.html?spm=a2g0s.9042311.0.0.b4924c4dbhEWkt).

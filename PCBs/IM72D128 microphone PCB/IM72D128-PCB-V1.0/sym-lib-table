@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "IM72D128")(type "Legacy")(uri "${KIPRJMOD}/IM72D128/IM72D128.lib")(options "")(descr ""))
+)

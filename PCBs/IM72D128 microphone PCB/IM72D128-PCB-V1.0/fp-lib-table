@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Solder_Pad")(type "KiCad")(uri "${KIPRJMOD}/Solder_Pad")(options "")(descr ""))
+  (lib (name "IM72D128")(type "KiCad")(uri "${KIPRJMOD}/IM72D128")(options "")(descr ""))
+)

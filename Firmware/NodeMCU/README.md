@@ -7,6 +7,52 @@
 
 ### Versions Historie NRZ-2020-134-DNMS:
 
+ - NRZ-2020-134-DNMS-5.2 und NRZ-2020-134-DNMS-5.2-en<br>
+  NRZ-2020-134-DNMS-5.2-en  ist die englische Sprachversion
+
+   - Debug Level standardmäßig auf Fehler (entspricht 1) gesetzt (zuvor war es standardmäßig auf min. Info entsprechend 3 gesetzt).
+   - Debug Ausgabe über serielle USB Schnittstelle der NodeMCU auf 115200 Baud eingestellt (zuvor waren 9600 Baud eingestellt).
+   - Erweitere Fehler Ausgabe der Übertragung zu Sensor.Community und zu eigenen APIs (z.B. zur InfluxDB).
+   
+   		![](images/DNMS_Debug_Output.jpg)
+   		
+   		Die Fehlerausgabe erfolgt sowohl über die serielle USB Schnittstelle der NodeMCU als auch über den lokalen WebServer der NodeMCU (Button Debug Level). Gibt es viele Übertragungsfehler, so lässt sich die lokale Web Seite Debug Level u.U. nicht aufrufen, da die Übertragung blockiert ist. In diesen Fällen hilft die Debug Ausgabe über den seriellen USB Ausgabg der NodeMCU.<br>
+Das Übertragungsziel der NodeMCU wird durch die Ziffer in der Zeile http Post to: entsprechend der folgenden Tabelle angegeben:
+
+		Ziffer | Ziel der Übertragung
+---------- | ----------
+0 | Sensor.Community
+1 | Madavi.de
+2 | OpenSenseMap
+3 | FSapp
+4 | aircms
+5 | InfluxDB
+6 | Custom
+7 | Count
+
+		Die weitere Tabelle gibt die Fehlercodes an:<br>
+		
+		Fehlercode | Bedeutung
+---------- | ----------
+-1 | Connection Failed
+-2 | Send Header Failed
+-3 | Send Payload Failed
+-4 | Not Connected
+-5 | Connection Lost
+-6 | No Stream
+-7 | No HTTP Server
+-8 | Too Less RAM
+-9 | Encoding
+-10 | Stream Write
+-11 | Read Timeout<br>
+
+
+   - Berechnung und Ausgabe von Z-Werten - LZeq, LZmin, LZmax und ebenso die Terz LZeq Werte von 20Hz - 20.000Hz für beide Messintervalle. Die Einstellung, welche Werte berechnet und Ausgelesen werden sollen, erfolgt auf der DNMS Konfigurationsseite:
+   
+   		![](images/DNMS_configuration.jpg)
+   		
+   		Zu Sensor.Community werden wie bisher nur die Werte LAeq, LAmin und LAmax übertragen. Die anderen Werte können an eine eigene API oder z.B. an eine InfluxDB übertragen werden.
+		
  - NRZ-2020-134-DNMS-4.4
    - Stabileres Verhalten des lokalen Webservers auf der NodeMCU durch Übersetzung mit der Version 3.1.1 der ESP8266 Library
    - Ein zyklischer Restart der NodeMCU kann unter Konfiguration -> Weitere Einstellungen angegeben werden mit einer Zeitangabe für den Restart in Stunden. Dies kann bei Problemen mit Routern und Proxys helfen, die nach einer festen Zeit die WLAN Verbindung unterbrechen.  
@@ -110,6 +156,53 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Node
 
 
 ### Version history NRZ-2020-134-DNMS:
+
+ - NRZ-2020-134-DNMS-5.2 and NRZ-2020-134-DNMS-5.2-en<br>
+  NRZ-2020-134-DNMS-5.2-en  is the version with english text
+
+   - Default Debug Level is now sat to error (equates to 1). Before ist was sat to min. info (equates to 3).
+   - Baud rate of Debug Output on serial USB of NodeMCU is now sat to 115200 baud (before it was sat to 9600 baud).
+   - Enhanced error output for transfers to Sensor.Community and the other APIs (e.g. InfluxDB).
+   
+   		![](images/DNMS_Debug_Output_en.jpg)
+   		
+   		Debug Output of errors is done via the serial USB interface of the NodeMCU as well as the Debug level page of the local webserver (Button Debug level). If a lot of transmission errors occurs the access to the Debug level page may be blocked. In such a case the output via the serial USB interface is helpful.
+
+		The destination of the transmission is shown in the line http Post to: as a single figure:
+	
+
+		figure | destination of transmission
+---------- | ----------
+0 | Sensor.Community
+1 | Madavi.de
+2 | OpenSenseMap
+3 | FSapp
+4 | aircms
+5 | InfluxDB
+6 | Custom
+7 | Count
+
+		Die weitere Tabelle gibt die Fehlercodes an:<br>
+		
+		error code | meaning
+---------- | ----------
+-1 | Connection Failed
+-2 | Send Header Failed
+-3 | Send Payload Failed
+-4 | Not Connected
+-5 | Connection Lost
+-6 | No Stream
+-7 | No HTTP Server
+-8 | Too Less RAM
+-9 | Encoding
+-10 | Stream Write
+-11 | Read Timeout<br>
+
+   - Calculation and output of Z-values - LZeq, LZmin, LZmax as well as LZeq 1/3 octave values from 20Hz - 20.000Hz for both measurement intervals The configuration what values are calculated is done on the DNMS noise sensor configuration page:
+   
+   		![](images/DNMS_configuration_en.jpg)
+   		
+   		To Sensor.Community only LAeq, LAmin and LAmax values are transmitted as before. All the other values can be transmitted to own APIs e.g. to an InfluxDB.
 
   - NRZ-2020-134-DNMS-4.4
     - More stability of thge local NodeMCU webserver based on compilation with version 3.1.1 of ESP8266 Library

@@ -1,0 +1,31 @@
+"Source:","/home/helmut/Ablage/sonstiges/Luftdaten.info Feinstaubsensor, Lärm u.a/Lärm/DNMS/PCBs/IM72D128-PCB/IM72D128-PCB-V1.0/IM72D128-PCB.kicad_sch"
+"Date:","Di 17 Jan 2023 18:46:33 CET"
+"Tool:","Eeschema 6.0.10-86aedd382b~118~ubuntu22.04.1"
+"Generator:","/usr/share/kicad/plugins/bom_csv_grouped_by_value.py"
+"Component Count:","8"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Field4","Field5"
+"","","C1","100nF","Device:C","Capacitor_SMD:C_0603_1608Metric","~","",""
+"","","MK1","IM72D128",":IM72D128_1","IM72D128:MIC_IM72D128","Infineon","1.0","Manufacturer Recommendations"
+"","","R1","100","Device:R","Resistor_SMD:R_0603_1608Metric","~","",""
+"","","SP1","VDD","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","",""
+"","","SP2","CLK",":TestPoint_3","Solder_Pad:Solder_Pad_1.0x1.0mm","~","",""
+"","","SP3","SEL",":TestPoint_2","Solder_Pad:Solder_Pad_1.0x1.0mm","~","",""
+"","","SP4","DATA",":TestPoint_1","Solder_Pad:Solder_Pad_1.0x1.0mm","~","",""
+"","","SP5","GND","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","",""
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Field4","Field5"
+"1","1","C1","100nF","Device:C","Capacitor_SMD:C_0603_1608Metric","~","",""
+"2","1","MK1","IM72D128",":IM72D128_1","IM72D128:MIC_IM72D128","Infineon","1.0","Manufacturer Recommendations"
+"3","1","R1","100","Device:R","Resistor_SMD:R_0603_1608Metric","~","",""
+"4","1","SP1","VDD","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","",""
+"5","1","SP2","CLK",":TestPoint_3","Solder_Pad:Solder_Pad_1.0x1.0mm","~","",""
+"6","1","SP3","SEL",":TestPoint_2","Solder_Pad:Solder_Pad_1.0x1.0mm","~","",""
+"7","1","SP4","DATA",":TestPoint_1","Solder_Pad:Solder_Pad_1.0x1.0mm","~","",""
+"8","1","SP5","GND","Connector:TestPoint","Solder_Pad:Solder_Pad_1.0x1.0mm","~","",""

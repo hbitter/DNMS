@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "ADAU7002")(type "Legacy")(uri "${KIPRJMOD}/ADAU7002/ADAU7002.lib")(options "")(descr ""))
+  (lib (name "SN74LV1T34DBVR")(type "KiCad")(uri "${KIPRJMOD}/SN74LV1T34DBVR/SN74LV1T34DBVR.kicad_sym")(options "")(descr ""))
+)

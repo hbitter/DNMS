@@ -9,10 +9,26 @@ Die Werte werden dann über eine I²C-Schnittstelle an einen abfragenden Mikroco
 
 Eine Version mit der Möglichkeit das Frequenzspektrum zu betrachten ist seit einiger Zeit verfügbar. Terzwerte von 20Hz - 20000Hz können ausgegeben werden. Terzwerte werden z.Zt. nicht von Sensor.Community unterstützt, deshalb gibt es spezielle Versionen der NodeMCU Firmware um Terzwerte auf der lokalen Webseite der NodeMCU auszugeben und an weitere APIs wie z.B. zu einer InfluxDB zu senden.
 
-Weitere Entwicklungen wie die Berechnung und Ausgabe von Z-Werten und C-Werten sind in der Überlegung.
+Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, LZmax sowie Z-Terzwerte) unterstützt.
+
+### Die Firma Watterott electronic (https://shop.watterott.com) plant das neu unterstütze Mikrofon IM72D128 von Infineon sowie das DNMS Teensy4.0 Board demnächst als Modul anzubieten.
  
 ## Neuigkeiten
 
+### Juli 2023
+ - Unterstützung des Mikrofons IM72D128 von Infineon. Das IM72D128 bietet zwei wesentliche Vorteile:
+   - IP57 Schutz gegen Staub und Feuchtigkeit im Mikrofon integriert (trotzdem ist ein zusätzlicher Wind-/Wetterschutz sinnvoll).
+   - hoher Signal to noise ratio (SNR) von 72 dB(A), dadurch wird ein unterer Messbereich von ca. 23 dB(A) erreicht.
+
+  - PCBs für das IM72D128 Mikrofon. Ein rundes Mikrofon Board und ein längliches Board mit einer Schaltung zur Umsetzung der PDM Schnittstelle des Mikrofons auf die I²S Schnittstelle, dadurch ist die Anschlusskompatibilität zum bisherigen ICS-43434 Mikrofon gegeben.
+
+ - Teensy4.0 Firmware V5, die zusätzlich die Berechnung und Ausgabe von Z-Werten unterstützt (LZeq, LZmin, LZmax sowie die LZeq Werte der Terzen von 20Hz - 20.000Hz). Für das bisherige Mikrofon ICS-43434 und das neue Mikrofon IM72D128 gibt es zwei unterschiedliche Versionen:
+    - DNMS_V5.0.4 für das bisherige Mikrofon ICS-43434
+    - DNMS_V5.0.6 für das neu unterstützte Mikrofon IM72D128
+ 
+ - Neue NodeMCU Firmware Versionen NRZ-2020-134-DNMS-5.2 und NRZ-2020-134-DNMS-5.2-en zur Unterstützung der Z-Werte. Diese Versionen sind auch kompatibel mit allen Teensy Firmware Versionen (V2, V3, V4 und V5) und ersetzen damit die älteren NodeMCU Versionen.
+ 
+   Weitere Details im README.md unter NodeMCU<br><br>
 
 ### März 2023
 
@@ -59,9 +75,31 @@ All measurements will be transfered to a further microcontroller via I²C bus. T
 
 A version with support of frequency spectrum is available for some time. 1/3 octave values from 20Hz - 20000Hz are calculated. 1/3 octave values are not supported by Sensor.Community so far. Therefore a special version of the NodeMCU firmware is available, showing the 1/3 octave values on the local webpage of the NodeMCU as well as transmitting the 1/3 octave values to an InfluxDB.
 
-Further development for generating Z-values and C-values are under consideration.
+Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as well as Z spectrum values).
 
+
+### Watterott electronic (https://shop.watterott.com) plans to offer a IM72D128 microphone module and a DNMS Teensy4.0 module very soon.
+
+ 
 ## News
+
+### July 2023
+- Support of IM72D128 microphone from Infineon. IM72D128 microphone does have two significant advantages:
+   - IP57 water and dust resistant on component level (however a good windshield is recommended).
+
+   - Signal to noise ratio of 72 dB(A) SNR, this lowers the measurement range down to about 23 dB(A)
+
+   - PCBs for IM72D128 microphone. A round PCB for the microphone itself and a longish PCB for the additional circuitry to convert the PDM interface of the IM72D128 to I²S. Therfore it is compatible to the I²S interface of the ICS-43434 used up to now.
+
+ - Teensy4.0 firmware V5, which does now in addition calculation and output of Z-values (LZeq, LZmin, LZmax as well as LZeq values of 1/3 octaves from 20Hz - 20.000Hz). For the ICS-43434 microphone and the newly supported IMD128 microphone there are two different firmware versions:
+    - DNMS_V5.0.4 for the ICS-43434 microphone
+    - DNMS_V5.0.6 for the IM72D128 microphone
+ 
+ - New NodeMCU firmware versions NRZ-2020-134-DNMS-5.2 and NRZ-2020-134-DNMS-5.2-en supporting Z-values. These versions are compatible with all Teensy firmware versions (V2, V3, V4 and V5) and replaces the older NodeMCU firmware versions.
+ 
+   README.md under NodeMCU gives more details<br><br>
+
+
 
 ### March 2023
 

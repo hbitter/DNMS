@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "Solder_Pad")(type "KiCad")(uri "${KIPRJMOD}/Solder_Pad")(options "")(descr ""))
+  (lib (name "ADAU7002")(type "KiCad")(uri "${KIPRJMOD}/ADAU7002/ADAU7002.pretty")(options "")(descr ""))
+  (lib (name "SN74LV1T34DBVR")(type "KiCad")(uri "${KIPRJMOD}/SN74LV1T34DBVR")(options "")(descr ""))
+)

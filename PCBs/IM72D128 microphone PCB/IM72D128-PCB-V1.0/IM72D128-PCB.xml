@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/helmut/Ablage/sonstiges/Luftdaten.info Feinstaubsensor, Lärm u.a/Lärm/DNMS/PCBs/IM72D128-PCB/IM72D128-PCB-V1.0/IM72D128-PCB.kicad_sch</source>
+    <date>Di 17 Jan 2023 18:46:33 CET</date>
+    <tool>Eeschema 6.0.10-86aedd382b~118~ubuntu22.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>DNMS IM72D128</title>
+        <company/>
+        <rev>V1.0</rev>
+        <date>2023-01-17</date>
+        <source>IM72D128-PCB.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="IM72D128-PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ed3c043</tstamps>
+    </comp>
+    <comp ref="MK1">
+      <value>IM72D128</value>
+      <footprint>IM72D128:MIC_IM72D128</footprint>
+      <datasheet>Infineon</datasheet>
+      <fields>
+        <field name="Field4">1.0</field>
+        <field name="Field5">Manufacturer Recommendations</field>
+      </fields>
+      <libsource lib="" part="IM72D128_1" description=""/>
+      <property name="Field4" value="1.0"/>
+      <property name="Field5" value="Manufacturer Recommendations"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="IM72D128-PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cbc979f2-354a-44d7-b81e-a5b20f4f7bed</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="IM72D128-PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ed407a1</tstamps>
+    </comp>
+    <comp ref="SP1">
+      <value>VDD</value>
+      <footprint>Solder_Pad:Solder_Pad_1.0x1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="IM72D128-PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ed3cd2a</tstamps>
+    </comp>
+    <comp ref="SP2">
+      <value>CLK</value>
+      <footprint>Solder_Pad:Solder_Pad_1.0x1.0mm</footprint>
+      <libsource lib="" part="TestPoint_3" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="IM72D128-PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ed3dd3f</tstamps>
+    </comp>
+    <comp ref="SP3">
+      <value>SEL</value>
+      <footprint>Solder_Pad:Solder_Pad_1.0x1.0mm</footprint>
+      <libsource lib="" part="TestPoint_2" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="IM72D128-PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f1565e3</tstamps>
+    </comp>
+    <comp ref="SP4">
+      <value>DATA</value>
+      <footprint>Solder_Pad:Solder_Pad_1.0x1.0mm</footprint>
+      <libsource lib="" part="TestPoint_1" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="IM72D128-PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ed3e46b</tstamps>
+    </comp>
+    <comp ref="SP5">
+      <value>GND</value>
+      <footprint>Solder_Pad:Solder_Pad_1.0x1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="IM72D128-PCB.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ed3e8ec</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="" part="IM72D128_1">
+      <docs>Infineon</docs>
+      <fields>
+        <field name="Reference">MK</field>
+        <field name="Value">IM72D128_1</field>
+        <field name="Footprint">MIC_IM72D128</field>
+        <field name="Datasheet">Infineon</field>
+        <field name="Field4">1.0</field>
+        <field name="Field5">Manufacturer Recommendations</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DATA" type="output"/>
+        <pin num="2" name="VDD" type="power_in"/>
+        <pin num="3" name="CLOCK" type="input"/>
+        <pin num="4" name="SELECT" type="input"/>
+        <pin num="5" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="TestPoint_1">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint_1</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="TestPoint_2">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint_2</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="TestPoint_3">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint_3</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+1V8">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="MK1" pin="2" pinfunction="VDD" pintype="power_in"/>
+      <node ref="SP1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="MK1" pin="5" pinfunction="GND" pintype="power_in"/>
+      <node ref="SP5" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="3" name="Net-(MK1-Pad1)">
+      <node ref="MK1" pin="1" pinfunction="DATA" pintype="output"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(MK1-Pad3)">
+      <node ref="MK1" pin="3" pinfunction="CLOCK" pintype="input"/>
+      <node ref="SP2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(MK1-Pad4)">
+      <node ref="MK1" pin="4" pinfunction="SELECT" pintype="input"/>
+      <node ref="SP3" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="SP4" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+  </nets>
+</export>
