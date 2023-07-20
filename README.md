@@ -75,7 +75,7 @@ All measurements will be transfered to a further microcontroller via I²C bus. T
 
 A version with support of frequency spectrum is available for some time. 1/3 octave values from 20Hz - 20000Hz are calculated. 1/3 octave values are not supported by Sensor.Community so far. Therefore a special version of the NodeMCU firmware is available, showing the 1/3 octave values on the local webpage of the NodeMCU as well as transmitting the 1/3 octave values to an InfluxDB.
 
-Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as well as Z spectrum values).
+Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as well as 1/3 octave Z-values).
 
 
 ### Watterott electronic (https://shop.watterott.com) plans to offer a IM72D128 microphone module and a DNMS Teensy4.0 module very soon.
