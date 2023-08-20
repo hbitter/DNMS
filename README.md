@@ -15,6 +15,15 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
  
 ## Neuigkeiten
 
+### August 2023
+ - Standalone Testprogramme für Teensy4.0 und die Mikrofone ICS-43434 und IM72D128:
+ 	- DNMS_Vt.5.4 - für ICS43434 mit Teensy4.0
+ 	- DNMS_Vt.5.6 - für IM72D128 mit Teensy4.0
+ 
+ 	Diese Testprogramme basieren auf der Teensy4.0 Firmware Version 5. Neben einem einfachen Test, ob Mikrofon und Teensy4.0 funktionieren, können die Messwerte mittels einem geeigneten  Terminalprogramm auch aufgezeichnet und weiter ausgewertet werden. Das Messintervall kann eingegeben werden.
+ 	
+ - Airrohr-ESP32-PCB-V1.1 PCB gelöscht - obsolet, da keine Firmware Unterstützung.	
+ 
 ### Juli 2023
  - Unterstützung des Mikrofons IM72D128 von Infineon. Das IM72D128 bietet zwei wesentliche Vorteile:
    - IP57 Schutz gegen Staub und Feuchtigkeit im Mikrofon integriert (trotzdem ist ein zusätzlicher Wind-/Wetterschutz sinnvoll).
@@ -82,6 +91,15 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 
  
 ## News
+
+### August 2023
+ - Standalone test programs for Teensy4.0 and microphones ICS-43434 and IM72D128:
+ 	- DNMS_Vt.5.4 - for ICS43434 and Teensy4.0
+ 	- DNMS_Vt.5.6 - for IM72D128 and Teensy4.0
+ 
+	These test programs are based on Teensy4.0 firmware version 5. In addition to a simple test to see if the microphone and Teensy4.0 are working, a suitable terminal program can be used to store the measured values for future use. It is possible to input the measurement interval.
+ 	
+ - Airrohr-ESP32-PCB-V1.1 PCB deleted - obsolete, because no firmware support.	
 
 ### July 2023
 - Support of IM72D128 microphone from Infineon. IM72D128 microphone does have two significant advantages:

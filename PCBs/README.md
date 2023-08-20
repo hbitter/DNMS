@@ -47,15 +47,6 @@ PCB Versions Historie:
 <img src="images/Airrohr-PCB-V1.4.jpg"><br>
 
 
-### Airrohr ESP32 PCB
-Basis Board wie Airrohr PCB aber für ESP32 CPU statt NodeMCU mit ESP8266 CPU. Das Board ist ausgelegt für das Heltec WiFi LoRa 32 (V2) Modul und das kompatible LILYGO TTGO LORA 32 V1  Modul. Beide ESP32 Module besitzen ein Display und auch LoRaWAN Funktionalität. Bitte mit Sensor.Community klären, inwieweit ESP32 Systeme und welche Funktionalität von der standard Sensor.Community Firmware unterstützt wird ohne die Firmware selbst zu compilieren oder zu erweitern. Ansonsten bietet das Board die gleichen Anschlussmöglichkeiten wie das Airrohr Board mit ESP8266 NodeMCU.
-
-PCB Versions Historie:
-- Airrohr-ESP32-PCB-V1.1 - erste Version
-
-<img src="images/Airrohr-ESP32-V1.0.jpg"><br>
-
-
 ### DNMS-RPI-HAT
 Aufsatzboard für den Raspberry Pi um einen DNMS Sensor und andere I²C Sensoren mit dem Raspberry Pi zu verbinden. Das Board hat die gleich Größe wie ein RPI Zero W. Die folgenden Anschlüsse sind vorhanden:
 - I²C-Bus Verlängerung mit 5V Versorgungsspannung für einen DNMS Sensor und Kabellängen > 250mm mittels RJ12 (Modular Jack) 6P/6C Buchse
@@ -163,15 +154,6 @@ PCB revision history:
 - Airrohr-V1.6 - change of layout for power connection of R1, R2, R3 and J4
 			   
 <img src="images/Airrohr-PCB-V1.4.jpg"><br>
-
-
-### Airrohr ESP32 PCB
-Basis board as Airrohr PCB but for ESP32 CPU instead of ESP8266 NodeMCU. The board can hold the Heltec WiFi LoRa 32 (V2) modul or the compatible LILYGO TTGO LORA 32 V1 modul. Both have an display and as well LoRaWAN functionality. Please check with Sensor.Community if and what functionality is supported by the standard Sensor.Community firmware out of the box or if you have to compile the firmware yourself and doing your own additions. In other respects the boards gives the same possibilities of connections as the Airrohr PCB board based on ESP8266 NodeMCU.
-
-PCB revision history:
-- Airrohr-ESP32-PCB-V1.1 - first version
-
-<img src="images/Airrohr-ESP32-V1.0.jpg"><br>
 
 
 ### DNMS-RPI-HAT
