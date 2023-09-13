@@ -1,6 +1,6 @@
 # DNMS Firmware Teensy 4.0
 
-# find English text below
+# [English text below](#english text)
 
 ## Anmerkung zum selbst Übersetzen der DNMS Firmware 
 
@@ -56,7 +56,7 @@ In der Audio Bibliothek sind einige Dateien mit dem Namen "control_xxx.cpp" vorh
 ------------------------------------------------------------------------
 
 
-# Englisch Text
+# <a name="english text"></a>DNMS Firmware Teensy 4.0
 
 ## Note how to compile the firmware yourself
 

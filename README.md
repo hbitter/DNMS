@@ -1,5 +1,5 @@
 
-## English text below
+## [English text below](#english text)
 
 ## DNMS (Digital Noise Measurement Sensor)
 
@@ -14,6 +14,12 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 ### Die Firma Watterott electronic (https://shop.watterott.com) plant das neu unterstütze Mikrofon IM72D128 von Infineon sowie das DNMS Teensy4.0 Board demnächst als Modul anzubieten.
  
 ## Neuigkeiten
+
+### September 2023
+  - Neue NodeMCU Firmware NRZ-2020-134-DNMS-5.4 auch in englischer und französischer Version mit:
+    - Verbesserungen bei der Fehlerausgabe von Übertragungen zu Sensor.Community und zu einer InfluxDB
+    - Vergrößerung des Übertagungspuffers, so dass neben sämtlichen DNMS Werten auch die Werte weiterer Sensoren zu einer InfluxDB übertragen werden können.
+    - Link zur Meldung von Problemen geändert auf https://github.com/hbitter/DNMS/issues 
 
 ### August 2023
  - Standalone Testprogramme für Teensy4.0 und die Mikrofone ICS-43434 und IM72D128:
@@ -76,7 +82,7 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 
 
 ----------------------------------------------------------------------------------------------------------------
-## DNMS (Digital Noise Measurement Sensor)
+## <a name="english text"></a>  DNMS (Digital Noise Measurement Sensor)
 
 A sensor modul for SPL measurement. Over a period of time the LAeq value is calculated, beside that the minimal and the maximal LA value is covered over the time period. The central element of DNMS is a digital MEMS-Microphone (InvenSense ICS-43434). The digital data is fed from the microphone via a I²S connection as 24-bit, 44,1 kHz PCM data (from firmware version 2 on - before it was only 16-Bit) to a microcontroller board (Teensy3.6 / Teensy4.0). The data is filtered by an A-filter, then the RMS value is calculated. Further the sound pressure level (SPL) is calculated based on microphone sensivity. The SPL values are integrated over time to give the LAeq. Also the maximum level in the measurement period LAmax and the minimum level LAmin will be kept.
 
@@ -91,6 +97,12 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 
  
 ## News
+
+### September 2023
+- New NodeMCU firmware NRZ-2020-134-DNMS-5.4, also available as English and French version:
+    - Improved output of transmission errors for communication with Sensor.Community and an InfluxDB.
+    - Larger buffer for transmissions, so in addition to transmitting all DNMS readings, you can also transmit readings from other sensors.
+    - Changed issue reporting link to https://github.com/hbitter/DNMS/issues
 
 ### August 2023
  - Standalone test programs for Teensy4.0 and microphones ICS-43434 and IM72D128:

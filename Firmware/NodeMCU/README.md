@@ -1,4 +1,4 @@
-# find English text below
+# [English text below](#english text)
 
 ## NodeMCU Firmware für DNMS
 
@@ -7,15 +7,25 @@
 
 ### Versions Historie NRZ-2020-134-DNMS:
 
+ - NRZ-2020-134-DNMS-5.4, NRZ-2020-134-DNMS-5.4-en und NRZ-2020-134-DNMS-5.4-fr<br>
+   - Neu NRZ-2020-134-DNMS-5.4-fr französische Version
+   - Vergrößerter Puffer für die Übertragung zu eigenen APIs (z.B. InfluxDB), dadurch können neben sämtlichen DNMS Werten (1. und 2. Messintervall mit LA und LZ Terzwerten) auch Werte von mehreren weiteren Sensoren wie BME280 und/oder SEN5x übertragen werden.
+   - Verbesserte Ausgabe bei Übertragungsfehlern zu Sensor.Community und zu eigenen APIs (z.B. zur InfluxDB) mit UTC Zeitangabe und Klartext.
+ 
+		![](images/DNMS_debug_output_V5.4.jpg)
+		
+   - Geänderter Link um Probleme zu melden, geht zu zu https://github.com/hbitter/DNMS/issues
+ 
  - NRZ-2020-134-DNMS-5.2 und NRZ-2020-134-DNMS-5.2-en<br>
   NRZ-2020-134-DNMS-5.2-en  ist die englische Sprachversion
 
    - Debug Level standardmäßig auf Fehler (entspricht 1) gesetzt (zuvor war es standardmäßig auf min. Info entsprechend 3 gesetzt).
    - Debug Ausgabe über serielle USB Schnittstelle der NodeMCU auf 115200 Baud eingestellt (zuvor waren 9600 Baud eingestellt).
    - Erweitere Fehler Ausgabe der Übertragung zu Sensor.Community und zu eigenen APIs (z.B. zur InfluxDB).
-   
-   		![](images/DNMS_Debug_Output.jpg)
+         		
+      ![](images/DNMS_Debug_Output.jpg)
    		
+  
    		Die Fehlerausgabe erfolgt sowohl über die serielle USB Schnittstelle der NodeMCU als auch über den lokalen WebServer der NodeMCU (Button Debug Level). Gibt es viele Übertragungsfehler, so lässt sich die lokale Web Seite Debug Level u.U. nicht aufrufen, da die Übertragung blockiert ist. In diesen Fällen hilft die Debug Ausgabe über den seriellen USB Ausgabg der NodeMCU.<br>
 Das Übertragungsziel der NodeMCU wird durch die Ziffer in der Zeile http Post to: entsprechend der folgenden Tabelle angegeben:
 
@@ -138,18 +148,26 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Node
 
 ## Anmerkung zum selbst Übersetzen der NodeMCU Firmware
 
- - Zum Übersetzen der Version 4.4 unbedingt die ESP8266 Library 3.1.1 benutzten.
-
  - Die Übersetzung der Firmware kann unter der Arduino IDE erfolgen. Alle Libs, die auch in der Sensor.Community firmware eingebunden werden, müssen auch hier verfügbar sein. Nur die für die Arduino IDE notwendigen Files sind im Source Ordner enthalten. PlatformIO wird nicht benutzt, deshalb sind keine PlatformIO Files vorhanden. In der Arduino IDE Umgebung ist ein File mit dem Namen platform.local.txt anzulegen mit den beiden folgenden Einträgen:
 
 	compiler.c.extra_flags=-fpermissive<br>
 	compiler.cpp.extra_flags=-fpermissive<br>
 	
+ - Zum Übersetzen der Version 4.4 unbedingt die ESP8266 Library 3.1.1 benutzten.
+ - Die Version 5.4 ist mit der Arduino IDE 2.2.1, der ESP8266 Library 3.1.2 sowie mit folgenden Einstellungen übersetzt:
+
+ 	![](images/Arduino_Tools.png)
+
+ - Zum Ändern der Sprachversion in der Datei intl.h
+ 
+	![](images/NodeMCU_Sprachversion_anpassen.jpg)
+	
+	den entsprechenden include File auswählen. Bei weiteren Sprachen neben Englisch, Französisch und Deutsch sind die Sprach-Files noch nicht vollständig angepasst.
 
 ------------------------------------------------------------------------
-# English text
 
-## NodeMCU firmware for DNMS
+
+## <a name="english text"></a>NodeMCU firmware for DNMS
 
 
 ## NRZ-2020-134-DNMS
@@ -157,6 +175,16 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Node
 
 ### Version history NRZ-2020-134-DNMS:
 
+ - NRZ-2020-134-DNMS-5.4, NRZ-2020-134-DNMS-5.4-en and NRZ-2020-134-DNMS-5.4-fr<br>
+   - New NRZ-2020-134-DNMS-5.4-fr french version
+   - Enlarged buffer for transfer to own APIs (e.g. InfluxDB), so not only all DNMS values can be transferred, but also values from other sensors such as BME280 and/or SEN5x.
+   - Further enhanced output of transmission errors to Sensor.Community and to own APIs (e.g. InfluxDB) now with UTC time info and plaintext.
+
+		![](images/DNMS_debug_output_V5.4.jpg)
+		
+	- Changed link to report problems, it's now to  https://github.com/hbitter/DNMS/issues
+
+ 
  - NRZ-2020-134-DNMS-5.2 and NRZ-2020-134-DNMS-5.2-en<br>
   NRZ-2020-134-DNMS-5.2-en  is the version with english text
 
@@ -291,15 +319,21 @@ Is the Arduino IDE installed then flashing of the NodeMCU takes place as the nex
 
 ## Note how to compile the NodeMCU firmware yourself
 
-- To compile version 4.4 yourself using ESP8266 Library 3.1.1 is necessary.
-
 - Compilation can be done using the Arduino IDE. All libs, which are used by the Sensor.Community firmware have to be installed as well. Only the files 
 which are relevant for the Arduino IDE are within the source folder. PlatformIO is not used and there are no PlatformIO files in the source folder. For the Arduino IDE a file with the name platform.local.txt has to be generated and placed at the right position with the following content:
 
 	compiler.c.extra_flags=-fpermissive<br>
 	compiler.cpp.extra_flags=-fpermissive<br>
+		
+- To compile version 4.4 yourself using ESP8266 Library 3.1.1 is necessary.
+- Version 5.4 is compiled with Arduino IDE 2.2.1, ESP8266 Library 3.1.2 and the following settings:
+ 	![](images/Arduino_Tools.png)
+ 	
+- Changing the language is done by editing file intl.h
+ 
+	![](images/NodeMCU_Sprachversion_anpassen.jpg)
 	
-	
+	select the appropriate include file. For languages other than English, French and German, the language files may not be fully customised.
 
 
 

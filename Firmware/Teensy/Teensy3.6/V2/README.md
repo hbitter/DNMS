@@ -1,4 +1,4 @@
-# find English text below
+# [English text below](#english text)
 
 ## Teensy3.6 DNMS Firmware
 
@@ -11,10 +11,7 @@
  
 
 ------------------------------------------------------------------------
-# English text
-
-
-## Teensy3.6 DNMS Firmware
+## <a name="english text"></a>Teensy3.6 DNMS Firmware
 
 
 

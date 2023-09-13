@@ -1,5 +1,5 @@
 
-## English text below
+## [English text below](#english text)
  
 ## Archivierte Neuigkeiten
 
@@ -44,7 +44,7 @@
 
 ----------------------------------------------------------------------------------------------------------------
 
-## Archived News
+## <a name="english text"></a>Archived News
 
 ### September 2021
 - Beta firmware versions 2.1.4 and 2.1.5 tries to fix this I²C communication problem if you are using a combined board DNMS-T4.0+NodeMCU-V1.x. Please try the new beta firmware, if you had such problems. Feedback about the result would be appreciated.

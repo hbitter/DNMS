@@ -1,4 +1,4 @@
-# find English text below
+# [English text below](#english text)
 
 ## DNMS Firmware für Teensy 3.6 und Teensy 4.0
 
@@ -24,11 +24,7 @@
 - aktuelle V5 Versionen:
 	- DNMS_V5.0.4 - für Mikrofon ICS-43434 zusätzlich mit Berechnung von Z-Werten
 	- DNMS_V5.0.6 - für Mikrofon IM72D128 zusätzlich mit Berechnung von Z-Werten
-
-
-
-### Testprogramm für Teensy4.0 Board und angeschlossenem Mikrofon DNMS_Vt.2.4
-
+	- Testprogramm für Teensy4.0 Board und angeschlossenem Mikrofon ICS-43434:  DNMS_Vt.5.4 und für Mikrofon IM72D128: DNMS_Vt.5.6
 
 ## Teensy 3.6
 
@@ -66,9 +62,8 @@ Es ist dafür nicht notwendig die Arduino IDE zu installieren und/oder zu benutz
 Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Teensy Board direkt im Anschluss an die Übersetzung der Firmware aus der Arduino IDE heraus (siehe Arduino IDE Beschreibung).
 
 ------------------------------------------------------------------------
-# English text
 
-## DNMS firmware for Teensy 3.6 and Teensy 4.0
+## <a name="english text"></a>DNMS firmware for Teensy 3.6 and Teensy 4.0
 
 
 ## Teensy 4.0
@@ -91,8 +86,7 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Teen
 - current V5 versions:
 	- DNMS_V5.0.4 - for ICS-43434 microphone, in addition calculation of Z-values
 	- DNMS_V5.0.6 - for IM72D128 microphone, in addition calculation of Z-values
-
-### Testprogram for Teensy4.0 board and connected microphone: DNMS_Vt.2.4
+	- Testprogramm forTeensy4.0 Board and connected microphone ICS-43434:  DNMS_Vt.5.4 and for microphone IM72D128: DNMS_Vt.5.6
 
 
 ## Teensy 3.6

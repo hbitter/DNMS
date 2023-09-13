@@ -1,6 +1,7 @@
 # DNMS Firmware Teensy4.0 V5
 
-# find English text below
+# [English text below](#english text)
+
 
 ## V5 realisiert neben der Funktionalität von V4 zusätzlich die Berechnung und Ausgabe von Z-Werten
 
@@ -21,7 +22,7 @@ Bitte beachten: Werden nicht zusammengehörige Versionen von Mikrofon und Teensy
 ------------------------------------------------------------------------
 
 
-# Englisch Text
+# <a name="english text"></a>DNMS Firmware Teensy4.0 V5
 
 ## V5 realizes besides the functionality of V4 the calculation and output of Z-values 
 
