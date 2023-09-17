@@ -1,5 +1,5 @@
 
-## [English text below](#dnms-Digital-noise-measurement-sensor-english)
+## [English text below](#dnms-digital-noise-measurement-sensor-english)
 
 ## DNMS (Digital Noise Measurement Sensor)
 
