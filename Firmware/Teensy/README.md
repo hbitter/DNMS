@@ -1,4 +1,4 @@
-# [English text below](#dnms-firmware-for-teensy3.6-and-teensy4.0)
+# [English text below](#dnms-firmware-for-teensy36-and-teensy40)
 
 ## DNMS Firmware für Teensy3.6 und Teensy4.0
 
