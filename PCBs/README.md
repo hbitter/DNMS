@@ -1,4 +1,4 @@
-## [English text below](#english text)
+## [English text below](#pcbs-english)
 
 ## PCBs
 
@@ -109,7 +109,7 @@ PCB Versions Historie:
 
 
 ----------------------------------------------------------------------------------------------------------------
-## <a name="english text"></a>PCBs
+## PCBs English
 
 
 ## What are the different PCBs for
