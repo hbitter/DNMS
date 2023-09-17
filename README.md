@@ -1,5 +1,5 @@
 
-## [English text below](#english text)
+## [English text below](#DNMS-(Digital-Noise-Measurement-Sensor)-English)
 
 ## DNMS (Digital Noise Measurement Sensor)
 
@@ -82,7 +82,7 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 
 
 ----------------------------------------------------------------------------------------------------------------
-## <a id="english text"></a>  DNMS (Digital Noise Measurement Sensor)
+## DNMS (Digital Noise Measurement Sensor) English
 
 A sensor modul for SPL measurement. Over a period of time the LAeq value is calculated, beside that the minimal and the maximal LA value is covered over the time period. The central element of DNMS is a digital MEMS-Microphone (InvenSense ICS-43434). The digital data is fed from the microphone via a I²S connection as 24-bit, 44,1 kHz PCM data (from firmware version 2 on - before it was only 16-Bit) to a microcontroller board (Teensy3.6 / Teensy4.0). The data is filtered by an A-filter, then the RMS value is calculated. Further the sound pressure level (SPL) is calculated based on microphone sensivity. The SPL values are integrated over time to give the LAeq. Also the maximum level in the measurement period LAmax and the minimum level LAmin will be kept.
 
