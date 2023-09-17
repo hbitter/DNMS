@@ -1,4 +1,4 @@
-# [English text below](#english text)
+# [English text below](#teensy36-dnms-firmware)
 
 ## Teensy3.6 DNMS Firmware
 
@@ -11,7 +11,7 @@
  
 
 ------------------------------------------------------------------------
-## <a name="english text"></a>Teensy3.6 DNMS Firmware
+## Teensy3.6 DNMS Firmware
 
 
 

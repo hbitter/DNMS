@@ -1,4 +1,4 @@
-# [English text below](#dnms-firmware-teensy4.0-v5-english)
+# [English text below](#dnms-firmware-teensy40-v5-english)
 
 # DNMS Firmware Teensy4.0 V5
 

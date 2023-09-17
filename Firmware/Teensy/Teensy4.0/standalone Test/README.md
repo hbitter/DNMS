@@ -1,6 +1,6 @@
-# DNMS standalone Test Firmware Teensy 4.0
+# [English text below](#standalone-test-program-for-microphone-and-teensy40)
 
-# find English text below
+# DNMS standalone Test Firmware Teensy 4.0
 
 ## Testprogramm für den autonomen Test von Mikrofon und Teensy4.0
 
@@ -51,9 +51,6 @@ Die folgenden Schritte sind notwendig:
 
 
 ------------------------------------------------------------------------
-
-
-# Englisch Text
 
 ## Standalone test program for microphone and Teensy4.0
 
