@@ -1,4 +1,4 @@
-# [English text below](#english text)
+# [English text below](#raspberry-pi-application-for-dnms)
 
 ## Raspberry Pi Anwendung für DNMS
 
@@ -7,7 +7,7 @@ Eine erste Version wird in einigen Wochen verfügbar sein.
 	
 ------------------------------------------------------------------------
 
-## <a name="english text"></a>Raspberry Pi application for DNMS
+## Raspberry Pi application for DNMS
 
 
 First version will be available in some weeks.

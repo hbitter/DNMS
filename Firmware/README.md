@@ -1,5 +1,5 @@
 
-# [English text below](#english text)
+# [English text below](#note-how-to-download-single-file)
 
 ## Anmerkung zum Download einzelner Files
 
@@ -13,8 +13,6 @@ Eine weitere Möglichkeit ist den File in GitHub zu öffnen und dann die Funktio
 
 ------------------------------------------------------------------------
 
-
-# <a name="english text"></a>Englisch text
 
 ## Note how to download single file
 

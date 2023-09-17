@@ -1,6 +1,6 @@
-# DNMS Firmware Teensy4.0 V4
+# [English text below](#dnms-firmware-teensy4.0-v4-english)
 
-# [English text below](#english text)
+# DNMS Firmware Teensy4.0 V4
 
 ## V4 realisiert neben der Funktionalität von V3 ein 2. Messintervall 
 
@@ -19,7 +19,7 @@
 ------------------------------------------------------------------------
 
 
-# <a name="english text"></a>DNMS Firmware Teensy4.0 V4
+# DNMS Firmware Teensy4.0 V4 English
 
 ## V4 realizes a 2nd measurement interval besides the functionality of V3 
 

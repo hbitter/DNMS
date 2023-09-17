@@ -1,6 +1,6 @@
-# DNMS Firmware Teensy4.0 V3
+# [English text below](#dnms-firmware-teensy4.0-v3-english)
 
-# [English text below](#english text)
+# DNMS Firmware Teensy4.0 V3
 
 ## Neben der Berechnung von LAeq, LAmin und LAmax erfolgt zusätzlich die Berechnung der Terzwerte von 20Hz - 20000Hz mittels FFT
 
@@ -18,7 +18,7 @@
 ------------------------------------------------------------------------
 
 
-# <a name="english text"></a>DNMS Firmware Teensy4.0 V3
+# DNMS Firmware Teensy4.0 V3 English
 
 ## Besides the calculation of LAeq, LAmin and LAmax there is a calculation of 1/3 octave values from 20Hz to 20000Hz based on FFT
 

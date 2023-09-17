@@ -1,6 +1,6 @@
-# DNMS Firmware Teensy4.0 V2
+# [English text below](#dnms-firmware-teensy4.0-v2)
 
-# [English text below](#english text)
+# DNMS Firmware Teensy4.0 V2
 
 ## Diese Versionen berechnen LAeq, LAmin und LAmax
 
@@ -15,9 +15,9 @@
 ------------------------------------------------------------------------
 
 
-# <a name="english text"></a>DNMS Firmware Teensy4.0 V2
+# DNMS Firmware Teensy4.0 V2
 
-## This version calculate LAeq, LAmin and LAmax
+## This version calculates LAeq, LAmin and LAmax
 
 ### current versions:
 
