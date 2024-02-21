@@ -11,9 +11,26 @@ Eine Version mit der Möglichkeit das Frequenzspektrum zu betrachten ist seit ei
 
 Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, LZmax sowie Z-Terzwerte) unterstützt.
 
-### Die Firma Watterott electronic (https://shop.watterott.com) plant das neu unterstütze Mikrofon IM72D128 von Infineon sowie das DNMS Teensy4.0 Board demnächst als Modul anzubieten.
+### Die Firma Watterott electronic GmbH (https://shop.watterott.com) plant das neu unterstütze Mikrofon IM72D128 von Infineon sowie das DNMS Teensy4.0 Board demnächst als Modul anzubieten.
  
 ## Neuigkeiten
+
+### Februar 2024
+   - Verbesserte Teensy4.0 Firmware für die Mikrofone ICS-43434 und IM72D128 mit verbessertem internen Zeitverhalten (Upgrade empfohlen): 
+     - DNMS_V5.2.4 - für ICS43434 mit Teensy4.0
+     - DNMS_V5.2.6 - für IM72D128 mit Teensy4.0
+ 	
+  - Standalone Testprogramme für Teensy4.0 und die Mikrofone ICS-43434 und IM72D128 mit verbessertem internen Zeitverhalten	und geänderter Ein- und Ausgabe beim Start, es können Messintervall ab 125ms eingestellt werden, die Ausgabe von der Terzwerte ist ab 500ms möglich:
+ 	- DNMS_Vt.7.4 - für ICS43434 mit Teensy4.0
+ 	- DNMS_Vt.7.6 - für IM72D128 mit Teensy4.0
+  
+  - dnms-0.9.12 erste Version der Raspberry Pi Anwendung um den DNMS Sensor auszulesen und Daten an Sensor.Community und/oder zu einer InfluxDB zu senden als Alternative zu einer NodeMCU (Airrohr-Board). Die Raspberry Pi Anwenung unterstützt zur Übertragung an eine InfluxDB zwei zeitlich unterschiedliche Messintervalle mit unterschiedlich konfigurierbaren Messwerten. Die Messwerte des 2. Messintervalls werden erst ab der Überschreitung eines Schwellwertes (LAeq) übertragen.  
+  - KiCad Layouts an KiCad Version 7 angepasst für die folgenden PCBs (im Layout selbst keine Änderung):
+	  + DNMS-T4.0-V1.7
+	  + DNMS-RPI-HAT-V1.0
+	  + IM72D128-PCB-V1.0
+	  + IM72D128-Tube-PCB-V1.0
+  
 
 ### September 2023
   - Neue NodeMCU Firmware NRZ-2020-134-DNMS-5.4 auch in englischer und französischer Version mit:
@@ -93,10 +110,27 @@ A version with support of frequency spectrum is available for some time. 1/3 oct
 Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as well as 1/3 octave Z-values).
 
 
-### Watterott electronic (https://shop.watterott.com) plans to offer a IM72D128 microphone module and a DNMS Teensy4.0 module very soon.
+### Watterott electronic GmbH  (https://shop.watterott.com) plans to offer a IM72D128 microphone module and a DNMS Teensy4.0 module very soon.
 
  
 ## News
+
+### February 2024
+- Improved Teensy 4.0 firmware for ICS-43434 and IM72D128 microphones with improved internal timing (upgrade recommended):
+     - DNMS_V5.2.4 - for ICS43434 with Teensy4.0
+     - DNMS_V5.2.6 - for IM72D128 with Teensy4.0
+ 	
+- Standalone testprograms for Teensy4.0 and microphones ICS-43434 and IM72D128 with improved internal timing and changed input and output at startup, measuring interval can be set from 125ms upwards, output of 1/3 octave values is possible from 500ms upwards:
+ 	- DNMS_Vt.7.4 - for ICS43434 with Teensy4.0
+ 	- DNMS_Vt.7.6 - for IM72D128 with Teensy4.0
+  
+- dnms-0.9.12 First version of the Raspberry Pi application to read out the DNMS sensor and send data to Sensor.Community and/or an InfluxDB as an alternative to a NodeMCU (Airrohr board). The Raspberry Pi application supports two different measurement intervals with different configurable measurement values for sending to an InfluxDB. The values of the 2nd measurement interval are only transmitted when a limit value (LAeq) is exceeded.
+- KiCad layouts adapted to KiCad version 7 for the following PCBs (no change to the layout itself):
+
+  + DNMS-T4.0-V1.7
+  + DNMS-RPI-HAT-V1.0
+  + IM72D128-PCB-V1.0
+  + IM72D128-Tube-PCB-V1.0
 
 ### September 2023
 - New NodeMCU firmware NRZ-2020-134-DNMS-5.4, also available as English and French version:

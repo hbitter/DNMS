@@ -6,8 +6,8 @@
 
 ### aktuelle Versionen:
 
-- DNMS_V5.0.4 - für das ICS-43434 Mikrofon
-- DNMS_V5.0.6 - für das IM72D128 Mikrofon
+- DNMS_V5.2.4 - für das ICS-43434 Mikrofon
+- DNMS_V5.2.6 - für das IM72D128 Mikrofon
 
 Bitte beachten: Werden nicht zusammengehörige Versionen von Mikrofon und Teensy Firmware benutzt, so ergeben sich falsch Lärmwerte!
 
@@ -27,8 +27,8 @@ Bitte beachten: Werden nicht zusammengehörige Versionen von Mikrofon und Teensy
 
 ### Current versions:
 
-- DNMS_V5.0.4 - for ICS-43434 Mikrofon
-- DNMS_V5.0.6 - for IM72D128 Mikrofon
+- DNMS_V5.2.4 - for ICS-43434 Mikrofon
+- DNMS_V5.2.6 - for IM72D128 Mikrofon
 
 Note: Using inappropriate versions of microphone and Teensy firmware will result in erroneous noise values!
 
