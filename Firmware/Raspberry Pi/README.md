@@ -56,7 +56,8 @@
  - Überprüfung des Status von dnms.service:
 
        sudo systemctl status dnms.service
-![](images/pic5.jpg)
+
+	![](images/pic5.jpg)
 
 - Stoppen von dnms.service um zuerst die Konfiguration zu bearbeiten:
 
@@ -74,8 +75,9 @@
 - Achtung: Nach jeder Änderung der Konfiguration in der Datei dnms.conf, muss dnms.service wieder mit dem obigen Befehl gestartet werden.
 - Konnte die Konfiguration erfolgreich gestartet werden, so wird ein Logfile mit dem Namen dnms.log im Installationsordner angelegt, Ausgabe z.B. mit:
  
-		cat dnms.log
-![](images/pic7.jpg)
+	  cat dnms.log
+
+	![](images/pic7.jpg)
 
 - Die Messwerte können auch in die Datei dnms.log geschrieben werden. Dies muss konfiguriert werden (Output to Terminal - Umleitung der Terminalausgabe in die Datei). Es ist aber keine komplette Datenlogger Funktionalität realisiert. Diese rudimentäre Funktionalität dient zur Einrichtung und zum Test der Konfiguration und zur Aufzeichnung von Fehlern. Es lassen sich auch die Übertragungszeiten zur InfluxDB loggen. 
 
@@ -120,7 +122,7 @@ dnms-0.9.12 First released version of the DNMS communication application for Ras
  
 		unzip dnms.zip
 
-with the following result:
+	with the following result:
 	
 	![](images/pic2.jpg)
 
@@ -130,12 +132,13 @@ with the following result:
 - Launch the installation script:
        
        sudo ./dnms_install.sh
-The installation script may take a few minutes to complete as it will also perform a full update/upgrade cycle.
+
+	The installation script may take a few minutes to complete as it will also perform a full update/upgrade cycle.
 	
 	![](images/pic3.jpg)
  
-The installation script should end as follows:
-  
+	The installation script should end as follows:  
+
 	![](images/pic4.jpg)
 
 - Check the status of dnms.service:
@@ -150,7 +153,8 @@ The installation script should end as follows:
 - Edit the dnms.conf file that contains the configuration, e.g. with nano:
 
 		nano dnms.conf
-![](images/pic6.jpg)
+
+	![](images/pic6.jpg)
 
 - Once all the settings in the dnms.conf file have been adjusted, in particular the address, password, database name, etc. for accessing an InfluxDB, the dnms.service can be restarted:
 
