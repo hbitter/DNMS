@@ -20,7 +20,7 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
      - DNMS_V5.2.4 - für ICS43434 mit Teensy4.0
      - DNMS_V5.2.6 - für IM72D128 mit Teensy4.0
  	
-  - Standalone Testprogramme für Teensy4.0 und die Mikrofone ICS-43434 und IM72D128 mit verbessertem internen Zeitverhalten	und geänderter Ein- und Ausgabe beim Start, es können Messintervall ab 125ms eingestellt werden, die Ausgabe von der Terzwerte ist ab 500ms möglich:
+  - Standalone Testprogramme für Teensy4.0 und die Mikrofone ICS-43434 und IM72D128 mit verbessertem internen Zeitverhalten	und geänderter Ein- und Ausgabe beim Start, es können Messintervall ab 125ms eingestellt werden, die Ausgabe von Terzwerten ist ab 500ms möglich:
  	- DNMS_Vt.7.4 - für ICS43434 mit Teensy4.0
  	- DNMS_Vt.7.6 - für IM72D128 mit Teensy4.0
   
