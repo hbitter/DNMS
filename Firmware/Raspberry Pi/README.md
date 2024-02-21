@@ -66,7 +66,8 @@
 - Editieren der Datei dnms.conf, die die Konfiguration enthält z.B. mit nano:
 
 		nano dnms.conf
-![](images/pic6.jpg)
+
+	![](images/pic6.jpg)
 
 - Sind alle Einstellungen angepasst in der Datei dnms.conf insbesondere Adresse, Passwort, Datenbankname usw. für den Zugang zu einer InfluxDB, kann dnms.service wieder gestartet werden:
 
@@ -144,7 +145,8 @@ dnms-0.9.12 First released version of the DNMS communication application for Ras
 - Check the status of dnms.service:
 
        sudo systemctl status dnms.service
-![](images/pic5.jpg)
+
+	![](images/pic5.jpg)
 
 - Stop the dnms.service to edit the configuration first:
 
@@ -164,7 +166,8 @@ dnms-0.9.12 First released version of the DNMS communication application for Ras
 - If the configuration was started successfully, a log file with the name dnms.log is created in the installation folder:
  
 		cat dnms.log
-![](images/pic7.jpg)
+
+	![](images/pic7.jpg)
 
 - The readings can also be written to the dnms.log file. This must be configured (output to terminal - redirect terminal output to the file). However, no complete data logger functionality is implemented. This rudimentary functionality is used to set up and test the configuration and to record errors. It is also possible to log the transfer times to InfluxDB.
 
