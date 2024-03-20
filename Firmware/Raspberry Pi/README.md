@@ -17,6 +17,13 @@
 - Aktuelles Raspberry Pi OS installiert (Bookworm)
 - ssh Zugriff auf den Raspberry Pi
 - I²C Interface aktiviert (raspi-config) 
+- ntp und ntpdate sollten installiert sein und Zeitabgleich durchgeführt sein z.B. mittels der folgenden Befehle:  
+  
+        sudo apt-get install ntp ntpdate -y
+        sudo systemctl stop ntp
+        sudo ntpdate de.pool.ntp.org
+        sudo systemctl start ntp
+	    
 
 ### Installation:
  - ssh Verbindung zum Raspberry Pi herstellen.
@@ -105,7 +112,15 @@ dnms-0.9.12 First released version of the DNMS communication application for Ras
 - Current Raspberry Pi OS installed (Bookworm)
 - ssh access to the Raspberry Pi
 - I²C interface enabled (raspi-config)
-
+- ntp and ntpdate should be installed, which can be done using the following commands:  
+  
+        sudo apt-get install ntp ntpdate -y
+        sudo systemctl stop ntp
+        sudo ntpdate de.pool.ntp.org
+        sudo systemctl start ntp
+	    
+	Instead of using de.pool.ntp.org, use the appropriate pool for your country.
+	
 ### Installation:
 - Make an ssh connection to the Raspberry Pi.
  - Create a new folder for the application under the current user (e.g. dnms):
