@@ -7,6 +7,14 @@
 
 ### Versions Historie NRZ-2020-134-DNMS:
 
+ - NRZ-2020-134-DNMS-5.6, NRZ-2020-134-DNMS-5.6-en und NRZ-2020-134-DNMS-5.6-fr<br>
+   - Fehlerbeseitigung: Der DNMS Korrekturwert wurde falsch umgewandelt, bei einer negativen Eingabe im Bereich von -0.1 - -0.9. Es wurde daraus ein positiver Wert erzeugt. Diese Fehlerbeseitigung gilt auch für den Temperatur Korrekturwert bei Temperatursensoren. Bei den Temperatursensoren wird der Korrekturwert nun addiert d.h. ein negativer Temperatur Korrekturwert verringert den Messwert.
+   - Statusanzeige durch eine LED an GPIO16 / D0. Die NodeMCU V2 hat eine interne LED an GPIO16 / D0, andere Versionen nicht. Nach Power Up ist die LED zunächst an. Nachdem sich die NodeMCU mit dem WLAN verbunden hat, blinkt die LED mit der Frequenz von 2 Hz. Das folgende Bild zeigt, wie eine LED an GPIO0 angeschlossen werden kann, wenn keine interne LED vorhanden ist:
+ 
+   	 ![](images/NodeMCU LED GPIO0.png)
+   - Geänderte Speicheraufteilung. Deswegen ist es notwendig, dass der ESP8266 komplett gelöscht wird (Sketch und FS) beim Flashen dieser Version, andernfalls können Fehler beim Lesen der Konfiguration auftreten.
+   
+
  - NRZ-2020-134-DNMS-5.4, NRZ-2020-134-DNMS-5.4-en und NRZ-2020-134-DNMS-5.4-fr<br>
    - Neu NRZ-2020-134-DNMS-5.4-fr französische Version
    - Vergrößerter Puffer für die Übertragung zu eigenen APIs (z.B. InfluxDB), dadurch können neben sämtlichen DNMS Werten (1. und 2. Messintervall mit LA und LZ Terzwerten) auch Werte von mehreren weiteren Sensoren wie BME280 und/oder SEN5x übertragen werden.
@@ -174,6 +182,16 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Node
 
 
 ### Version history NRZ-2020-134-DNMS:
+
+ - NRZ-2020-134-DNMS-5.6, NRZ-2020-134-DNMS-5.6-en and NRZ-2020-134-DNMS-5.6-fr<br>
+   - Bug fix: DNMS correction value was wrong for negative input in range -0.1 to -0.9. The resulting correction value was positive instead of negative. This bug fix also applies to the temperature correction value. For all temperature sensors the correction value is now added, i.e. a negative temperature correction value will lower the reading.
+   - LED status indication on GPIO0 / D0. NodeMCU V2 has an internal LED on GPIO0 / D0, other versions do not. After power up the LED is on. After the NodeMCU is connected to the WLAN, the LED flashes with a frequency of 2 Hz. The following illustration shows how to connect an LED if there is no internal LED on the board:
+ 
+   	 ![](images/NodeMCU LED GPIO0.png)
+
+   - Changed flash order. It is therefore necessary to erase the entire flash of the ESP8266 (sketch and FS) before flashing the new firmware, otherwise there may be problems reading the configuration.
+
+   
 
  - NRZ-2020-134-DNMS-5.4, NRZ-2020-134-DNMS-5.4-en and NRZ-2020-134-DNMS-5.4-fr<br>
    - New NRZ-2020-134-DNMS-5.4-fr french version
