@@ -15,6 +15,14 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
  
 ## Neuigkeiten
 
+### April 2024
+ - Neue NodeMCU Firmware NRZ-2020-134-DNMS-5.6 mit:
+	 - Fehlerbeseitigung für DNMS Korrekturwert (Issue #54)
+	 - LED Statusanzeige
+	 - geänderte Speicheraufteilung<br>
+	 
+	 Weitere Details dazu im README.md unter Firmware/NodeMCU
+
 ### Februar 2024
    - Verbesserte Teensy4.0 Firmware für die Mikrofone ICS-43434 und IM72D128 mit verbessertem internen Zeitverhalten (Upgrade empfohlen): 
      - DNMS_V5.2.4 - für ICS43434 mit Teensy4.0
@@ -114,6 +122,14 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 
  
 ## News
+
+### April 2024
+ - New NodeMCU firmware NRZ-2020-134-DNMS-5.6 with:
+	 - DNMS correction value bug fix (issue #54)
+	 - LED status display
+	 - modified memory organisation<br>
+	 
+	 Weitere Details dazu im README.md unter Firmware/NodeMCU
 
 ### February 2024
 - Improved Teensy 4.0 firmware for ICS-43434 and IM72D128 microphones with improved internal timing (upgrade recommended):
