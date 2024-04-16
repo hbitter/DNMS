@@ -21,7 +21,7 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 	 - LED Statusanzeige
 	 - geänderte Speicheraufteilung<br>
 	 
-	 Weitere Details dazu im README.md unter Firmware/NodeMCU
+	 Weitere Details dazu im README.md unter Firmware/NodeMCU.
 
 ### Februar 2024
    - Verbesserte Teensy4.0 Firmware für die Mikrofone ICS-43434 und IM72D128 mit verbessertem internen Zeitverhalten (Upgrade empfohlen): 
@@ -129,7 +129,8 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 	 - LED status display
 	 - modified memory organisation<br>
 	 
-	 Weitere Details dazu im README.md unter Firmware/NodeMCU
+	See README.md under Firmware/NodeMCU for details.
+	
 
 ### February 2024
 - Improved Teensy 4.0 firmware for ICS-43434 and IM72D128 microphones with improved internal timing (upgrade recommended):
