@@ -3,9 +3,24 @@
 ## NodeMCU Firmware für DNMS
 
 
-## NRZ-2020-134-DNMS
 
-### Versions Historie NRZ-2020-134-DNMS:
+### Versions Historie:
+
+ - AIRROHR-DNMS-5.8, AIRROHR-DNMS-5.8-en und AIRROHR-DNMS-5.8-fr<br>
+     - MQTT Übertragung (z.Zt. kein TLS). Dies kann als weitere Möglichkeit unter APIs ausgewählt werden. Die Daten werden im InfluxDB Line Protocol Format übertragen (wie bei der direkten InfluxDB Übertragung).
+  	 	 ![](images/APIs-de.png)
+   - Änderung der I²C PIns ist verschoben auf die Konfigurationsseite "Weitere Einstellungen"
+   - Möglichkeit nach Restart mit den Messungen zur vollen Minute oder zur vollen Stunde zu beginnen. Konfiguration auf der Seite "Weitere Einstellungen"
+  	 	 ![](images/weitere_Einstellungen-de.png)
+   - Auswahl des am Teensy4.0 angeschlossenen Mikrofons über die Konfigurationsseite "DNMS Lärm Sensor". Damit die Konfiguration durch einen entsprechenden Umschaltbefehl im Teensy4.0 umgesetzt werden kann, ist die Teensy4.0 Version DNMS_V5.3.x Vorraussetzung.
+  	 	 ![](images/DNMS-de.png)
+    - Erweiterte Debug Ausgabe am Start mit Ausgabe des Beginns der Messungen.
+  	 	 ![](images/start.png)
+
+ - NRZ-2020-134-DNMS-5.4, NRZ-2020-134-DNMS-5.4-en und NRZ-2020-134-DNMS-5.4-fr<br>
+   - Neu NRZ-2020-134-DNMS-5.4-fr französische Version
+   - Vergrößerter Puffer für die Übertragung zu eigenen APIs (z.B. InfluxDB), dadurch können neben sämtlichen DNMS Werten (1. und 2. Messintervall mit LA und LZ Terzwerten) auch Werte von mehreren weiteren Sensoren wie BME280 und/oder SEN5x übertragen werden.
+   - Verbesserte Ausgabe bei Übertragungsfehlern zu Sensor.Community und zu eigenen APIs (z.B. zur InfluxDB) mit UTC Zeitangabe und Klartext.
 
  - NRZ-2020-134-DNMS-5.6, NRZ-2020-134-DNMS-5.6-en und NRZ-2020-134-DNMS-5.6-fr<br>
    - Fehlerbeseitigung: Der DNMS Korrekturwert wurde falsch umgewandelt, bei einer negativen Eingabe im Bereich von -0.1 - -0.9. Es wurde daraus ein positiver Wert erzeugt. Diese Fehlerbeseitigung gilt auch für den Temperatur Korrekturwert bei Temperatursensoren. Bei den Temperatursensoren wird der Korrekturwert nun addiert d.h. ein negativer Temperatur Korrekturwert verringert den Messwert.
@@ -178,10 +193,20 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Node
 ## NodeMCU firmware for DNMS
 
 
-## NRZ-2020-134-DNMS
+### Version history:
 
+- AIRROHR-DNMS-5.8, AIRROHR-DNMS-5.8-en and AIRROHR-DNMS-5.8-fr<br>
+     - MQTT ttransmission (currently no TLS). This further choice can be selected under APIs. Data is transmitted in InfluxDB Line Protocol format (same as direct InfluxDB transmission).
+  	 	 ![](images/APIs-en.png)
 
-### Version history NRZ-2020-134-DNMS:
+	- Changing the I²C PIns has been moved to the “More settings” configuration page
+   - Possibility to start measuring on the full minute or on the hour after a restart. Configuration on the “More settings” page
+  	 	 ![](images/weitere_Einstellungen-en.png)
+   - Selection of the microphone connected to the Teensy4.0 via the "DNMS noise sensor" configuration page. The Teensy4.0 version DNMS_V5.3.x is required to use the switch command in Teensy4.0.
+  	 	 ![](images/DNMS-en.png)
+    - Extended debug output at start with output of measurement start.
+  	 	 ![](images/start.png)
+
 
  - NRZ-2020-134-DNMS-5.6, NRZ-2020-134-DNMS-5.6-en and NRZ-2020-134-DNMS-5.6-fr<br>
    - Bug fix: DNMS correction value was wrong for negative input in range -0.1 to -0.9. The resulting correction value was positive instead of negative. This bug fix also applies to the temperature correction value. For all temperature sensors the correction value is now added, i.e. a negative temperature correction value will lower the reading.

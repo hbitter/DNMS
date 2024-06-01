@@ -2,7 +2,18 @@
 
 ## Raspberry Pi Anwendung für DNMS
 
-  dnms-0.9.12 erste veröffentliche Version der DNMS Kommunikations Anwendung für den Raspberry Pi (ab Pi Zero möglich, Pi Zero 2 aufwärts empfohlen).
+Ab Pi Zero W möglich, Pi Zero 2 W und aufwärts empfohlen.
+
+### Versions Historie:
+
+ - dnms-0.9.16:
+	 - MQTT Übertragung (z.Zt. kein TLS). Konfiguration im dnms.conf File. Die Daten werden im InfluxDB Line Protocol Format übertragen (wie bei der direkten InfluxDB Übertragung).
+	 - Auswahl des am Teensy4.0 angeschlossenen Mikrofons durch einen Eintrag im dnms.conf File. Damit die Konfiguration durch einen entsprechenden Umschaltbefehl im Teensy4.0 umgesetzt werden kann, ist die Teensy4.0 Version DNMS_V5.3.x Vorraussetzung.
+	 - Angabe eines Korrekturwertes für die DNMS Einzahlwerte im dnms.conf File.
+
+ - dnms-0.9.12 erste veröffentliche Version der DNMS Kommunikations Anwendung für den Raspberry Pi.
+
+
   
 ###  Funktionalität:
   -	Übertragung der DNMS Daten zu Sensor.Community.
@@ -97,7 +108,16 @@
 ## Raspberry Pi application for DNMS
 
 
-dnms-0.9.12 First released version of the DNMS communication application for Raspberry Pi (possible on Pi Zero, recommended from Pi Zero 2 on).
+Possible from Pi Zero W, Pi Zero 2 W and above recommended.
+
+### Version history:
+
+ - dnms-0.9.16:
+	 - MQTT transmission (currently no TLS). Configuration in the dnms.conf file. The data is transmitted in InfluxDB Line Protocol format (as with direct InfluxDB transmission).
+	 - Selection of the microphone connected to the Teensy4.0 through an entry in the dnms.conf file. On Teensy4.0 the version DNMS_V5.3.x is required to use the microphone switch command.
+	 - Specify a correction value for the DNMS single values (does not apply to 1/3 octave values) in the dnms.conf file.
+	 
+ - dnms-0.9.12 first released version of the DNMS communication application for the Raspberry Pi.
   
 ###  Functionality:
   -	Transfer of DNMS data to Sensor.Community.

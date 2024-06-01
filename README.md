@@ -15,6 +15,26 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
  
 ## Neuigkeiten
 
+### Juni 2024
+ - Neue NodeMCU Firmware AIRROHR-DNMS-5.8 mit:
+	 - MQTT Übertragung (z.Zt. kein TLS)
+	 - Unterstützung der neuen Teensy4.0 Firmware DNMS_V5.3.x (Mikrofone ICS-43434 und IM72D128 in einer Teensy4 Firmware)
+	 - Möglichkeit nach Restart mit den Messungen zur vollen Minute oder zur vollen Stunde zu beginnen<br>
+	 
+	 Weitere Details dazu im README.md unter Firmware/NodeMCU.
+
+ - Erweiterte Raspberry Pi Anwendung dnms-0.9.16 mit:
+	 - MQTT Übertragung zu einem MQTT-Broker (z.Zt. kein TLS)
+	 - Unterstützung der neuen Teensy4.0 Firmware DNMS_V5.3.x (Mikrofone ICS-43434 und IM72D128 in einer Teensy4 Firmware)
+	 - Einführung eines DNMS Korrekturwertes für die Lärmwerte (nicht für Frequenzspektren) entsprechend der NodeMCU Firmware  <br>
+	 
+	 Weitere Details dazu im README.md unter Firmware/Raspberry Pi.
+	 
+ - Neue Teensy4.0 Firmware DNMS_V5.3.x mit:
+	 - Zusammenführung der bisher getrennten Versionen für die beiden Mikrofone ICS-43434 und IM72D128 in einer Teensy4.0 Firmware. Die Auswahl des Mikrofons erfolgt über die Konfiguration in der NodeMCU bzw. im Raspberry Pi und wird mittels Umschaltbefehl an die Teensy4.0 Firmware übertragen. Wird kein Umschaltbefehl übertragen ist als standardmäßig das ICS-43434 ausgewählt d.h. auch ältere NodeMCU Firmware unterstützt die Version DNMS_V5.3.x mit ICS-43434 Mikrofon. <br>
+
+	 Weitere Details dazu im README.md unter Firmware/Teensy4.0/V5.	 
+
 ### April 2024
  - Neue NodeMCU Firmware NRZ-2020-134-DNMS-5.6 mit:
 	 - Fehlerbeseitigung für DNMS Korrekturwert (Issue #54)
@@ -122,6 +142,26 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 
  
 ## News
+
+### June 2024
+ - New NodeMCU firmware AIRROHR-DNMS-5.8 with:
+	 - MQTT transmission (currently no TLS)
+	 - Support of new Teensy4.0 firmware DNMS_V5.3.x (microphones ICS-43434 and IM72D128 supported in one single Teensy4.0 firmware)
+	 - Possibility to start at full minute or full hour after restart<br>
+	 
+	 See README.md under Firmware/NodeMCU for details.
+
+ - Enhanced Raspberry Pi application dnms-0.9.16 with:
+	 - MQTT transmission (currently no TLS)
+	 - Support of new Teensy4.0 firmware DNMS_V5.3.x (microphones ICS-43434 and IM72D128 supported in one single Teensy4.0 firmware)
+	 - Implementation of DNMS correction for noise values (not for 1/3 octave values) according to the NodeMCU firmware  <br>
+	 
+	See README.md under Firmware/Raspberry Pi for details.
+	 
+ - New Teensy4.0 firmware DNMS_V5.3.x with:
+	 - Merging the previously separate versions for the two microphones ICS-43434 and IM72D128 in one Teensy4.0 firmware. The microphone is selected via the configuration in the NodeMCU or Raspberry Pi and is transferred to the Teensy4.0 firmware using a switching command. If no switching command is transmitted, the ICS-43434 is selected as default, i.e. older NodeMCU firmware also supports version DNMS_V5.3.x with ICS-43434 microphone. <br>
+
+	 See README.md under Firmware/Teensy4.0/V5 for details.
 
 ### April 2024
  - New NodeMCU firmware NRZ-2020-134-DNMS-5.6 with:
