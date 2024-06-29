@@ -16,6 +16,9 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 ## Neuigkeiten
 
 ### Juni 2024
+
+ - Raspberry Pi dnms-0.9.16 Korrektur der Versionsnummer:
+	 - Die Versionsnummer wurde falsch (0.9.15 statt 0.9.16) angezeigt
  - Neue NodeMCU Firmware AIRROHR-DNMS-5.8 mit:
 	 - MQTT Übertragung (z.Zt. kein TLS)
 	 - Unterstützung der neuen Teensy4.0 Firmware DNMS_V5.3.x (Mikrofone ICS-43434 und IM72D128 in einer Teensy4 Firmware)
@@ -144,6 +147,9 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 ## News
 
 ### June 2024
+
+ - Raspberry Pi dnms-0.9.16 Fix for version number output:
+	 - Version number was displayed as 0.9.15 instead of 0.9.16
  - New NodeMCU firmware AIRROHR-DNMS-5.8 with:
 	 - MQTT transmission (currently no TLS)
 	 - Support of new Teensy4.0 firmware DNMS_V5.3.x (microphones ICS-43434 and IM72D128 supported in one single Teensy4.0 firmware)
