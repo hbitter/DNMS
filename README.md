@@ -11,9 +11,12 @@ Eine Version mit der Möglichkeit das Frequenzspektrum zu betrachten ist seit ei
 
 Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, LZmax sowie Z-Terzwerte) unterstützt.
 
-### Die Firma Watterott electronic GmbH (https://shop.watterott.com) plant das neu unterstütze Mikrofon IM72D128 von Infineon sowie das DNMS Teensy4.0 Board demnächst als Modul anzubieten.
  
 ## Neuigkeiten
+
+### Juli 2024
+
+### Bei der Firma Watterott electronic GmbH kann nun das Mikrofon IM72D128 von Infineon fertig in einem Kunststoffrohr eingegossen im Shop bestellt werden (https://shop.watterott.com/Mikrofon-IM72D128V01-im-127mm-Rundrohr). Das IM72D128 Mikrofon auf einer Platine und mit Anschlusskabel aber nicht  im Kunststoffrohr eingegossen ist ebenfalls verfügbar (https://shop.watterott.com/Mikrofon-IM72D128V01-Platine-mit-Anschlussleitung).  Das DNMS Teensy4.0 Board wird demnächst verfügbar sein.
 
 ### Juni 2024
 
@@ -141,10 +144,12 @@ A version with support of frequency spectrum is available for some time. 1/3 oct
 Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as well as 1/3 octave Z-values).
 
 
-### Watterott electronic GmbH  (https://shop.watterott.com) plans to offer a IM72D128 microphone module and a DNMS Teensy4.0 module very soon.
-
  
 ## News
+
+### July 2024
+
+### The IM72D128 microphone from Infineon can now be ordered ready-molded in a plastic tube from Watterott electronic GmbH in the shop (https://shop.watterott.com/Mikrofon-IM72D128V01-im-127mm-Rundrohr). The IM72D128 microphone on a circuit board and with a connection cable but not cast in the plastic tube is also available (https://shop.watterott.com/Mikrofon-IM72D128V01-Platine-mit-Anschlussleitung).  The DNSMS Teensy4.0 board will be available soon.
 
 ### June 2024
 
