@@ -6,6 +6,10 @@ Ab Pi Zero W möglich, Pi Zero 2 W und aufwärts empfohlen.
 
 ### Versions Historie:
 
+ - dnms-0.9.18:
+	 - Korrektur eines Fehlers: Wenn nur die Ausgabe auf dem Terminal konfiguriert war, wurden die Werte nicht richtig auf dem Terminal ausgegeben.
+	 - Neue Möglichkeit der Weitergabe von Messwerten mittels einer named pipe (oder auch fifo) zu anderen Anwendungen auf dem Raspberry Pi. Der Name der named pipe und der Ort können im Konfigurationsfile (dnms.conf) konfiguriert werden. Weiterhin, ob die Messwerte des 1. Messintervalls, des 2. Messintervalls oder beide mittel der named pipe übertragen werden. Ob die Konfiguration einer named pipe funktioniert kann einfach mit dem Befehl: cat "name der named pipe" überprüft werden. Die Ausgabe im Terminal entspricht dann der direkten Ausgabe auf einem terminal, wenn dies konfiguriert ist bzw. der Ausgabe der Messwerte im File dnms.log. Ein C-Beispielprogramm ist im Ordner "read_named_pipe" unterhalb dnms-0.9.18 beigefügt. Ein Beispiel wie von Python eine named pipe gelesen werden kann ist z.B. bei stackoverflow Frage: Python read named PIPE zu finden: https://stackoverflow.com/questions/39089776/python-read-named-pipe
+
  - dnms-0.9.16:
 	 - MQTT Übertragung (z.Zt. kein TLS). Konfiguration im dnms.conf File. Die Daten werden im InfluxDB Line Protocol Format übertragen (wie bei der direkten InfluxDB Übertragung).
 	 - Auswahl des am Teensy4.0 angeschlossenen Mikrofons durch einen Eintrag im dnms.conf File. Damit die Konfiguration durch einen entsprechenden Umschaltbefehl im Teensy4.0 umgesetzt werden kann, ist die Teensy4.0 Version DNMS_V5.3.x Vorraussetzung.
@@ -111,6 +115,10 @@ Ab Pi Zero W möglich, Pi Zero 2 W und aufwärts empfohlen.
 Possible from Pi Zero W, Pi Zero 2 W and above recommended.
 
 ### Version history:
+
+- dnms-0.9.18:
+	 - Bug fix: If only output to terminal was configured, the values were not output correctly to the terminal.
+	 - New way to pass measurements to other applications on the Raspberry Pi using a named pipe (or fifo). The name of the named pipe and the location can be configured in the configuration file (dnms.conf). You can also specify whether the named pipe should send the readings from the 1st interval, the 2nd interval or both. You can easily check if the configuration of a named pipe works with the command: cat "name of the named pipe". The output in the terminal then corresponds to the direct output on a terminal, if this is configured, or to the output of the readings in the file dnms.log. An example C program is included in the folder "read_named_pipe" below dnms-0.9.18. An example of how to read a named pipe from Python can be found in the stackoverflow question: Python read named PIPE: https://stackoverflow.com/questions/39089776/python-read-named-pipe
 
  - dnms-0.9.16:
 	 - MQTT transmission (currently no TLS). Configuration in the dnms.conf file. The data is transmitted in InfluxDB Line Protocol format (as with direct InfluxDB transmission).
