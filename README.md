@@ -19,7 +19,7 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 
  - Raspberry Pi dnms-0.9.18 Fehlerkorrektur und neue Funktion:
 	 - Korrektur eines Fehlers: Wenn nur die Ausgabe auf dem Terminal konfiguriert war, wurden die Werte nicht richtig auf dem Terminal ausgegeben.
- - Neue Möglichkeit der Weitergabe von Messwerten mittels einer named pipe (oder auch fifo) zu anderen Anwendungen auf dem Raspberry Pi.
+ 	- Neue Möglichkeit der Weitergabe von Messwerten mittels einer named pipe (oder auch fifo) zu anderen Anwendungen auf dem Raspberry Pi.
 
 
 
@@ -156,7 +156,7 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 
 - Raspberry Pi dnms-0.9.18  bug fix and new feature:
 	 - Bug fix: If only output to terminal was configured, the values were not output correctly to the terminal.
-  - New way to pass measurements to other applications on the Raspberry Pi using a named pipe (or fifo).
+  	- New way to pass measurements to other applications on the Raspberry Pi using a named pipe (or fifo).
 
 ### June 2024
 
