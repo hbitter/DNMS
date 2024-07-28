@@ -17,6 +17,13 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 
 ### Juli 2024
 
+- Neue Firmware für Teensy4.0 DNMS_V5.4.x - für ICS-43434 und IM72D128 Mikrofon
+	+ Ersetzt DNMS_V5.3.x da in der Version DNMS_V5.3.x Fehler in der Berechnung der Terzwerte waren. DNMS_V5.3.x bitte ersetzen mit DNMS_V5.4.x 
+	
+- Neue NodeMCU Firmware AIRROHR-DNMS-5.11 mit:
+	+ NTP Server können nun in der Konfiguration gesetzt werden unter "Weitere Einstellungen"
+	+ Konfigurationsänderung für die Übertragung zum MQTT Broker, eigenes Feld für die Konfiguration der MQTT Messung. Dies wird im InfluxDB Line Protocol als Measurement weitergegeben
+
  - Raspberry Pi dnms-0.9.18 Fehlerkorrektur und neue Funktion:
 	 - Korrektur eines Fehlers: Wenn nur die Ausgabe auf dem Terminal konfiguriert war, wurden die Werte nicht richtig auf dem Terminal ausgegeben.
  	- Neue Möglichkeit der Weitergabe von Messwerten mittels einer named pipe (oder auch fifo) zu anderen Anwendungen auf dem Raspberry Pi.
@@ -154,6 +161,13 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 
 ### July 2024
 
+- New NodeMCU firmware AIRROHR-DNMS-5.11 with:
+	+ NTP servers can now be set in the configuration under "More settings".
+	+ Configuration change for MQTT Broker transmission, separate field for configuring the MQTT measurement. This will be reported as measurement in the InfluxDB line protocol.
+
+- New firmware for Teensy4.0 DNMS_V5.4.x - for ICS-43434 and IM72D128 microphone
+	+ Replaces DNMS_V5.3.x because of an error in the calculation of the 1/3 octave values in DNMS_V5.3.x. Please replace DNMS_V5.3.x with DNMS_V5.4.x.
+	
 - Raspberry Pi dnms-0.9.18  bug fix and new feature:
 	 - Bug fix: If only output to terminal was configured, the values were not output correctly to the terminal.
   	- New way to pass measurements to other applications on the Raspberry Pi using a named pipe (or fifo).

@@ -6,6 +6,12 @@
 
 ### Versions Historie:
 
+- AIRROHR-DNMS-5.11, AIRROHR-DNMS-5.11-en, AIRROHR-DNMS-5.11-fr
+	+ NTP Server können nun in der Konfiguration gesetzt werden unter "Weitere Einstellungen"
+	 ![](images/Weitere_Einstellungen_28.07.2024_de.png)
+	+ Konfigurationsänderung für die Übertragung zum MQTT Broker, eigenes Feld für die Konfiguration der MQTT Messung. Dies wird im InfluxDB Line Protocol als Measurement weitergegeben
+	 ![](images/APIs_28.07.2024_de.png)
+
  - AIRROHR-DNMS-5.8, AIRROHR-DNMS-5.8-en und AIRROHR-DNMS-5.8-fr<br>
      - MQTT Übertragung (z.Zt. kein TLS). Dies kann als weitere Möglichkeit unter APIs ausgewählt werden. Die Daten werden im InfluxDB Line Protocol Format übertragen (wie bei der direkten InfluxDB Übertragung).
   	 	 ![](images/APIs-de.png)
@@ -195,6 +201,13 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Node
 
 ### Version history:
 
+
+- AIRROHR-DNMS-5.11, AIRROHR-DNMS-5.11-en, AIRROHR-DNMS-5.11-fr
+	+ NTP servers can now be set in the configuration under "More settings".
+		 ![](images/Weitere_Einstellungen_28.07.2024_en.png)
+	+ Configuration change for MQTT Broker transmission, separate field for configuring the MQTT measurement. This will be reported as a measurement in the InfluxDB line protocol.
+	 ![](images/APIs_28.07.2024_en.png)
+	 
 - AIRROHR-DNMS-5.8, AIRROHR-DNMS-5.8-en and AIRROHR-DNMS-5.8-fr<br>
      - MQTT ttransmission (currently no TLS). This further choice can be selected under APIs. Data is transmitted in InfluxDB Line Protocol format (same as direct InfluxDB transmission).
   	 	 ![](images/APIs-en.png)

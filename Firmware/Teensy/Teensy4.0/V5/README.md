@@ -6,6 +6,9 @@
 
 ### Versions Historie:
 
+- DNMS_V5.4.x - für ICS-43434 und IM72D128 Mikrofon
+	+ Ersetzt DNMS_V5.3.x da in der Version DNMS_V5.3.x Fehler in der Berechnung der Terzwerte waren. DNMS_V5.3.x bitte ersetzen mit DNMS_V5.4.x 
+
 - DNMS_V5.3.x - für ICS-43434 und IM72D128 Mikrofon
 	 - Zusammenführung der bisher getrennten Versionen für die beiden Mikrofone ICS-43434 und IM72D128 in einer Teensy4.0 Firmware. Die Auswahl des Mikrofons erfolgt über die Konfiguration in der NodeMCU bzw. im Raspberry Pi und wird mittels Umschaltbefehl an die Teensy4.0 Firmware übertragen. Wird kein Umschaltbefehl übertragen ist standardmäßig das ICS-43434 ausgewählt d.h. auch ältere NodeMCU Firmware unterstützt die Version DNMS_V5.3.x mit ICS-43434 Mikrofon.
 	 - Abhänging vom ausgewählten Mikrofon erfolgt das Blinken der roten LED auf dem Teensy4.0 Board mit unterschiedlicher Frequenz:	
@@ -34,6 +37,8 @@ IM72D128: im Wechsel 500ms an und 500ms aus
 
 ### Version history:
 
+- DNMS_V5.4.x - for ICS-43434 and IM72D128 microphone
+	+ Replaces DNMS_V5.3.x because of an error in the calculation of the 1/3 octave values in DNMS_V5.3.x. Please replace DNMS_V5.3.x with DNMS_V5.4.x.
 
 - DNMS_V5.3.x - for ICS-43434 and IM72D128 microphone
 	 - Merging the previously separate versions for the two microphones ICS-43434 and IM72D128 into one Teensy4.0 firmware. The microphone is selected via the configuration in the NodeMCU or Raspberry Pi and is transferred to the Teensy4.0 firmware using a switching command. If no switching command is transmitted, the ICS-43434 is selected by default, i.e. older NodeMCU firmware also supports version DNMS_V5.3.x with ICS-43434 microphone.

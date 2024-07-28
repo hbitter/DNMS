@@ -27,11 +27,11 @@
    along with this program. If not, see <http://www.gnu.org/licenses/>.
  *                                                                      *
  ************************************************************************
-Memory Usage on Teensy 4.0:
-  FLASH: code:79048, data:121800, headers:9068   free for files:1821700
-   RAM1: variables:291776, code:76776, padding:21528   free for local variables:134208
-   RAM2: variables:16064  free for malloc/new:508224
 
+Memory Usage on Teensy 4.0:
+  FLASH: code:78984, data:127944, headers:9132   free for files:1815556
+   RAM1: variables:297920, code:76712, padding:21592   free for local variables:128064
+   RAM2: variables:16064  free for malloc/new:508224
 */
 #include <Arduino.h>
 #include <math.h>
@@ -41,13 +41,12 @@ Memory Usage on Teensy 4.0:
 #include <i2c_driver_wire.h>
 
 #include "./DNMS_def.h"
-#include "./FIR_decimation_filter_ICS-43434.h"
+#include "./FIR_decimation_filter.h"
 #include "./Micro_corr_values_ICS-43434.h"
-#include "./FIR_decimation_filter_IM72D128.h"
 #include "./Micro_corr_values_IM72D128.h"
 
 
-#define SOFTWARE_VERSION "DNMS Version 5.3.x"  // Version 5.3.x for Teensy4 and ICS-43434 or IM72D128 microphone based on FFT
+#define SOFTWARE_VERSION "DNMS Version 5.4.x"  // Version 5.3.x for Teensy4 and ICS-43434 or IM72D128 microphone based on FFT
 /**********************************************************************************
  *                                                                                *
  *      version for Teensy4 and ICS-43434 or IM72D128 microphone                              *
@@ -272,7 +271,6 @@ float32_t decimation_buffer[BLK_LEN * DECI_FACTOR];
 float32_t decimation_state_buffer[number_FIR_taps_decimation + (BLK_LEN * DECI_FACTOR) - 1];
 
 // pointer to coefficients
-float32_t *dnms_decimate_coeffs;
 double *corr_Z;
 double *corr_A;
 double *corr1024_Z;
@@ -318,11 +316,10 @@ void setup() {
   Wire.onRequest(i2c_request_from_master);
 
   // preset for ICS-43434 -- ICS-43434 is default without any additional command
-  dnms_decimate_coeffs = dnms_decimate_coeffs_ICS43434;
   corr_Z = corr_Z_ICS43434;
   corr_A = corr_A_ICS43434;
   corr1024_Z = corr1024_Z_ICS43434;
-  corr1024_A = corr1024_Z_ICS43434;
+  corr1024_A = corr1024_A_ICS43434;
   micro_type = 1; // ICS-43434
   blink_period = BLINK_PERIOD_ICS43434;
 
@@ -1390,11 +1387,10 @@ void i2c_receive_from_master(int num_bytes) {
     case 27:  // set DNMS to ICS-43434 microphone
       AudioNoInterrupts();
       // command to set for ICS-43434 microphone
-      dnms_decimate_coeffs = dnms_decimate_coeffs_ICS43434;
       corr_Z = corr_Z_ICS43434;
       corr_A = corr_A_ICS43434;
       corr1024_Z = corr1024_Z_ICS43434;
-      corr1024_A = corr1024_Z_ICS43434;
+      corr1024_A = corr1024_A_ICS43434;
       micro_type = 1;
       blink_period = BLINK_PERIOD_ICS43434;
       DNMS_reset();
@@ -1403,11 +1399,10 @@ void i2c_receive_from_master(int num_bytes) {
     case 28:  // set DNMS to IM72D128 microphone
       AudioNoInterrupts();
       // command to set for IM72D128 microphone
-      dnms_decimate_coeffs = dnms_decimate_coeffs_IM72D128;
       corr_Z = corr_Z_IM72D128;
       corr_A = corr_A_IM72D128;
       corr1024_Z = corr1024_Z_IM72D128;
-      corr1024_A = corr1024_Z_IM72D128;
+      corr1024_A = corr1024_A_IM72D128;
       micro_type = 2;
       blink_period = BLINK_PERIOD_IM72D128;    
       DNMS_reset();

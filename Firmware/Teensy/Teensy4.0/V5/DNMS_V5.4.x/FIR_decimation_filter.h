@@ -15,9 +15,10 @@
   actual attenuation = -82.03021272680374 dB
 
 ************************************************/
+
 #include "./DNMS_def.h"
 
-float32_t dnms_decimate_coeffs_IM72D128[number_FIR_taps_decimation] = 
+float32_t dnms_decimate_coeffs[number_FIR_taps_decimation] = 
 {
       0.0000471383600320714,
       0.000016301596047241903,
