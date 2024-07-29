@@ -6,7 +6,7 @@
 
 ### Versions Historie:
 
-- AIRROHR-DNMS-5.11, AIRROHR-DNMS-5.11-en, AIRROHR-DNMS-5.11-fr
+- AIRROHR-DNMS-5.12, AIRROHR-DNMS-5.12-en, AIRROHR-DNMS-5.12-fr
 	+ NTP Server können nun in der Konfiguration gesetzt werden unter "Weitere Einstellungen"
 	 ![](images/Weitere_Einstellungen_28.07.2024_de.png)
 	+ Konfigurationsänderung für die Übertragung zum MQTT Broker, eigenes Feld für die Konfiguration der MQTT Messung. Dies wird im InfluxDB Line Protocol als Measurement weitergegeben
@@ -202,7 +202,7 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Node
 ### Version history:
 
 
-- AIRROHR-DNMS-5.11, AIRROHR-DNMS-5.11-en, AIRROHR-DNMS-5.11-fr
+- AIRROHR-DNMS-5.12, AIRROHR-DNMS-5.12-en, AIRROHR-DNMS-5.12-fr
 	+ NTP servers can now be set in the configuration under "More settings".
 		 ![](images/Weitere_Einstellungen_28.07.2024_en.png)
 	+ Configuration change for MQTT Broker transmission, separate field for configuring the MQTT measurement. This will be reported as a measurement in the InfluxDB line protocol.

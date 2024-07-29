@@ -37,18 +37,18 @@
  *
  * latest build using esp8266 BSP 3.1.2 , do not use a lower version than 3.1.1!
 
-. Variables and constants in RAM (global, static), used 42452 / 80192 bytes (52%)
+. Variables and constants in RAM (global, static), used 42868 / 80192 bytes (53%)
 ║   SEGMENT  BYTES    DESCRIPTION
-╠══ DATA     2724     initialized variables
-╠══ RODATA   9344     constants       
-╚══ BSS      30384    zeroed variables
+╠══ DATA     2740     initialized variables
+╠══ RODATA   9304     constants       
+╚══ BSS      30824    zeroed variables
 . Instruction RAM (IRAM_ATTR, ICACHE_RAM_ATTR), used 63493 / 65536 bytes (96%)
 ║   SEGMENT  BYTES    DESCRIPTION
 ╠══ ICACHE   32768    reserved space for flash instruction cache
 ╚══ IRAM     30725    code in IRAM    
-. Code in flash (default, ICACHE_FLASH_ATTR), used 641408 / 1048576 bytes (61%)
+. Code in flash (default, ICACHE_FLASH_ATTR), used 639780 / 1048576 bytes (61%)
 ║   SEGMENT  BYTES    DESCRIPTION
-╚══ IROM     641408   code in flash   
+╚══ IROM     639780   code in flash   
 
  ************************************************************************/
 
@@ -56,7 +56,7 @@
 #include <pgmspace.h>
 
 // increment on change
-#define SOFTWARE_VERSION_STR "AIRROHR-DNMS-5.11"
+#define SOFTWARE_VERSION_STR "AIRROHR-DNMS-5.12"
 String SOFTWARE_VERSION(SOFTWARE_VERSION_STR);
 
 
@@ -6069,7 +6069,7 @@ static void initDNMS() {
   char dnms_version[DNMS_MAX_VERSION_LEN + 1];
   int int_version;
 
-  debug_out(F("Trying DNMS sensor on 0x55H "), DEBUG_MIN_INFO);
+  debug_outln(F("Trying DNMS sensor on 0x55H"), DEBUG_MIN_INFO);
   dnms_reset();
   delay(1000);
   if (dnms_read_version(dnms_version) != 0) {
@@ -6350,12 +6350,9 @@ static void powerOnTestSensors() {
     ds18b20.begin();  // Start DS18B20
     debug_outln_info(F("Read DS18B20..."));
   }
-
-  if (cfg::dnms_read || cfg::dnms_read_spectrum || cfg::dnms_read_Z || cfg::dnms_read_spectrum_Z || cfg::dnms_2nd_interval
-      || cfg::dnms_2nd_interval_Z || cfg::dnms_2nd_read_spectrum || cfg::dnms_2nd_read_spectrum_Z) {
-    debug_outln_info(F("Read DNMS..."));
-    initDNMS();
-  }
+/*
+DNMS is now separate in setup based on timing considerations
+ */ 
 }
 
 static void logEnabledAPIs() {
@@ -6669,6 +6666,12 @@ void setup(void) {
   setupNetworkTime();
 
   setup_webserver();
+
+  if (cfg::dnms_read || cfg::dnms_read_spectrum || cfg::dnms_read_Z || cfg::dnms_read_spectrum_Z || cfg::dnms_2nd_interval
+      || cfg::dnms_2nd_interval_Z || cfg::dnms_2nd_read_spectrum || cfg::dnms_2nd_read_spectrum_Z) {
+    debug_outln_info(F("Read DNMS..."));
+    initDNMS();
+  }
 
 // start on full hour or on full minute
   if (cfg::start_on_full_hour) {

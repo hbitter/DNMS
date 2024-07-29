@@ -20,7 +20,7 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 - Neue Firmware für Teensy4.0 DNMS_V5.4.x - für ICS-43434 und IM72D128 Mikrofon
 	+ Ersetzt DNMS_V5.3.x da in der Version DNMS_V5.3.x Fehler in der Berechnung der Terzwerte waren. DNMS_V5.3.x bitte ersetzen mit DNMS_V5.4.x 
 	
-- Neue NodeMCU Firmware AIRROHR-DNMS-5.11 mit:
+- Neue NodeMCU Firmware AIRROHR-DNMS-5.12 mit:
 	+ NTP Server können nun in der Konfiguration gesetzt werden unter "Weitere Einstellungen"
 	+ Konfigurationsänderung für die Übertragung zum MQTT Broker, eigenes Feld für die Konfiguration der MQTT Messung. Dies wird im InfluxDB Line Protocol als Measurement weitergegeben
 
@@ -161,7 +161,7 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 
 ### July 2024
 
-- New NodeMCU firmware AIRROHR-DNMS-5.11 with:
+- New NodeMCU firmware AIRROHR-DNMS-5.12 with:
 	+ NTP servers can now be set in the configuration under "More settings".
 	+ Configuration change for MQTT Broker transmission, separate field for configuring the MQTT measurement. This will be reported as measurement in the InfluxDB line protocol.
 

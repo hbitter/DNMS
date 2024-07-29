@@ -326,7 +326,7 @@ static const char MEASUREMENT_NAME_MQTT[] PROGMEM = "dnms";
 #define DNMS_2nd_INTERVAL_TIME "5"
 #define DNMS_API_PIN 15
 #define DNMS_CORRECTION "0.0"
-#define DNMS_2nd_THRESHOLD "60.0"
+#define DNMS_2nd_THRESHOLD "20.0"
 #define DNMS_2nd_NUMBER_MEASUREMENTS "120"
 #define DNMS_2nd_SWITCH_OUTPUT 0
 #define DNMS_2nd_GPIO_PIN "15"
