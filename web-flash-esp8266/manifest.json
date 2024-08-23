@@ -6,19 +6,7 @@
       "parts": [
         { "path": "en-airrohr-firmware.ino.bin", "offset": 0 }
       ]
-    },
-    {
-      "chipFamily": "ESP8266",
-      "parts": [
-        { "path": "de-airrohr-firmware.ino.bin", "offset": 0 }
-      ]
-    },
-    {
-      "chipFamily": "ESP8266",
-      "parts": [
-        { "path": "fr-airrohr-firmware.ino.bin", "offset": 0 }
-      ]
-    }        
+    }
   ]
 }
 
