@@ -1,8 +1,48 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>DNMS NodeMCU Web Flash</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+    <style>
+        body,h1 {font-family: "Raleway", sans-serif}
+        body, html {height: 100%}
+        .bgimg {
+        background-image: url('web-flash-esp8266-de/noise.webp');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js?module"></script>
+</head>
 <body>
-    <h1>DNMS Web-Flasher for ESP8266 firmware version: AIRROHR-DNMS-5.12/EN</h1>
-    <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
-    <esp-web-install-button manifest="web-flash-esp8266-en/manifest.json"></esp-web-install-button>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-large">
+    <a class="w3-button w3-transparent w3-border" href="https://github.com/hbitter/DNMS">@DNMS</a>
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-center w3-jumbo w3-animate-top">DNMS Web Flasher für AIRROHR ESP8266 Firmware </h1>
+			<p class="w3-center">To install the AIRROHR firmware, please connect the ESP8266 board to the computer and then press the 'Install firmware' button. The firmware will then be installed on the ESP8266. As usual, the ESP8266 will then set up an access point with the IP address 192.168.4.1, i.e. a WLAN named 'airrohr- ...' should now be visible (search/display available WLANs on your smartphone/PC). Connect to this network, if a password is requested, enter the password 'airrohrcfg' and then enter the URL 192.168.4.1 in your web browser to access the configuration page. A more detailed description can be found at the following <a href="https://github.com/hbitter/DNMS/wiki/Integration-into-the-user-WLAN">link</a>.</p>
+    <div class="w3-center w3-padding-24">
+        <esp-web-install-button manifest="web-flash-esp8266-de/manifest.json">
+            <button slot="activate" class="w3-button w3-yellow w3-round-xxlarge w3-padding-large">Firmware installieren</button>
+            <span slot="unsupported">Ah snap, your browser doesn't work!</span>
+            <span slot="not-allowed">Ah snap, you are not allowed to use this on HTTP!</span>
+        </esp-web-install-button>
+    </div>
+
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Powered by <a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools</a></p>
+  
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
+</div>
+
 </body>
 </html>
