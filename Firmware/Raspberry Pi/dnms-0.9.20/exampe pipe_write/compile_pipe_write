@@ -1,0 +1,1 @@
+gcc -w -o pipe_write pipe_write.c
