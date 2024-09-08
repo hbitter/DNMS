@@ -10,27 +10,38 @@ Ab Pi Zero W möglich, Pi Zero 2 W und aufwärts empfohlen.
 
   - Start und Stopp der Messwertausgabe durch ein Steuersignal über eine named pipe. Das Beispiel-Programm, pipe_write, in C  ist beigefügt. Ebenso kann die Steuerung über die Konsole erfolgen, dazu z.B. zwei Variable definieren:
 
-    `null="0"`
+	```
+	null="0"
+	
+	eins="1"
+	```
 
-    `eins="1"`
 
     und zum Starten der Messwertausgabe:
 
-    `echo $eins > /tmp/start_stop_dnms`
+    
+	```
+	echo $eins > /tmp/start_stop_dnms
+	```
+	
 
     und zum Stoppen:
 
-    `echo $null > /tmp/start_stop_dnms`
+    
+	```
+	echo $null > /tmp/start_stop_dnms
+	```
+
 
     Der Name der named pipe kann in der Konfigurationsdatei frei gewählt werden, aber der Pfad ist festgelegt und muss im  Ordner /tmp liegen.
 
   - Data Logging der Messwertdaten auf der SD-Karte. Für jeden Tag wird eine Datei mit dem Dateinamen 'data_dd.mm.yyyy.csv' erzeugt.  Die Messwertdaten werden beim Data Logging, bei der Ausgabe auf dem Terminal und bei der Übertragung zu einer named pipe im ASCII Format jeweils mit einem Komma getrennt ausgegeben wie im folgenden Beispiel.
 
-    ![raspi_data_logging](/home/helmut/Ablage/sonstiges/Feinstaub_und_Lärm_u.a/Lärm/DNMS/github/DNMS/Firmware/Raspberry Pi/images/raspi_data_logging.png)
+	![](images/raspi_data_logging.png)
 
     Die Konfiguration welche Messwerte (1. Messintervall, 2. Messintervall, A-Werte, Z-Werte und die jeweiligen Terzwerte) übertragen werden, erfolgt in der Konfigurationsdatei dnms.conf für die Ausgabe auf dem Terminal, die named pipe Übertragung und das Data Logging gemeinsam.  
 
-  - Änderung der Eingabe von Bool Werten in der Konfigurationsdatei dnms.conf: Für false eine '0' eingeben und für true eine '1'. 
+  - Änderung der Eingabe von Bool-Werten in der Konfigurationsdatei dnms.conf: Für false eine '0' und für true eine '1' eingeben. 
 
  - dnms-0.9.18:
 	 - Korrektur eines Fehlers: Wenn nur die Ausgabe auf dem Terminal konfiguriert war, wurden die Werte nicht richtig auf dem Terminal ausgegeben.
@@ -144,29 +155,41 @@ Possible from Pi Zero W, Pi Zero 2 W and above recommended.
 ### Version history:
 
 - dnms-0.9.20:
+
 	 - Start and stop the output of measurements by a control signal via a named pipe. An example program in C, pipe_write, is included. The control can also be done from the console, e.g. by defining two variables:
-	
-	   `null="0"`
-	 
-	   `eins="1"`
-	 
+
+		```
+		null="0"
+		
+		eins="1"
+		```
+
+
 	   and to start the output of the measured values:
-	 
-	   `echo $eins > /tmp/start_stop_dnms`
-	 
-	   and to stop the output of the measured values:
-	 
-	   `echo $null > /tmp/start_stop_dnms`
-	 
+
+    
+		```
+		echo $eins > /tmp/start_stop_dnms
+		```
+	
+
+	    and to stop the output of the measured values:
+
+    
+		```
+		echo $null > /tmp/start_stop_dnms
+		```
+
+
 	   The name of the named pipe can be freely chosen in the configuration file, but the path is fixed and must be in the /tmp folder.
-	 
-	 - Data logging of the measurement data on the SD card. For each day a file with the name 'data_dd.mm.yyyy.csv' is created. The measurement data is output in ASCII format, separated by commas, during data logging, when output to the terminal and when transferred to a named pipe, as in the following example.
-	 
-	   ![raspi_data_logging](/home/helmut/Ablage/sonstiges/Feinstaub_und_Lärm_u.a/Lärm/DNMS/github/DNMS/Firmware/Raspberry Pi/images/raspi_data_logging.png)
-	 
-	   The configuration of which measurement values (1st measurement interval, 2nd measurement interval, A-values, Z-values and the respective third octave values) are transmitted is made together in the configuration file 'dnms.conf' for output on the terminal, for named pipe transmission and data logging.
-	 
-	 - Changed the Bool value entry in the 'dnms.conf' configuration file: Enter '0' for false and '1' for true.
+
+  - Data logging of the measurement data on the SD card. For each day a file with the name 'data_dd.mm.yyyy.csv' is created. The measurement data is output in ASCII format, separated by commas, during data logging, when output to the terminal and when transferred to a named pipe, as in the following example.
+
+	![](images/raspi_data_logging.png)
+
+    The configuration of which measurement values (1st measurement interval, 2nd measurement interval, A-values, Z-values and the respective third octave values) are transmitted is made together in the configuration file 'dnms.conf' for output on the terminal, for named pipe transmission and data logging.
+
+  - Changed the entry for bool values in the dnms.conf configuration file: Enter '0' for false and '1' for true.
 	 
 - dnms-0.9.18:
 	 - Bug fix: If only output to terminal was configured, the values were not output correctly to the terminal.
