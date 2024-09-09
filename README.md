@@ -15,6 +15,18 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
  
 ## Neuigkeiten
 
+### September 2024
+
+ - Raspberry Pi dnms-0.9.20 Version mit folgenden neuen Funktionen:
+	+ Data Logging der Messwerte auf der SD-Karte des Raspberry Pi
+	+ Externer Start und Stop der Messwertübertragung, Ausgabe und Speicherung mittels einer named pipe
+	+ Änderung der Eingabe von Bool-Werten in der Konfigurationsdatei dnms.conf: Für false eine '0' und für true eine '1' eingeben.
+
+ - Möglichkeit die NodeMCU Firmware direkt über den Webbrowser auf einen ESP8266  zu flashen. Die ist möglich mit allen Webbrowsern, die das Web Serial API unterstützen (Chrome, Edge, Brave, Opera aber nicht Firefox ). Um die Funktion zu benutzen,  abhängig von der gewünschten Sprachverion den entsprechenden Link aufrufen:
+	+ Deutsche Firmware: https://hbitter.github.io/DNMS/flash-de.html
+	+ Englische Firmware: https://hbitter.github.io/DNMS/flash-en.html
+	+ Französische Firmware: https://hbitter.github.io/DNMS/flash-fr.html
+
 ### Juli 2024
 
 - Neue Firmware für Teensy4.0 DNMS_V5.4.x - für ICS-43434 und IM72D128 Mikrofon
@@ -158,6 +170,18 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 ### The IM72D128 microphone from Infineon can now be ordered ready-molded in a plastic tube from Watterott electronic GmbH in the shop (https://shop.watterott.com/Mikrofon-IM72D128V01-im-127mm-Rundrohr). The IM72D128 microphone on a circuit board and with a connection cable but not cast in the plastic tube is also available (https://shop.watterott.com/Mikrofon-IM72D128V01-Platine-mit-Anschlussleitung).  The DNSMS Teensy4.0 board will be available soon.
  
 ## News
+
+### September 2024
+
+ - Raspberry Pi dnms-0.9.20 release with the following new features:
+	+ Data logging of measurements to Raspberry Pi SD card
+	+ External start and stop of transmission of measurements, output and storage using a named pipe
+	+ Changed entry of bool values in the dnms.conf configuration file: Enter '0' for false and '1' for true.
+
+- Ability to flash NodeMCU firmware to an ESP8266 directly from a web browser. This is possible with all web browsers that support the Web Serial API (Chrome, Edge, Brave, Opera but not Firefox). To use this feature, click on the appropriate link for your language version:
+	+ German firmware: https://hbitter.github.io/DNMS/flash-de.html
+	+ English firmware: https://hbitter.github.io/DNMS/flash-en.html
+	+ French firmware: https://hbitter.github.io/DNMS/flash-fr.html
 
 ### July 2024
 
