@@ -22,7 +22,7 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 	+ Externer Start und Stop der Messwertübertragung, Ausgabe und Speicherung mittels einer named pipe
 	+ Änderung der Eingabe von Bool-Werten in der Konfigurationsdatei dnms.conf: Für false eine '0' und für true eine '1' eingeben.
 
- - Möglichkeit die NodeMCU Firmware direkt über den Webbrowser auf einen ESP8266  zu flashen. Die ist möglich mit allen Webbrowsern, die das Web Serial API unterstützen (Chrome, Edge, Brave, Opera aber nicht Firefox ). Um die Funktion zu benutzen,  abhängig von der gewünschten Sprachverion den entsprechenden Link aufrufen:
+ - Möglichkeit die NodeMCU Firmware direkt über den Webbrowser auf einen ESP8266  zu flashen. Dies ist möglich mit allen Webbrowsern, die das Web Serial API unterstützen (Chrome, Edge, Brave, Opera aber nicht Firefox ). Um die Funktion zu benutzen,  abhängig von der gewünschten Sprachverion den entsprechenden Link aufrufen:
 	+ Deutsche Firmware: https://hbitter.github.io/DNMS/flash-de.html
 	+ Englische Firmware: https://hbitter.github.io/DNMS/flash-en.html
 	+ Französische Firmware: https://hbitter.github.io/DNMS/flash-fr.html
