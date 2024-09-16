@@ -6,6 +6,11 @@ Ab Pi Zero W möglich, Pi Zero 2 W und aufwärts empfohlen.
 
 ### Versions Historie:
 
+ - dnms-0.9.21 ersetzt Version dnms-0.9.20 aufgrund von Fehlern.
+ 	+ Fehler in der dnms.conf beim Eintrag 'mqtt_transmit'.
+ 	+ Fehlerhaft gesetzte Prioritäten für die Threads in der dnms.conf ('prio_1st_timer', ... usw).
+ 	+ Neben der InfluxDB HTTP Übertragung kann nun parallel eine Übertragung der Werte zu einem MQTT Broker erfolgen.
+
 - dnms-0.9.20:
 
   - Start und Stopp der Messwertausgabe durch ein Steuersignal über eine named pipe. Das Beispiel-Programm, pipe_write, in C  ist beigefügt. Ebenso kann die Steuerung über die Konsole erfolgen, dazu z.B. zwei Variable definieren:
@@ -153,6 +158,11 @@ Ab Pi Zero W möglich, Pi Zero 2 W und aufwärts empfohlen.
 Possible from Pi Zero W, Pi Zero 2 W and above recommended.
 
 ### Version history:
+
+  - dnms-0.9.21 replaces version dnms-0.9.20 due to bugs.
+ 	+ Error in dnms.conf with entry 'mqtt_transmit'.
+ 	+ Incorrectly set priorities for the threads in dnms.conf ('prio_1st_timer', ... etc).
+ 	+ In addition to the InfluxDB HTTP transfer, the values ​​can now be transferred to an MQTT broker in parallel.
 
 - dnms-0.9.20:
 

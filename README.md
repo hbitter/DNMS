@@ -17,6 +17,11 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 
 ### September 2024
 
+ - Raspberry Pi dnms-0.9.21 ersetzt Version dnms-0.9.20 aufgrund von Fehlern.
+ 	+ Fehler in der dnms.conf beim Eintrag 'mqtt_transmit'.
+ 	+ Fehlerhaft gesetzte Prioritäten für die Threads in der dnms.conf ('prio_1st_timer', ... usw).
+ 	+ Neben der InfluxDB HTTP Übertragung kann nun parallel eine Übertragung der Werte zu einem MQTT Broker erfolgen.
+ 		
  - Raspberry Pi dnms-0.9.20 Version mit folgenden neuen Funktionen:
 	+ Data Logging der Messwerte auf der SD-Karte des Raspberry Pi
 	+ Externer Start und Stop der Messwertübertragung, Ausgabe und Speicherung mittels einer named pipe
@@ -172,6 +177,11 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 ## News
 
 ### September 2024
+
+ - Raspberry Pi dnms-0.9.21 replaces version dnms-0.9.20 due to bugs.
+ 	+ Error in dnms.conf with entry 'mqtt_transmit'.
+ 	+ Incorrectly set priorities for the threads in dnms.conf ('prio_1st_timer', ... etc).
+ 	+ In addition to the InfluxDB HTTP transfer, the values ​​can now be transferred to an MQTT broker in parallel.
 
  - Raspberry Pi dnms-0.9.20 release with the following new features:
 	+ Data logging of measurements to Raspberry Pi SD card
