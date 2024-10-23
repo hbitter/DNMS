@@ -6,6 +6,12 @@
 
 ### Versions Historie:
 
+- AIRROHR-DNMS-5.16, AIRROHR-DNMS-5.16-en, AIRROHR-DNMS-5.16-fr
+	+ Neue Konfigurationsmöglichkeit die WLAN Verbindung ohne Passwort auszuwählen aufgrund einer Änderung in der Wifi Lib. Dies ist notwendig  z.B. für Freifunk WLAN Verbindungen.
+	+ Verbesserte Fehlerbehandlung bei der Datenübertragung und entsprechende Fehlerausgaben.
+	+ Fehlerbeseitigung bei der Übertragung des Zeitstempels zur InfluxDB und zu einem MQTT Broker, wenn der DNMS Sensor nicht konfiguriert ist.
+	
+
 - AIRROHR-DNMS-5.12, AIRROHR-DNMS-5.12-en, AIRROHR-DNMS-5.12-fr
 	+ NTP Server können nun in der Konfiguration gesetzt werden unter "Weitere Einstellungen"
 	 ![](images/Weitere_Einstellungen_28.07.2024_de.png)
@@ -201,6 +207,10 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Node
 
 ### Version history:
 
+- AIRROHR-DNMS-5.16, AIRROHR-DNMS-5.16-en, AIRROHR-DNMS-5.16-fr
+	+ New configuration option to select the WLAN connection without a password due to a change in the Wifi Lib. This is necessary, for example, for Freifunk WLAN connections.
+	+ Improved error handling during data transfer and corresponding error output.
+	+ Bug fix when transferring the timestamp to InfluxDB and an MQTT broker when the DNMS sensor is not configured.
 
 - AIRROHR-DNMS-5.12, AIRROHR-DNMS-5.12-en, AIRROHR-DNMS-5.12-fr
 	+ NTP servers can now be set in the configuration under "More settings".

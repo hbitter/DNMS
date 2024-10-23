@@ -15,6 +15,13 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
  
 ## Neuigkeiten
 
+### Oktober 2024
+
+- Neue NodeMCU Firmware AIRROHR-DNMS-5.16 mit:
+	+ Neue Konfigurationsmöglichkeit die WLAN Verbindung ohne Passwort auszuwählen aufgrund einer Änderung in der Wifi Lib. Dies ist notwendig  z.B. für Freifunk WLAN Verbindungen.
+	+ Verbesserte Fehlerbehandlung bei der Datenübertragung und entsprechende Fehlerausgaben.
+	+ Fehlerbeseitigung bei der Übertragung des Zeitstempels zur InfluxDB und zu einem MQTT Broker, wenn der DNMS Sensor nicht konfiguriert ist.
+
 ### September 2024
 
  - Raspberry Pi dnms-0.9.21 ersetzt Version dnms-0.9.20 aufgrund von Fehlern.
@@ -175,6 +182,13 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 ### The IM72D128 microphone from Infineon can now be ordered ready-molded in a plastic tube from Watterott electronic GmbH in the shop (https://shop.watterott.com/Mikrofon-IM72D128V01-im-127mm-Rundrohr). The IM72D128 microphone on a circuit board and with a connection cable but not cast in the plastic tube is also available (https://shop.watterott.com/Mikrofon-IM72D128V01-Platine-mit-Anschlussleitung).  The DNSMS Teensy4.0 board will be available soon.
  
 ## News
+
+### Oktober 2024
+
+- New NodeMCU firmware AIRROHR-DNMS-5.16 with:
+	+ New configuration option to select the WLAN connection without a password due to a change in the Wifi Lib. This is necessary, for example, for Freifunk WLAN connections.
+	+ Improved error handling during data transfer and corresponding error output.
+	+ Bug fix when transferring the timestamp to InfluxDB and an MQTT broker when the DNMS sensor is not configured.
 
 ### September 2024
 
