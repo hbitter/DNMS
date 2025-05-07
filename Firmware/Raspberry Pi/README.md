@@ -6,6 +6,11 @@ Ab Pi Zero W möglich, Pi Zero 2 W und aufwärts empfohlen.
 
 ### Versions Historie:
 
+ - dnms-0.9.23 ersetzt dnms-0.9.21 aufgrund von Fehlern:
+	 + Bei der Umwandlung der MAC-Adresse in die ID
+	 + Entfernung Testausgabe der Daten auf Konsole bei Sensor.Community Übertragung
+	 + Beseitigung Pufferüberlauf für InfluxDB/MQTT Übertragung, wenn keine Übertragung konfiguriert war
+
  - dnms-0.9.21 ersetzt Version dnms-0.9.20 aufgrund von Fehlern.
  	+ Fehler in der dnms.conf beim Eintrag 'mqtt_transmit'.
  	+ Fehlerhaft gesetzte Prioritäten für die Threads in der dnms.conf ('prio_1st_timer', ... usw).
@@ -159,6 +164,11 @@ Possible from Pi Zero W, Pi Zero 2 W and above recommended.
 
 ### Version history:
 
+ - dnms-0.9.23 replaces version dnms-0.9.21 due to bugs:
+	 + MAC address to ID conversion was incorrect in some circumstances
+	 + Removal of test output on console for transmission to Sensor.Community
+	 + Fix for buffer overflow on InfluxDB/MQTT transfers when one transfer is configured
+ 
   - dnms-0.9.21 replaces version dnms-0.9.20 due to bugs.
  	+ Error in dnms.conf with entry 'mqtt_transmit'.
  	+ Incorrectly set priorities for the threads in dnms.conf ('prio_1st_timer', ... etc).

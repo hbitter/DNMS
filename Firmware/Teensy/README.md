@@ -22,8 +22,8 @@
 	- DNMS_V4.4.4 - 2. Messintervall mit Schwellenangabe für Lärmereignisse um diese Daten zu einer InfluxDB zu senden.
 
 - aktuelle V5 Versionen:
-	- DNMS_V5.2.4 - für Mikrofon ICS-43434 zusätzlich mit Berechnung von Z-Werten, verbessertes Zeitverhalten
-	- DNMS_V5.2.6 - für Mikrofon IM72D128 zusätzlich mit Berechnung von Z-Werten, verbessertes Zeitverhalten
+	- DNMS_V5.5.x - für IM72D128 Mikrofon und  ICS-43434 Mikrofon mit verbesserter Frequenzgangkorrektur und verbesserten Terzwerten
+
 	- Testprogramm für Teensy4.0 Board und angeschlossenem Mikrofon ICS-43434:  DNMS_Vt.7.4 und für Mikrofon IM72D128: DNMS_Vt.7.6, verbessertes Zeitverhalten
 
 ## Teensy3.6
@@ -84,8 +84,7 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Teen
 	- DNMS_V4.4.4 - 2nd measurement interval with configurable threshold for transmitting the additional data to an InfluxDB
 
 - current V5 versions:
-	- DNMS_V5.2.4 - for ICS-43434 microphone, in addition calculation of Z-values, improved internal timing
-	- DNMS_V5.2.6 - for IM72D128 microphone, in addition calculation of Z-values, improved internal timing
+	- DNMS_V5.5.x - for IM72D128 microphone and ICS-43434 microphone with improved frequency correction also for 1/3 octave values
 	- Testprogramm forTeensy4.0 Board and connected microphone ICS-43434:  DNMS_Vt.7.4 and for microphone IM72D128: DNMS_Vt.7.6, improved internal timing
 
 

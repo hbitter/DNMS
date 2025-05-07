@@ -6,7 +6,10 @@
 
 ### Versions Historie:
 
-Bitte beachten: Wird das IM72D128 Mikrofon eingesetzt, muss auf dem Teensy4.0 Board die Firmware DNMS_V5.2.6 oder DNMS_V5.4.x geflasht sein. Die Firmware DNMS_V5.4.x kann mit dem IM72D128 benutzt werden, wenn auf dem Kommunikationsprozessor (NodeMCU oder Raspiberry Pi) eine Firmware vorhanden ist, die die Umschaltung zwischen den Mikrofonen ICS-43434 und IM72D128 erlaubt. Wird z.B. auf der NodeMCU eine ältere Firmware oder die standard Firmware von Sensor.Community eingesetzt, so muss auf dem Teensy4.0 Board die DNMS_V5.2.6 Firmware geflasht sein.
+Bitte beachten: Wird das IM72D128 Mikrofon eingesetzt, muss auf dem Teensy4.0 Board die Firmware DNMS_V5.2.6 oder DNMS_V5.5.x geflasht sein. Die Firmware DNMS_V5.5.x kann mit dem IM72D128 benutzt werden, wenn auf dem Kommunikationsprozessor (NodeMCU oder Raspiberry Pi) eine Firmware vorhanden ist, die die Umschaltung zwischen den Mikrofonen ICS-43434 und IM72D128 erlaubt. Wird z.B. auf der NodeMCU eine ältere Firmware oder die Standard Firmware von Sensor.Community eingesetzt, so muss auf dem Teensy4.0 Board die DNMS_V5.2.6 Firmware geflasht sein.
+
+- DNMS_V5.5.x  für IM72D128 und ICS-43434 Mikrofone mit:
+	+ Verbesserter Korrektur des Frequenzgangs für IM72D128 Mikrofon und ICS-43434 Mikrofon. Dies verbessert auch die Terzwerte des Spektrums.
 
 - DNMS_V5.4.x - für ICS-43434 und IM72D128 Mikrofon
 	+ Ersetzt DNMS_V5.3.x da in der Version DNMS_V5.3.x Fehler in der Berechnung der Terzwerte waren. DNMS_V5.3.x bitte ersetzen mit DNMS_V5.4.x 
@@ -39,7 +42,10 @@ IM72D128: im Wechsel 500ms an und 500ms aus
 
 ### Version history:
 
-Please note: If the IM72D128 microphone is used, the firmware DNMS_V5.2.6 or DNMS_V5.4.x must be flashed on the Teensy4.0 board. The firmware DNMS_V5.4.x can be used with the IM72D128 if there is firmware on the communications processor (NodeMCU or Raspiberry Pi) that allows switching between the ICS-43434 and IM72D128 microphones. For example, if older firmware or the standard firmware from Sensor.Community is used on the NodeMCU, the DNMS_V5.2.6 firmware must be flashed on the Teensy4.0 board.
+Please note: If the IM72D128 microphone is used, the firmware DNMS_V5.2.6 or DNMS_V5.5.x must be flashed on the Teensy4.0 board. The firmware DNMS_V5.5.x can be used with the IM72D128 if there is firmware on the communications processor (NodeMCU or Raspiberry Pi) that allows switching between the ICS-43434 and IM72D128 microphones. For example, if older firmware or the standard firmware from Sensor.Community is used on the NodeMCU, the DNMS_V5.2.6 firmware must be flashed on the Teensy4.0 board.
+
+- DNMS_V5.5.x  for IM72D128 and ICS-43434 microphones with:
+	+ Improved frequency correction for IM72D128 microphone and ICS-43434 microphone. It also improves the 1/2 octave values of the spectrum.
 
 - DNMS_V5.4.x - for ICS-43434 and IM72D128 microphone
 	+ Replaces DNMS_V5.3.x because of an error in the calculation of the 1/3 octave values in DNMS_V5.3.x. Please replace DNMS_V5.3.x with DNMS_V5.4.x.

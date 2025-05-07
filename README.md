@@ -15,6 +15,16 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
  
 ## Neuigkeiten
 
+### Mai 2025
+
+- Neue Teensy 4.0 Firmware DNMS_V5.5.x  für IM72D128 und ICS-43434 Mikrofone mit:
+	+ Verbesserte Korrektur des Frequenzgangs für IM72D128 Mikrofon und ICS-43434 Mikrofon. Dies verbessert auch die Terzwerte des Spektrums.
+
+ - Neue Raspberry Pi Firmware dnms-0.9.23 ersetzt dnms-0.9.21 aufgrund von Fehlern:
+	 + Bei der Umwandlung der MAC-Adresse in die ID
+	 + Entfernung Testausgabe der Daten auf Konsole bei Sensor.Community Übertragung
+	 + Beseitigung Pufferüberlauf für InfluxDB/MQTT Übertragung, wenn keine Übertragung konfiguriert war
+
 ### Oktober 2024
 
 - Neue NodeMCU Firmware AIRROHR-DNMS-5.16 mit:
@@ -182,6 +192,16 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 ### The IM72D128 microphone from Infineon can now be ordered ready-molded in a plastic tube from Watterott electronic GmbH in the shop (https://shop.watterott.com/Mikrofon-IM72D128V01-im-127mm-Rundrohr). The IM72D128 microphone on a circuit board and with a connection cable but not cast in the plastic tube is also available (https://shop.watterott.com/Mikrofon-IM72D128V01-Platine-mit-Anschlussleitung).  The DNSMS Teensy4.0 board will be available soon.
  
 ## News
+
+### May 2025
+
+- New Teensy 4.0 firmware DNMS_V5.5.x for IM72D128 and ICS-43434 microphones with:
+	+ Improved frequency correction for IM72D128 microphone and ICS-43434 microphone. It also improves the 1/2 octave values of the spectrum.
+
+ - New Raspberry Pi firmware dnms-0.9.23 replaces version dnms-0.9.21 due to bugs:
+	 + MAC address to ID conversion was incorrect in some circumstances
+	 + Removal of test output on console for transmission to Sensor.Community
+	 + Fix for buffer overflow on InfluxDB/MQTT transfers when one transfer is configured
 
 ### Oktober 2024
 
