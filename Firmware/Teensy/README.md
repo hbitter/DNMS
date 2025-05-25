@@ -19,12 +19,12 @@
 	- DNMS_V3.4.4 - Ausgabe Frequenzspektrum in Terzen von 20Hz - 20000Hz
 
 - aktuelle V4 Version:
-	- DNMS_V4.4.4 - 2. Messintervall mit Schwellenangabe für Lärmereignisse um diese Daten zu einer InfluxDB zu senden.
+	- DNMS_V4.4.4 - 2. Messintervall mit Schwellenangabe für Lärmereignisse um diese Daten zu einer InfluxDB zu senden
 
 - aktuelle V5 Versionen:
 	- DNMS_V5.5.x - für IM72D128 Mikrofon und  ICS-43434 Mikrofon mit verbesserter Frequenzgangkorrektur und verbesserten Terzwerten
 
-	- Testprogramm für Teensy4.0 Board und angeschlossenem Mikrofon ICS-43434:  DNMS_Vt.7.4 und für Mikrofon IM72D128: DNMS_Vt.7.6, verbessertes Zeitverhalten
+	- Testprogramm für Teensy4.0 Board und angeschlossenem Mikrofon ICS-43434:  DNMS_Vt.8.4 und für Mikrofon IM72D128: DNMS_Vt.8.6, mit verbesserter Frequenzgangkorrektur
 
 ## Teensy3.6
 
@@ -85,7 +85,8 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Teen
 
 - current V5 versions:
 	- DNMS_V5.5.x - for IM72D128 microphone and ICS-43434 microphone with improved frequency correction also for 1/3 octave values
-	- Testprogramm forTeensy4.0 Board and connected microphone ICS-43434:  DNMS_Vt.7.4 and for microphone IM72D128: DNMS_Vt.7.6, improved internal timing
+	- Test program for Teensy 4.0 board and connected ICS-43434 microphone: DNMS_Vt.8.4 and
+test program for IM72D128 microphone: DNMS_Vt.8.6, both with improved microphone frequency correction
 
 
 ## Teensy3.6

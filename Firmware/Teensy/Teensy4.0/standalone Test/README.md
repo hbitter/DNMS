@@ -5,14 +5,14 @@
 ## Testprogramm für den autonomen Test von Mikrofon und Teensy4.0
 
 Mit dieser Firmware kann ein einfacher Test von Mikrofon und Teensy4.0 ohne Anschluss an eine NodeMCU (oder einen anderen Kommunikationsprozessor) direkt mit einem PC/Laptop durchgeführt werden. Da die Firmware auf der gleichen Softwarebasis aufsetzt wie die Firmware Version 5 lassen sich damit auch Messungen mit Ausgabe der LA und LZ Werte an den PC mit einem festen Intervall (von 125ms bis 3600s) durchführen. Abhängig vom Mikrofon existieren zwei Versionen der Firmware:
-- ICS-43434 Mikrofon - DNMS_Vt.5.4
-- IM72D128 Mikrofon - DNMS_Vt.5.6
+- ICS-43434 Mikrofon - DNMS_Vt.8.4
+- IM72D128 Mikrofon - DNMS_Vt.8.6
 
 ### Einsatz der Testprogramme
 
 Die folgenden Schritte sind notwendig:
 
-1. Aufspielen der Firmware DNMS_Vt.5.4 oder DNMS_Vt.5.6 auf dem Teensy4.0 Board
+1. Aufspielen der Firmware DNMS_Vt.8.4 oder DNMS_Vt.8.6 auf dem Teensy4.0 Board
 
 	Die entsprechende Firmware ist auf das Teensy4.0 Board in gleicher Weise aufzuspielen (flashen) wie die normalen Firmware Versionen:
  	- Brücke J1 mit einem Jumper oder einem Dupont-Kabel schließen, damit über das USB-Kabel vom PC her die Stromversorgung übernommen wird.
@@ -56,14 +56,14 @@ Die folgenden Schritte sind notwendig:
 
 This firmware allows easy testing of the microphone and Teensy4.0 board without connecting to a NodeMCU (or other communication processor) directly from a PC/laptop. This firmware uses the same software base as the version 5 Teensy firmware and therefore provides the same measurements of LZ and LA values directly to the connected PC/Laptop with fixed measurement intervals (from 125ms to 3600s).
 Dependent on the used microphone two versions of the firmware exists:
-- ICS-43434 Mikrofon - DNMS_Vt.5.4
-- IM72D128 Mikrofon - DNMS_Vt.5.6
+- ICS-43434 Mikrofon - DNMS_Vt.8.4
+- IM72D128 Mikrofon - DNMS_Vt.8.6
 
 ### How to use the test programs
 
 Follow the steps below:
 
-1. Flash firmware DNMS_Vt.5.4 or DNMS_Vt.5.6 on the Teensy4.0 board
+1. Flash firmware DNMS_Vt.8.4 or DNMS_Vt.8.6 on the Teensy4.0 board
 
 	Flash the appropriate firmware version in the same way as the normal DNMS firmware for Teensy4.0:
  	- Close J1 with a jumper or a dupont cable to power the Teensy4.0 board via the USB connection from the PC/Laptop

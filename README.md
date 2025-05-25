@@ -17,6 +17,8 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 
 ### Mai 2025
 
+- Neues Testprogramm für Teensy4.0 Board und angeschlossenem Mikrofon ICS-43434:  DNMS_Vt.8.4 und für Mikrofon IM72D128: DNMS_Vt.8.6, mit verbesserter Frequenzgangkorrektur
+
 - Neue Teensy 4.0 Firmware DNMS_V5.5.x  für IM72D128 und ICS-43434 Mikrofone mit:
 	+ Verbesserte Korrektur des Frequenzgangs für IM72D128 Mikrofon und ICS-43434 Mikrofon. Dies verbessert auch die Terzwerte des Spektrums.
 
@@ -195,8 +197,11 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 
 ### May 2025
 
+- New test program for Teensy 4.0 board and connected ICS-43434 microphone: DNMS_Vt.8.4 and
+test program for IM72D128 microphone: DNMS_Vt.8.6, both with improved microphone frequency correction
+
 - New Teensy 4.0 firmware DNMS_V5.5.x for IM72D128 and ICS-43434 microphones with:
-	+ Improved frequency correction for IM72D128 microphone and ICS-43434 microphone. It also improves the 1/2 octave values of the spectrum.
+	+ Improved frequency correction for IM72D128 microphone and ICS-43434 microphone. It also improves the 1/2 octave values of the spectrum
 
  - New Raspberry Pi firmware dnms-0.9.23 replaces version dnms-0.9.21 due to bugs:
 	 + MAC address to ID conversion was incorrect in some circumstances
