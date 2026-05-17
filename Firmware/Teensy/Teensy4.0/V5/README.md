@@ -6,7 +6,13 @@
 
 ### Versions Historie:
 
-Bitte beachten: Wird das IM72D128 Mikrofon eingesetzt, muss auf dem Teensy4.0 Board die Firmware DNMS_V5.2.6 oder DNMS_V5.5.x geflasht sein. Die Firmware DNMS_V5.5.x kann mit dem IM72D128 benutzt werden, wenn auf dem Kommunikationsprozessor (NodeMCU oder Raspiberry Pi) eine Firmware vorhanden ist, die die Umschaltung zwischen den Mikrofonen ICS-43434 und IM72D128 erlaubt. Wird z.B. auf der NodeMCU eine ältere Firmware oder die Standard Firmware von Sensor.Community eingesetzt, so muss auf dem Teensy4.0 Board die DNMS_V5.2.6 Firmware geflasht sein.
+Bitte beachten: Wird das IM72D128 Mikrofon eingesetzt, muss auf dem Teensy4.0 Board die Firmware DNMS_V5.2.6 oder DNMS_V5.5.x und höher geflasht sein. Die Firmware DNMS_V5.5.x kann mit dem IM72D128 benutzt werden, wenn auf dem Kommunikationsprozessor (NodeMCU oder Raspiberry Pi) eine Firmware vorhanden ist, die die Umschaltung zwischen den Mikrofonen ICS-43434 und IM72D128 erlaubt. Wird z.B. auf der NodeMCU eine ältere Firmware oder die Standard Firmware von Sensor.Community eingesetzt, so muss auf dem Teensy4.0 Board die DNMS_V5.2.6 Firmware geflasht sein.
+
+- DNMS_V5.8.x  für IM72D128 und ICS-43434 Mikrofone mit:
+	+ zusätzlicher Auswahl der Frequenzgangkorrektur für das DLR Gehäuse mit IM72D128 Mikrofon, sowie Auswahl ohne Frequenzgangkorrektur für IM72D128 und ICS-43434 Mikrofon.
+	+ Kleine Korrekturen im Source Code, so dass in der Arduino IDE Version 2.3.8 die Übersetzung ohne Warnungen erfolgt. Dies betrifft auch die Library dnms_audio_lib-master.zip, deshalb beim Übersetzen die veränderte Library einbinden.
+	+ Korrekturen an der I²C Übertragung, Änderung der Werte für die Glitch Filter von SDA und SCL im Slave Modus. Diese Korrekturen befinden sich in der Library  teensy4_i2c-master.zip, deshalb beim Übersetzen die veränderte Library einbinden.
+
 
 - DNMS_V5.5.x  für IM72D128 und ICS-43434 Mikrofone mit:
 	+ Verbesserter Korrektur des Frequenzgangs für IM72D128 Mikrofon und ICS-43434 Mikrofon. Dies verbessert auch die Terzwerte des Spektrums.
@@ -42,7 +48,12 @@ IM72D128: im Wechsel 500ms an und 500ms aus
 
 ### Version history:
 
-Please note: If the IM72D128 microphone is used, the firmware DNMS_V5.2.6 or DNMS_V5.5.x must be flashed on the Teensy4.0 board. The firmware DNMS_V5.5.x can be used with the IM72D128 if there is firmware on the communications processor (NodeMCU or Raspiberry Pi) that allows switching between the ICS-43434 and IM72D128 microphones. For example, if older firmware or the standard firmware from Sensor.Community is used on the NodeMCU, the DNMS_V5.2.6 firmware must be flashed on the Teensy4.0 board.
+Please note: If the IM72D128 microphone is used, the firmware DNMS_V5.2.6 or DNMS_V5.5.x and higher must be flashed on the Teensy4.0 board. The firmware DNMS_V5.5.x can be used with the IM72D128 if there is firmware on the communications processor (NodeMCU or Raspiberry Pi) that allows switching between the ICS-43434 and IM72D128 microphones. For example, if older firmware or the standard firmware from Sensor.Community is used on the NodeMCU, the DNMS_V5.2.6 firmware must be flashed on the Teensy4.0 board.
+
+- DNMS_V5.8.x  for IM72D128 and ICS-43434 microphones with:
+	+ additional selection of frequency response correction for the DLR housing with IM72D128 microphone, as well as a selection without frequency response correction for IM72D128 and ICS-43434 microphones
+	+ minor corrections have been made to the source code so that the code compiles without warnings in Arduino IDE version 2.3.8. This also applies to the dnms_audio_lib-master.zip library, so please include the updated library when compiling.
+	+ corrections to the I²C transmission; changes to the values for the SDA and SCL glitch filters in slave mode. These corrections are contained in the library teensy4_i2c-master.zip, so be sure to include the updated library when compiling.
 
 - DNMS_V5.5.x  for IM72D128 and ICS-43434 microphones with:
 	+ Improved frequency correction for IM72D128 microphone and ICS-43434 microphone. It also improves the 1/2 octave values of the spectrum.

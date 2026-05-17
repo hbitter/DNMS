@@ -26,6 +26,10 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 		+ Englische Firmware: https://hbitter.github.io/DNMS/flash-en.html
 		+ Französische Firmware: https://hbitter.github.io/DNMS/flash-fr.html
 
+- Neue Teensy 4.0 Firmware DNMS_V5.8.x  für IM72D128 und ICS-43434 Mikrofone mit:
+	+ zusätzlicher Auswahl der Frequenzgangkorrektur für das DLR Gehäuse mit IM72D128 Mikrofon, sowie Auswahl ohne Frequenzgangkorrektur für IM72D128 und ICS-43434 Mikrofon.
+	+ Kleine Korrekturen im Source Code, so dass in der Arduino IDE Version 2.3.8 die Übersetzung ohne Warnungen erfolgt. Dies betrifft auch die Library dnms_audio_lib-master.zip, deshalb beim Übersetzen die veränderte Library einbinden.
+	+ Korrekturen an der I²C Übertragung, Änderung der Werte für die Glitch Filter von SDA und SCL im Slave Modus. Diese Korrekturen befinden sich in der Library  teensy4_i2c-master.zip, deshalb beim Übersetzen die veränderte Library einbinden.
 
 ### Mai 2025
 
@@ -218,6 +222,10 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 		+ English firmware: https://hbitter.github.io/DNMS/flash-en.html
 		+ French firmware: https://hbitter.github.io/DNMS/flash-fr.html
 
+- New Teensy 4.0 firmware DNMS_V5.8.x for IM72D128 and ICS-43434 microphones, featuring::
+	+ Additional selection of frequency response correction for the DLR housing with IM72D128 microphone, as well as a selection without frequency response correction for IM72D128 and ICS-43434 microphones
+	+ Minor corrections have been made to the source code so that the code compiles without warnings in Arduino IDE version 2.3.8. This also applies to the dnms_audio_lib-master.zip library, so please include the updated library when compiling.
+	+ Corrections to the I²C transmission; changes to the values for the SDA and SCL glitch filters in slave mode. These corrections are contained in the library teensy4_i2c-master.zip, so be sure to include the updated library when compiling.
 
 ### May 2025
 
