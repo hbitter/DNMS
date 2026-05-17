@@ -11,9 +11,21 @@ Eine Version mit der Möglichkeit das Frequenzspektrum zu betrachten ist seit ei
 
 Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, LZmax sowie Z-Terzwerte) unterstützt.
 
-### Bei der Firma Watterott electronic GmbH kann nun das Mikrofon IM72D128 von Infineon fertig in einem Kunststoffrohr eingegossen im Shop bestellt werden (https://shop.watterott.com/Mikrofon-IM72D128V01-im-127mm-Rundrohr). Das IM72D128 Mikrofon auf einer Platine und mit Anschlusskabel aber nicht  im Kunststoffrohr eingegossen ist ebenfalls verfügbar (https://shop.watterott.com/Mikrofon-IM72D128V01-Platine-mit-Anschlussleitung).  Das DNMS Teensy4.0 Board wird demnächst verfügbar sein.
+### Bei der Firma Watterott electronic GmbH kann nun das Mikrofon IM72D128 von Infineon fertig in einem Kunststoffrohr eingegossen im Shop bestellt werden (https://shop.watterott.com/Mikrofon-IM72D128V01-im-127mm-Rundrohr). Das IM72D128 Mikrofon auf einer Platine und mit Anschlusskabel aber nicht  im Kunststoffrohr eingegossen ist ebenfalls verfügbar (https://shop.watterott.com/Mikrofon-IM72D128V01-Platine-mit-Anschlussleitung).
  
 ## Neuigkeiten
+
+### Mai 2026
+
+- Neue NodeMCU Firmware AIRROHR-DNMS-5.17, AIRROHR-DNMS-5.17-en, AIRROHR-DNMS-5.17-fr
+	+ Neue Konfigurationsmöglichkeit für verschiedene Mikrofone und Frequenzgangkorrekturen der Mikrofone. Eine Teensy4.0 Version ab DNMS_V5.8.x ist Voraussetzung um dies zu nutzen.
+	+ Konfiguration eines digitalen Eingangs an der der NodeMCU. Der Zustand wird mit der Bezeichnung  DIN01 zur InfluxDB übertragen.
+	+ Kleine Korrekturen im Source Code, so dass in der Arduino IDE Version 2.3.8 die Übersetzung ohne Warnungen erfolgt.
+	+  Möglichkeit die NodeMCU Firmware direkt über den Webbrowser auf einen ESP8266  zu flashen. Dies ist möglich mit allen Webbrowsern, die das Web Serial API unterstützen (Chrome, Edge, Brave, Opera aber nicht Firefox ). Um die Funktion zu benutzen,  den entsprechenden Link aufrufen abhängig von der gewünschten Sprachversion:
+		+ Deutsche Firmware: https://hbitter.github.io/DNMS/flash-de.html
+		+ Englische Firmware: https://hbitter.github.io/DNMS/flash-en.html
+		+ Französische Firmware: https://hbitter.github.io/DNMS/flash-fr.html
+
 
 ### Mai 2025
 
@@ -46,7 +58,7 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 	+ Externer Start und Stop der Messwertübertragung, Ausgabe und Speicherung mittels einer named pipe
 	+ Änderung der Eingabe von Bool-Werten in der Konfigurationsdatei dnms.conf: Für false eine '0' und für true eine '1' eingeben.
 
- - Möglichkeit die NodeMCU Firmware direkt über den Webbrowser auf einen ESP8266  zu flashen. Dies ist möglich mit allen Webbrowsern, die das Web Serial API unterstützen (Chrome, Edge, Brave, Opera aber nicht Firefox ). Um die Funktion zu benutzen,  den entsprechenden Link aufrufen abhängig von der gewünschten Sprachversion :
+ - Möglichkeit die NodeMCU Firmware direkt über den Webbrowser auf einen ESP8266  zu flashen. Dies ist möglich mit allen Webbrowsern, die das Web Serial API unterstützen (Chrome, Edge, Brave, Opera aber nicht Firefox ). Um die Funktion zu benutzen,  den entsprechenden Link aufrufen abhängig von der gewünschten Sprachversion:
 	+ Deutsche Firmware: https://hbitter.github.io/DNMS/flash-de.html
 	+ Englische Firmware: https://hbitter.github.io/DNMS/flash-en.html
 	+ Französische Firmware: https://hbitter.github.io/DNMS/flash-fr.html
@@ -191,9 +203,21 @@ A version with support of frequency spectrum is available for some time. 1/3 oct
 
 Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as well as 1/3 octave Z-values).
 
-### The IM72D128 microphone from Infineon can now be ordered ready-molded in a plastic tube from Watterott electronic GmbH in the shop (https://shop.watterott.com/Mikrofon-IM72D128V01-im-127mm-Rundrohr). The IM72D128 microphone on a circuit board and with a connection cable but not cast in the plastic tube is also available (https://shop.watterott.com/Mikrofon-IM72D128V01-Platine-mit-Anschlussleitung).  The DNSMS Teensy4.0 board will be available soon.
+### The IM72D128 microphone from Infineon can now be ordered ready-molded in a plastic tube from Watterott electronic GmbH in the shop (https://shop.watterott.com/Mikrofon-IM72D128V01-im-127mm-Rundrohr). The IM72D128 microphone on a circuit board and with a connection cable but not cast in the plastic tube is also available (https://shop.watterott.com/Mikrofon-IM72D128V01-Platine-mit-Anschlussleitung).
  
 ## News
+
+### May 2026
+
+- New NodeMCU firmware AIRROHR-DNMS-5.17, AIRROHR-DNMS-5.17-en, AIRROHR-DNMS-5.17-fr
+	+ New configuration options for different microphones and microphone frequency response corrections. A Teensy 4.0 version from DNMS_V5.8.x onwards is required to use this feature.
+	+ Configuring a digital input on the NodeMCU. The status is transmitted to InfluxDB under the label DIN01.
+	+ Minor corrections to the source code so that the code compiles without warnings in Arduino IDE version 2.3.8.
+ + Ability to flash NodeMCU firmware to an ESP8266 directly from a web browser. This is possible with all web browsers that support the Web Serial API (Chrome, Edge, Brave, Opera but not Firefox). To use this feature, click on the appropriate link for your language version:
+		+ German firmware: https://hbitter.github.io/DNMS/flash-de.html
+		+ English firmware: https://hbitter.github.io/DNMS/flash-en.html
+		+ French firmware: https://hbitter.github.io/DNMS/flash-fr.html
+
 
 ### May 2025
 
@@ -208,7 +232,7 @@ test program for IM72D128 microphone: DNMS_Vt.8.6, both with improved microphone
 	 + Removal of test output on console for transmission to Sensor.Community
 	 + Fix for buffer overflow on InfluxDB/MQTT transfers when one transfer is configured
 
-### Oktober 2024
+### October 2024
 
 - New NodeMCU firmware AIRROHR-DNMS-5.16 with:
 	+ New configuration option to select the WLAN connection without a password due to a change in the Wifi Lib. This is necessary, for example, for Freifunk WLAN connections.

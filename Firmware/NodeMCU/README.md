@@ -6,6 +6,12 @@
 
 ### Versions Historie:
 
+
+- AIRROHR-DNMS-5.17, AIRROHR-DNMS-5.17-en, AIRROHR-DNMS-5.17-fr
+	+ Neue Konfigurationsmöglichkeit für verschiedene Mikrofone und Frequenzgangkorrekturen der Mikrofone. Eine Teensy4.0 Version ab DNMS_V5.8.x ist Voraussetzung um dies zu nutzen.
+	+ Konfiguration eines digitalen Eingangs an der der NodeMCU. Der Zustand wird mit der Bezeichnung  DIN01 zur InfluxDB übertragen.
+	+ Kleine Korrekturen im Source Code, so dass in der Arduino IDE Version 2.3.8 die Übersetzung ohne Warnungen erfolgt.
+
 - AIRROHR-DNMS-5.16, AIRROHR-DNMS-5.16-en, AIRROHR-DNMS-5.16-fr
 	+ Neue Konfigurationsmöglichkeit die WLAN Verbindung ohne Passwort auszuwählen aufgrund einer Änderung in der Wifi Lib. Dies ist notwendig  z.B. für Freifunk WLAN Verbindungen.
 	+ Verbesserte Fehlerbehandlung bei der Datenübertragung und entsprechende Fehlerausgaben.
@@ -206,6 +212,11 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Node
 
 
 ### Version history:
+
+- AIRROHR-DNMS-5.17, AIRROHR-DNMS-5.17-en, AIRROHR-DNMS-5.17-fr
+	+ New configuration options for different microphones and microphone frequency response corrections. A Teensy 4.0 version from DNMS_V5.8.x onwards is required to use this feature.
+	+ Configuring a digital input on the NodeMCU. The status is transmitted to InfluxDB under the label DIN01.
+	+ Minor corrections to the source code so that the code compiles without warnings in Arduino IDE version 2.3.8.
 
 - AIRROHR-DNMS-5.16, AIRROHR-DNMS-5.16-en, AIRROHR-DNMS-5.16-fr
 	+ New configuration option to select the WLAN connection without a password due to a change in the Wifi Lib. This is necessary, for example, for Freifunk WLAN connections.
