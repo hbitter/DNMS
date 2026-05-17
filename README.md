@@ -213,7 +213,7 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 	+ New configuration options for different microphones and microphone frequency response corrections. A Teensy 4.0 version from DNMS_V5.8.x onwards is required to use this feature.
 	+ Configuring a digital input on the NodeMCU. The status is transmitted to InfluxDB under the label DIN01.
 	+ Minor corrections to the source code so that the code compiles without warnings in Arduino IDE version 2.3.8.
- + Ability to flash NodeMCU firmware to an ESP8266 directly from a web browser. This is possible with all web browsers that support the Web Serial API (Chrome, Edge, Brave, Opera but not Firefox). To use this feature, click on the appropriate link for your language version:
+	+ Ability  to flash NodeMCU firmware to an ESP8266 directly from a web browser. This is possible with all web browsers that support the Web Serial API (Chrome, Edge, Brave, Opera but not Firefox). To use this feature, click on the appropriate link for your language version:
 		+ German firmware: https://hbitter.github.io/DNMS/flash-de.html
 		+ English firmware: https://hbitter.github.io/DNMS/flash-en.html
 		+ French firmware: https://hbitter.github.io/DNMS/flash-fr.html
