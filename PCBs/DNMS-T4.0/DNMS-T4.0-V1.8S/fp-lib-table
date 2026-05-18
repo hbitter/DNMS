@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "ProPrj_DNMS_TEENSY_2025-10-10") (type "KiCad") (uri "${KIPRJMOD}/ProPrj_DNMS_TEENSY_2025-10-10.pretty") (options "") (descr ""))
+)

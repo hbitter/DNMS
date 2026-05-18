@@ -1,0 +1,10 @@
+"ID";"Bezeichner";"Footprint";"Stückzahl";"Bezeichnung";"Anbieter und Referenz";
+1;"";"Pad_e350";1;"";;;
+2;"ET1, HB1, RB1";"C0603";3;"";;;
+3;"F1";"F0402";1;"";;;
+4;"HFT1";"SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL";1;"";;;
+5;"J2, J3";"HDR-TH_4P-P2.54-V-M";2;"";;;
+6;"MIC1";"CONN-SMD_SM06B-SRSS-TB-LF-SN";1;"";;;
+7;"R1, R2";"R0603";2;"";;;
+8;"RJ1";"RJ11-TH_R-RJ11R06P-A000";1;"";;;
+9;"U1";"TEENSY4.0";1;"";;;

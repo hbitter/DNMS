@@ -17,6 +17,10 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 
 ### Mai 2026
 
+- Neues Teensy 4.0 Board DNMS-T4.0-V1.8S mit Layout für SMD Bestückung , so dass nicht nur die Herstellung der Platine beauftragt werden kann sondern direkt die Bestückung bei Firmen wie Aisler, EuroCircuits, JLCPCB oder PCBWay und weiteren. Das Einlöten des Teensy Boards sollte aus Kosten- und Logistikgründen allerdings weiterhin selbst erfolgen. Zwei Bauteilelisten sind als Beispiel für die Bestellung fertig bestückter Boards beigefügt. Dies ist jedoch immer den aktuell lieferbaren Bauelementen anzupassen. Das Layout basiert auf der EasyEDA Vorlage von Ralf Bötticher (vielen Dank!). Weiterhin gibt es zwei Änderungen im Layout:
+	+ Verzicht der Brücke J1,  die Brücke war zur Stromversorgung für das standalone Flashen des Boards. Eine Auftrennung der Verbindung VIN - VUSB auf dem Teensy 4.0 Board ist nicht mehr notwendig.
+	+ Einfügung einer Sicherung F1 in die 5V Versorgungsleitung der extended I²C Verbindung d.h. zwischen Kommunikationsprozessor und Teensy 4.0 Board.
+
  - Neue Raspberry Pi Firmware dnms-0.9.25 mit folgenden Verbesserungen:
 	+ Möglichkeit C-Werte abzufragen und weiterzugeben, dazu ist die Teensy 4.0 Version DNMS_V5.9.x Voraussetzung. Abhängig von der Menge der übertragenen Daten zwischen Teensy und Raspberry Pi  wird empfohlen die I²C Übertragungsrate von 100 kHz auf 200 kHz zu erhöhen (`dtparam=i2c_arm=on,i2c_arm_baudrate=20000` in der Datei `/boot/firmware/config.txt`).
 	+ In der Konfigurationsdatei dnms.conf können nun wieder die Bool Werte mit true und false angegeben werden.
@@ -218,6 +222,10 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 ## News
 
 ### May 2026
+
+- New Teensy 4.0 board DNMS-T4.0-V1.8S has a layout for SMD assembly. This means that you can commission the manufacture and assembly of the board from companies such as Aisler, EuroCircuits, JLCPCB and PCBWay. However, for cost and logistical reasons, it is recommended that you solder the Teensy board yourself. Two bills of materials (BOMs) are attached as examples for ordering fully assembled boards. These must always be adapted to the currently available components, though. The layout is based on the EasyEDA template by Ralf Bötticher (many thanks!). There are also two changes to the layout:
+	+ The J1 jumper has been removed; this jumper was used to supply power for flashing the board in standalone mode. It is no longer necessary to cut the VIN – VUSB connection on the Teensy 4.0 board.
+	+ Integration of a fuse F1 in the 5V power supply line of the extended I²C connection, i.e. between the communication processor and the Teensy 4.0 board.
 
  - New Raspberry Pi firmware dnms-0.9.25 with the following improvements:
 	+ Ability to query and transmit C-values; this requires Teensy 4.0 version DNMS_V5.9.x. Depending on the amount of data transferred between the Teensy and the Raspberry Pi, it is recommended to increase the I²C clock from 100 kHz to 200 kHz (set `dtparam=i2c_arm=on,i2c_arm_baudrate=20000` in the file `/boot/firmware/config.txt`).
