@@ -8,6 +8,8 @@
 
 Bitte beachten: Wird das IM72D128 Mikrofon eingesetzt, muss auf dem Teensy4.0 Board die Firmware DNMS_V5.2.6 oder DNMS_V5.5.x und höher geflasht sein. Die Firmware DNMS_V5.5.x kann mit dem IM72D128 benutzt werden, wenn auf dem Kommunikationsprozessor (NodeMCU oder Raspiberry Pi) eine Firmware vorhanden ist, die die Umschaltung zwischen den Mikrofonen ICS-43434 und IM72D128 erlaubt. Wird z.B. auf der NodeMCU eine ältere Firmware oder die Standard Firmware von Sensor.Community eingesetzt, so muss auf dem Teensy4.0 Board die DNMS_V5.2.6 Firmware geflasht sein.
 
+- DNMS_V5.9.x  für IM72D128 und ICS-43434 Mikrofone mit dem Unterschied zur Version DNMS_V5.8.x, dass zusätzlich C-Werte berechnet und abgerufen werden können. Wenn keine C-Werte benötigt werden, ist die Version  DNMS_V5.8.x weiterhin aktuell. 
+
 - DNMS_V5.8.x  für IM72D128 und ICS-43434 Mikrofone mit:
 	+ zusätzlicher Auswahl der Frequenzgangkorrektur für das DLR Gehäuse mit IM72D128 Mikrofon, sowie Auswahl ohne Frequenzgangkorrektur für IM72D128 und ICS-43434 Mikrofon.
 	+ Kleine Korrekturen im Source Code, so dass in der Arduino IDE Version 2.3.8 die Übersetzung ohne Warnungen erfolgt. Dies betrifft auch die Library dnms_audio_lib-master.zip, deshalb beim Übersetzen die veränderte Library einbinden.
@@ -49,6 +51,8 @@ IM72D128: im Wechsel 500ms an und 500ms aus
 ### Version history:
 
 Please note: If the IM72D128 microphone is used, the firmware DNMS_V5.2.6 or DNMS_V5.5.x and higher must be flashed on the Teensy4.0 board. The firmware DNMS_V5.5.x can be used with the IM72D128 if there is firmware on the communications processor (NodeMCU or Raspiberry Pi) that allows switching between the ICS-43434 and IM72D128 microphones. For example, if older firmware or the standard firmware from Sensor.Community is used on the NodeMCU, the DNMS_V5.2.6 firmware must be flashed on the Teensy4.0 board.
+
+- DNMS_V5.9.x  for IM72D128 and ICS-43434 microphones; the difference from version DNMS_V5.8.x is that C-values can now also be calculated and retrieved. If C-values are not required, version  DNMS_V5.8.x remains the current version.
 
 - DNMS_V5.8.x  for IM72D128 and ICS-43434 microphones with:
 	+ additional selection of frequency response correction for the DLR housing with IM72D128 microphone, as well as a selection without frequency response correction for IM72D128 and ICS-43434 microphones

@@ -17,6 +17,8 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 
 ### Mai 2026
 
+- Neue Teensy 4.0 Firmware DNMS_V5.9.x  für IM72D128 und ICS-43434 Mikrofone mit dem Unterschied zur Version DNMS_V5.8.x, dass zusätzlich C-Werte berechnet und abgerufen werden können. Wenn keine C-Werte benötigt werden, ist die Version  DNMS_V5.8.x weiterhin aktuell. 
+
 - Neue NodeMCU Firmware AIRROHR-DNMS-5.17, AIRROHR-DNMS-5.17-en, AIRROHR-DNMS-5.17-fr
 	+ Neue Konfigurationsmöglichkeit für verschiedene Mikrofone und Frequenzgangkorrekturen der Mikrofone. Eine Teensy4.0 Version ab DNMS_V5.8.x ist Voraussetzung um dies zu nutzen.
 	+ Konfiguration eines digitalen Eingangs an der der NodeMCU. Der Zustand wird mit der Bezeichnung  DIN01 zur InfluxDB übertragen.
@@ -212,6 +214,8 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 ## News
 
 ### May 2026
+
+- New Teensy 4.0 firmware DNMS_V5.9.x  for IM72D128 and ICS-43434 microphones; the difference from version DNMS_V5.8.x is that C-values can now also be calculated and retrieved. If C-values are not required, version  DNMS_V5.8.x remains the current version. 
 
 - New NodeMCU firmware AIRROHR-DNMS-5.17, AIRROHR-DNMS-5.17-en, AIRROHR-DNMS-5.17-fr
 	+ New configuration options for different microphones and microphone frequency response corrections. A Teensy 4.0 version from DNMS_V5.8.x onwards is required to use this feature.
