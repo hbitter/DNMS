@@ -6,6 +6,10 @@ Ab Pi Zero W möglich, Pi Zero 2 W und aufwärts empfohlen.
 
 ### Versions Historie:
 
+ - Neue Raspberry Pi Firmware dnms-0.9.25 mit folgenden Verbesserungen:
+	+ Möglichkeit C-Werte abzufragen und weiterzugeben, dazu ist die Teensy 4.0 Version DNMS_V5.9.x Voraussetzung. Abhängig von der Menge der übertragenen Daten zwischen Teensy und Raspberry Pi  wird empfohlen die I²C Übertragungsrate von 100 kHz auf 200 kHz zu erhöhen (`dtparam=i2c_arm=on,i2c_arm_baudrate=20000` in der Datei `/boot/firmware/config.txt`).
+	+ In der Konfigurationsdatei dnms.conf können nun wieder die Bool Werte mit true und false angegeben werden.
+
  - dnms-0.9.23 ersetzt dnms-0.9.21 aufgrund von Fehlern:
 	 + Bei der Umwandlung der MAC-Adresse in die ID
 	 + Entfernung Testausgabe der Daten auf Konsole bei Sensor.Community Übertragung
@@ -163,6 +167,10 @@ Ab Pi Zero W möglich, Pi Zero 2 W und aufwärts empfohlen.
 Possible from Pi Zero W, Pi Zero 2 W and above recommended.
 
 ### Version history:
+
+ - New Raspberry Pi firmware dnms-0.9.25 with the following improvements:
+	+ Ability to query and transmit C-values; this requires Teensy 4.0 version DNMS_V5.9.x. Depending on the amount of data transferred between the Teensy and the Raspberry Pi, it is recommended to increase the I²C clock from 100 kHz to 200 kHz (set `dtparam=i2c_arm=on,i2c_arm_baudrate=20000` in the file `/boot/firmware/config.txt`).
+	+ In the configuration file dnms.conf, the Boolean values can now once again be specified as true and false.
 
  - dnms-0.9.23 replaces version dnms-0.9.21 due to bugs:
 	 + MAC address to ID conversion was incorrect in some circumstances

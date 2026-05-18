@@ -22,7 +22,13 @@
 	- DNMS_V4.4.4 - 2. Messintervall mit Schwellenangabe für Lärmereignisse um diese Daten zu einer InfluxDB zu senden
 
 - aktuelle V5 Versionen:
-	- DNMS_V5.5.x - für IM72D128 Mikrofon und  ICS-43434 Mikrofon mit verbesserter Frequenzgangkorrektur und verbesserten Terzwerten
+	- DNMS_V5.9.x  für IM72D128 und ICS-43434 Mikrofone mit dem Unterschied zur Version DNMS_V5.8.x, dass zusätzlich C-Werte berechnet und abgerufen werden können. Wenn keine C-Werte benötigt werden, ist die Version  DNMS_V5.8.x weiterhin aktuell. Eine Version mit Abfrage der C-Werte ist die Raspberry Pi Version dnms-0.9.25. Eine Abfrage der C-Werte für die NodeMCU Firmware ist z.Zt. nicht geplant.
+
+	- DNMS_V5.8.x  für IM72D128 und ICS-43434 Mikrofone mit:
+		+ zusätzlicher Auswahl der Frequenzgangkorrektur für das DLR Gehäuse mit IM72D128 Mikrofon, sowie Auswahl ohne Frequenzgangkorrektur für IM72D128 und ICS-43434 Mikrofon.
+		+ Kleine Korrekturen im Source Code, so dass in der Arduino IDE Version 2.3.8 die Übersetzung ohne Warnungen erfolgt. Dies betrifft auch die Library dnms_audio_lib-master.zip, deshalb beim Übersetzen die veränderte Library einbinden.
+		+ Korrekturen an der I²C Übertragung, Änderung der Werte für die Glitch Filter von SDA und SCL im Slave Modus. Diese Korrekturen befinden sich in der Library  teensy4_i2c-master.zip, deshalb beim Übersetzen die veränderte Library einbinden.
+
 
 	- Testprogramm für Teensy4.0 Board und angeschlossenem Mikrofon ICS-43434:  DNMS_Vt.8.4 und für Mikrofon IM72D128: DNMS_Vt.8.6, mit verbesserter Frequenzgangkorrektur
 
@@ -84,7 +90,12 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Teen
 	- DNMS_V4.4.4 - 2nd measurement interval with configurable threshold for transmitting the additional data to an InfluxDB
 
 - current V5 versions:
-	- DNMS_V5.5.x - for IM72D128 microphone and ICS-43434 microphone with improved frequency correction also for 1/3 octave values
+	- DNMS_V5.9.x  for IM72D128 and ICS-43434 microphones; the difference from version DNMS_V5.8.x is that C-values can now also be calculated and retrieved. If C-values are not required, version  DNMS_V5.8.x remains the current version. One version that retrieves C-values is the Raspberry Pi version dnms-0.9.25. There are currently no plans to retrieve C-values for the NodeMCU firmware.
+
+	- DNMS_V5.8.x  for IM72D128 and ICS-43434 microphones with:
+		+ additional selection of frequency response correction for the DLR housing with IM72D128 microphone, as well as a selection without frequency response correction for IM72D128 and ICS-43434 microphones
+		+ minor corrections have been made to the source code so that the code compiles without warnings in Arduino IDE version 2.3.8. This also applies to the dnms_audio_lib-master.zip library, so please include the updated library when compiling.
+		+ corrections to the I²C transmission; changes to the values for the SDA and SCL glitch filters in slave mode. These corrections are contained in the library teensy4_i2c-master.zip, so be sure to include the updated library when compiling.	
 	- Test program for Teensy 4.0 board and connected ICS-43434 microphone: DNMS_Vt.8.4 and
 test program for IM72D128 microphone: DNMS_Vt.8.6, both with improved microphone frequency correction
 
