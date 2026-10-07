@@ -6,6 +6,14 @@ Ab Pi Zero W möglich, Pi Zero 2 W und aufwärts empfohlen.
 
 ### Versions Historie:
 
+
+- Raspberry Pi Firmware Versionen dnms-0.9.27 und dnms-0.9.28
+	+ Die Version dnms-0.9.28 enthält  im Unterschied zur Version dnms-0.9.27 einen lokalen Webserver, der Sztatus Informationen anzeigt und über den die Konfiguration des Sensors angesehen und geändert werden kann. Weiterhin bietet die Version dnms-0.9.28 ein HTTP API (POST) für die Daten des 1. Messintervalls.
+	+ Unterstützung der Teensy4.0 Firmware DNMS_V6.0.x mit der wesentlichen Änderung, dass die Frequenzgangkorrekturwerte beim Start vom Raspberry Pi  an die Teensy4.0 Firmware übertragen werden. Ist eine ältere Firmware auf dem Tennsy4.0 Board installiert, so wird dies ebenfalls unterstützt d.h. es ist abwärtskompatibel.
+	+ Lokaler Webserver der Version dnms-0.9.28 mit Farbe und Logo entsprechend der NodeMCU Version.
+	 ![](images/Webserver_Raspi.png)
+
+
  - Neue Raspberry Pi Firmware dnms-0.9.25 mit folgenden Verbesserungen:
 	+ Möglichkeit C-Werte abzufragen und weiterzugeben, dazu ist die Teensy 4.0 Version DNMS_V5.9.x Voraussetzung. Abhängig von der Menge der übertragenen Daten zwischen Teensy und Raspberry Pi  wird empfohlen die I²C Übertragungsrate von 100 kHz auf 200 kHz zu erhöhen (`dtparam=i2c_arm=on,i2c_arm_baudrate=20000` in der Datei `/boot/firmware/config.txt`).
 	+ In der Konfigurationsdatei dnms.conf können nun wieder die Bool Werte mit true und false angegeben werden.
@@ -167,6 +175,12 @@ Ab Pi Zero W möglich, Pi Zero 2 W und aufwärts empfohlen.
 Possible from Pi Zero W, Pi Zero 2 W and above recommended.
 
 ### Version history:
+
+- Raspberry Pi Firmware versions dnms-0.9.27 and dnms-0.9.28
+	+ Unlike version dnms-0.9.27, version dnms-0.9.28 includes a local web server which displays status information and allows the sensor’s configuration to be viewed and modified. Furthermore, version dnms-0.9.28 provides an HTTP API (POST) for the data from the first measurement interval.
+	+ Support for the Teensy 4.0 firmware DNMS_V6.0.x, with the key change being that the frequency response correction values are transferred from the Raspberry Pi to the Teensy 4.0 firmware at start-up. If an older version of the firmware is installed on the Teensy 4.0 board, this is also supported; in other words, it is backwards compatible.
+	+ Local web server, version dnms-0.9.28, with a colour scheme and logo matching the NodeMCU version.
+	 ![](images/Webserver_Raspi.png)
 
  - New Raspberry Pi firmware dnms-0.9.25 with the following improvements:
 	+ Ability to query and transmit C-values; this requires Teensy 4.0 version DNMS_V5.9.x. Depending on the amount of data transferred between the Teensy and the Raspberry Pi, it is recommended to increase the I²C clock from 100 kHz to 200 kHz (set `dtparam=i2c_arm=on,i2c_arm_baudrate=20000` in the file `/boot/firmware/config.txt`).

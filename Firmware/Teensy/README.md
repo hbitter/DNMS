@@ -30,7 +30,15 @@
 		+ Korrekturen an der I²C Übertragung, Änderung der Werte für die Glitch Filter von SDA und SCL im Slave Modus. Diese Korrekturen befinden sich in der Library  teensy4_i2c-master.zip, deshalb beim Übersetzen die veränderte Library einbinden.
 
 
-	- Testprogramm für Teensy4.0 Board und angeschlossenem Mikrofon ICS-43434:  DNMS_Vt.8.4 und für Mikrofon IM72D128: DNMS_Vt.8.6, mit verbesserter Frequenzgangkorrektur
+- Testprogramm für Teensy4.0 Board und angeschlossenem Mikrofon ICS-43434:  DNMS_Vt.8.4 und für Mikrofon IM72D128: DNMS_Vt.8.6, mit verbesserter Frequenzgangkorrektur.
+
+
+- DNMS_V6.0.x für IM72D128 und ICS-43434 Mikrofone.   
+ 	+ Komplettes Refactoring der Firmware mit Optimierung der Verwendung von Double (nur noch wenn absolut notwendig), dadurch erfordert die Berechnung der Leq Werte deutlich weniger Ressourcen.
+ 	+  Fehlerbeseitigung einer Race-Condition zwischen 1. und 2. Messintervall.
+ 	+  Die Parameterwerte zur Frequenzgangkorrektur sind nicht mehr in der Firmware fest abgespeichert. Es werden für jeden Mikrofontyp 31 Korrekturwerte vom Kommunikationsprozessor an die Teensy Firmware beim Start übertragen, daraus berechnet die Teensy Firmware die Korrekturwerte für den gewählten Mikrofontyp für die FFT Bins.
+ 	+  Änderung der Filterparameter für die I²C Kommunikation zwischen Teensy und Kommunikationsprozessor, dadurch stabilere I²C Übertragung. Beim Kompilieren der Firmware ist es deshalb notwendig die angepasste teensy4_i2c-master Library zu benutzen (zu finden unter Firmware/Teensy/Teensy4.0/).
+ 	
 
 ## Teensy3.6
 
@@ -98,6 +106,14 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Teen
 		+ corrections to the I²C transmission; changes to the values for the SDA and SCL glitch filters in slave mode. These corrections are contained in the library teensy4_i2c-master.zip, so be sure to include the updated library when compiling.	
 	- Test program for Teensy 4.0 board and connected ICS-43434 microphone: DNMS_Vt.8.4 and
 test program for IM72D128 microphone: DNMS_Vt.8.6, both with improved microphone frequency correction
+
+- Test programme for the Teensy 4.0 board and connected ICS-43434 microphone: DNMS_Vt.8.4; and for the IM72D128 microphone: DNMS_Vt.8.6, with improved frequency response correction.
+
+- DNMS_V6.0.x for IM72D128 and ICS-43434 microphones.   
+ 	+ Complete refactoring of the firmware, optimising the use of `double` (now only used when absolutely necessary), meaning that the calculation of Leq values requires significantly fewer resources.
+ 	+  Resolving a race condition between the first and second measurement intervals.
+ 	+  The parameter values for frequency response correction are no longer hard-coded in the firmware. For each microphone type, 31 correction values are transferred from the communication processor to the Teensy firmware at start-up; the Teensy firmware then uses these to calculate the correction values for the selected microphone type for the FFT bins.
+ 	+  Changes to the filter parameters for I²C communication between the Teensy and the communication processor, resulting in more stable I²C transmission. When compiling the firmware, it is therefore necessary to use the modified teensy4_i2c-master library (located in Firmware/Teensy/Teensy4.0/).
 
 
 ## Teensy3.6

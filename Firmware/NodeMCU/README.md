@@ -7,6 +7,13 @@
 ### Versions Historie:
 
 
+- AIRROHR-DNMS-6.0, AIRROHR-DNMS-6.0-en, AIRROHR-DNMS-6.0-fr
+	+ Unterstützung der Teensy4.0 Firmware DNMS_V6.0.x mit der wesentlichen Änderung, dass die Frequenzgangkorrekturwerte beim Start von der NodeMCU an die Teensy4.0 Firmware übertragen werden. Ist eine ältere Firmware auf dem Tennsy4.0 Board installiert, so wird dies ebenfalls unterstützt d.h. es ist abwärtskompatibel.
+	+ Neue Farbe und neues Logo für den lokalen Webserver:
+	 ![](images/Neue_Farbe_und_neues_Logo.png)
+	+ Verbessertes Handling der Datenübertragung zu Sensor.Community und zu MQTT-Brokern um Datenverlust bei der Übertragung weiter zu reduzieren.
+
+
 - AIRROHR-DNMS-5.17, AIRROHR-DNMS-5.17-en, AIRROHR-DNMS-5.17-fr
 	+ Neue Konfigurationsmöglichkeit für verschiedene Mikrofone und Frequenzgangkorrekturen der Mikrofone. Eine Teensy4.0 Version ab DNMS_V5.8.x ist Voraussetzung um dies zu nutzen.
 	+ Konfiguration eines digitalen Eingangs an der der NodeMCU. Der Zustand wird mit der Bezeichnung  DIN01 zur InfluxDB übertragen.
@@ -212,6 +219,13 @@ Ist die Arduino IDE installiert, erfolgt das Schreiben der Firmware auf das Node
 
 
 ### Version history:
+
+- AIRROHR-DNMS-6.0, AIRROHR-DNMS-6.0-en, AIRROHR-DNMS-6.0-fr
+	+ Support for the Teensy 4.0 firmware DNMS_V6.0.x, with the key change being that the frequency response correction values are transferred from the NodeMCU to the Teensy 4.0 firmware at start-up. If an older version of the firmware is installed on the Teensy 4.0 board, this is also supported; in other words, it is backwards compatible.
+	+ A new colour scheme and a new logo for the local web server:
+	 ![](images/Neue_Farbe_und_neues_Logo_en.png)
+	+ Improved handling of data transmission to Sensor.Community and to MQTT brokers to further reduce data loss during transmission.
+
 
 - AIRROHR-DNMS-5.17, AIRROHR-DNMS-5.17-en, AIRROHR-DNMS-5.17-fr
 	+ New configuration options for different microphones and microphone frequency response corrections. A Teensy 4.0 version from DNMS_V5.8.x onwards is required to use this feature.

@@ -1,0 +1,1 @@
+gcc  -o dnms dnms.c dnms_rpi_i2c.c b64_encode.c data_logging.c webserver.c sensors_rpi.c -lm -lpigpio -lpthread -lssl -lcrypto -lrt -lconfig -lmosquitto -liw -lmicrohttpd -lpam

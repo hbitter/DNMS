@@ -15,6 +15,33 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
  
 ## Neuigkeiten
 
+### Oktober 2026
+
+- Neue Teensy4.0 Firmware DNMS_V6.0.x für IM72D128 und ICS-43434 Mikrofone.   
+ 	+ Komplettes Refactoring der Firmware mit Optimierung der Verwendung von Double (nur noch wenn absolut notwendig), dadurch erfordert die Berechnung der Leq Werte deutlich weniger Ressourcen.
+ 	+  Fehlerbeseitigung einer Race-Condition zwischen 1. und 2. Messintervall.
+ 	+  Die Parameterwerte zur Frequenzgangkorrektur sind nicht mehr in der Firmware fest abgespeichert. Es werden für jeden Mikrofontyp 31 Korrekturwerte vom Kommunikationsprozessor an die Teensy Firmware beim Start übertragen, daraus berechnet die Teensy Firmware die Korrekturwerte für den gewählten Mikrofontyp für die FFT Bins.
+ 	+  Änderung der Filterparameter für die I²C Kommunikation zwischen Teensy und Kommunikationsprozessor, dadurch stabilere I²C Übertragung. Beim Kompilieren der Firmware ist es deshalb notwendig die angepasste teensy4_i2c-master Library zu benutzen (zu finden unter Firmware/Teensy/Teensy4.0/).
+
+ 	<mark>Achtung: Um diese Firmware zu nutzen, ist die Firmware Version airrohr-DNMS-6.0.0 (oder höher) beim NodeMCU Kommunikationsprozessor oder beim Raspberry Pi  die Version dnms-0.9.27 bzw. dnms-0.9.28 (oder höher) notwendig. Nur diese Versionen haben die Parameter zur Frequenzgangkorrektur abgespeichert und übertragen diese Werte beim Start.<mark>
+ 	
+- Neue NodeMCU Firmware AIRROHR-DNMS-6.0, AIRROHR-DNMS-6.0-en, AIRROHR-DNMS-6.0-fr
+	+ Unterstützung der Teensy4.0 Firmware DNMS_V6.0.x mit der wesentlichen Änderung, dass die Frequenzgangkorrekturwerte beim Start von der NodeMCU an die Teensy4.0 Firmware übertragen werden. Ist eine ältere Firmware auf dem Tennsy4.0 Board installiert, so wird dies ebenfalls unterstützt d.h. es ist abwärtskompatibel.
+	+ Neue Farbe und neues Logo für den lokalen Webserver:
+	 ![](images/Neue_Farbe_und_neues_Logo.png)
+	+ Verbessertes Handling der Datenübertragung zu Sensor.Community und zu MQTT-Brokern um Datenverlust bei der Übertragung weiter zu reduzieren.
+	
+	+  Möglichkeit die NodeMCU Firmware direkt über den Webbrowser auf einen ESP8266  zu flashen. Dies ist möglich mit allen Webbrowsern, die das Web Serial API unterstützen (Chrome, Edge, Brave, Opera aber nicht Firefox ). Um die Funktion zu benutzen,  den entsprechenden Link aufrufen abhängig von der gewünschten Sprachversion:	
+		+ Webflasher Deutsche Firmware: https://hbitter.github.io/DNMS/flash-de.html
+		+ Webflasher Englische Firmware: https://hbitter.github.io/DNMS/flash-en.html
+		+ Webflasher Französische Firmware: https://hbitter.github.io/DNMS/flash-fr.html
+
+- Raspberry Pi Firmware Versionen dnms-0.9.27 und dnms-0.9.28
+	+ Die Version dnms-0.9.28 enthält  im Unterschied zur Version dnms-0.9.27 einen lokalen Webserver, der Sztatus Informationen anzeigt und über den die Konfiguration des Sensors angesehen und geändert werden kann. Weiterhin bietet die Version dnms-0.9.28 ein HTTP API (POST) für die Daten des 1. Messintervalls.
+	+ Unterstützung der Teensy4.0 Firmware DNMS_V6.0.x mit der wesentlichen Änderung, dass die Frequenzgangkorrekturwerte beim Start vom Raspberry Pi  an die Teensy4.0 Firmware übertragen werden. Ist eine ältere Firmware auf dem Tennsy4.0 Board installiert, so wird dies ebenfalls unterstützt d.h. es ist abwärtskompatibel.
+	+ Lokaler Webserver der Version dnms-0.9.28 mit Farbe und Logo entsprechend der NodeMCU Version.
+	 ![](images/Webserver_Raspi.png)
+
 ### Mai 2026
 
 - Neues Teensy 4.0 Board DNMS-T4.0-V1.8S mit Layout für SMD Bestückung , so dass nicht nur die Herstellung der Platine beauftragt werden kann sondern direkt die Bestückung bei Firmen wie Aisler, EuroCircuits, JLCPCB oder PCBWay und weiteren. Das Einlöten des Teensy Boards sollte aus Kosten- und Logistikgründen allerdings weiterhin selbst erfolgen. Zwei Bauteilelisten sind als Beispiel für die Bestellung fertig bestückter Boards beigefügt. Dies ist jedoch immer den aktuell lieferbaren Bauelementen anzupassen. Das Layout basiert auf der EasyEDA Vorlage von Ralf Bötticher (vielen Dank!). Weiterhin gibt es zwei Änderungen im Layout:
@@ -31,10 +58,7 @@ Mit der Firmware Version 5 für Teensy4.0 werden nun auch Z-Werte (LZeq, LZmin, 
 	+ Neue Konfigurationsmöglichkeit für verschiedene Mikrofone und Frequenzgangkorrekturen der Mikrofone. Eine Teensy4.0 Version ab DNMS_V5.8.x ist Voraussetzung um dies zu nutzen.
 	+ Konfiguration eines digitalen Eingangs an der der NodeMCU. Der Zustand wird mit der Bezeichnung  DIN01 zur InfluxDB übertragen.
 	+ Kleine Korrekturen im Source Code, so dass in der Arduino IDE Version 2.3.8 die Übersetzung ohne Warnungen erfolgt.
-	+  Möglichkeit die NodeMCU Firmware direkt über den Webbrowser auf einen ESP8266  zu flashen. Dies ist möglich mit allen Webbrowsern, die das Web Serial API unterstützen (Chrome, Edge, Brave, Opera aber nicht Firefox ). Um die Funktion zu benutzen,  den entsprechenden Link aufrufen abhängig von der gewünschten Sprachversion:
-		+ Deutsche Firmware: https://hbitter.github.io/DNMS/flash-de.html
-		+ Englische Firmware: https://hbitter.github.io/DNMS/flash-en.html
-		+ Französische Firmware: https://hbitter.github.io/DNMS/flash-fr.html
+
 
 - Neue Teensy 4.0 Firmware DNMS_V5.8.x  für IM72D128 und ICS-43434 Mikrofone mit:
 	+ zusätzlicher Auswahl der Frequenzgangkorrektur für das DLR Gehäuse mit IM72D128 Mikrofon, sowie Auswahl ohne Frequenzgangkorrektur für IM72D128 und ICS-43434 Mikrofon.
@@ -221,6 +245,33 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
  
 ## News
 
+### October 2026
+
+- New Teensy4.0 firmware DNMS_V6.0.x for IM72D128 and ICS-43434 microphones.   
+ 	+ Complete refactoring of the firmware, optimising the use of `double` (now only used when absolutely necessary), meaning that the calculation of Leq values requires significantly fewer resources.
+ 	+  Resolving a race condition between the first and second measurement intervals.
+ 	+  The parameter values for frequency response correction are no longer hard-coded in the firmware. For each microphone type, 31 correction values are transferred from the communication processor to the Teensy firmware at start-up; the Teensy firmware then uses these to calculate the correction values for the selected microphone type for the FFT bins.
+ 	+  Changes to the filter parameters for I²C communication between the Teensy and the communication processor, resulting in more stable I²C transmission. When compiling the firmware, it is therefore necessary to use the modified teensy4_i2c-master library (located in Firmware/Teensy/Teensy4.0/).	
+
+ 	<mark>Please note: To use this firmware, the NodeMCU communication processor must be running firmware version airrohr-DNMS-6.0.0 (or later), whilst the Raspberry Pi must be running version dnms-0.9.27 or dnms-0.9.28 (or later). Only these versions have the frequency response correction parameters stored and transmit these values on start-up.<mark>
+
+- New NodeMCU firmware AIRROHR-DNMS-6.0, AIRROHR-DNMS-6.0-en, AIRROHR-DNMS-6.0-fr
+	+ Support for the Teensy 4.0 firmware DNMS_V6.0.x, with the key change being that the frequency response correction values are transferred from the NodeMCU to the Teensy 4.0 firmware at start-up. If an older version of the firmware is installed on the Teensy 4.0 board, this is also supported; in other words, it is backwards compatible.
+	+ A new colour scheme and a new logo for the local web server:
+	 ![](images/Neue_Farbe_und_neues_Logo_en.png)
+	+ Improved handling of data transmission to Sensor.Community and to MQTT brokers to further reduce data loss during transmission.
+	+ Ability  to flash NodeMCU firmware to an ESP8266 directly from a web browser. This is possible with all web browsers that support the Web Serial API (Chrome, Edge, Brave, Opera but not Firefox). To use this feature, click on the appropriate link for your language version:
+		+ German firmware: https://hbitter.github.io/DNMS/flash-de.html
+		+ English firmware: https://hbitter.github.io/DNMS/flash-en.html
+		+ French firmware: https://hbitter.github.io/DNMS/flash-fr.html
+
+
+- Raspberry Pi Firmware versions dnms-0.9.27 and dnms-0.9.28
+	+ Unlike version dnms-0.9.27, version dnms-0.9.28 includes a local web server which displays status information and allows the sensor’s configuration to be viewed and modified. Furthermore, version dnms-0.9.28 provides an HTTP API (POST) for the data from the first measurement interval.
+	+ Support for the Teensy 4.0 firmware DNMS_V6.0.x, with the key change being that the frequency response correction values are transferred from the Raspberry Pi to the Teensy 4.0 firmware at start-up. If an older version of the firmware is installed on the Teensy 4.0 board, this is also supported; in other words, it is backwards compatible.
+	+ Local web server, version dnms-0.9.28, with a colour scheme and logo matching the NodeMCU version.
+	 ![](images/Webserver_Raspi.png)
+
 ### May 2026
 
 - New Teensy 4.0 board DNMS-T4.0-V1.8S has a layout for SMD assembly. This means that you can commission the manufacture and assembly of the board from companies such as Aisler, EuroCircuits, JLCPCB and PCBWay. However, for cost and logistical reasons, it is recommended that you solder the Teensy board yourself. Two bills of materials (BOMs) are attached as examples for ordering fully assembled boards. These must always be adapted to the currently available components, though. The layout is based on the EasyEDA template by Ralf Bötticher (many thanks!). There are also two changes to the layout:
@@ -237,10 +288,7 @@ Firmware version 5 for Teensy4.0 now supports Z-values (LZeq, LZmin, LZmax as we
 	+ New configuration options for different microphones and microphone frequency response corrections. A Teensy 4.0 version from DNMS_V5.8.x onwards is required to use this feature.
 	+ Configuring a digital input on the NodeMCU. The status is transmitted to InfluxDB under the label DIN01.
 	+ Minor corrections to the source code so that the code compiles without warnings in Arduino IDE version 2.3.8.
-	+ Ability  to flash NodeMCU firmware to an ESP8266 directly from a web browser. This is possible with all web browsers that support the Web Serial API (Chrome, Edge, Brave, Opera but not Firefox). To use this feature, click on the appropriate link for your language version:
-		+ German firmware: https://hbitter.github.io/DNMS/flash-de.html
-		+ English firmware: https://hbitter.github.io/DNMS/flash-en.html
-		+ French firmware: https://hbitter.github.io/DNMS/flash-fr.html
+
 
 - New Teensy 4.0 firmware DNMS_V5.8.x for IM72D128 and ICS-43434 microphones, featuring::
 	+ Additional selection of frequency response correction for the DLR housing with IM72D128 microphone, as well as a selection without frequency response correction for IM72D128 and ICS-43434 microphones

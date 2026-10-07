@@ -1,0 +1,23 @@
+[Unit]
+Description=DNMS Service
+After=network-online.target NetworkManager-wait-online.service
+Wants=network-online.target NetworkManager-wait-online.service
+StartLimitInterval=60
+StartLimitBurst=10
+
+
+[Service]
+Type=simple
+
+StandardOutput=truncate:uhuuhu/dnms.log
+StandardError=truncate:uhuuhu/dnms.log
+
+WorkingDirectory=uhuuhu
+ExecStart=uhuuhu/dnms
+
+Restart=always
+RestartSec=1
+
+
+[Install]
+WantedBy=multi-user.target

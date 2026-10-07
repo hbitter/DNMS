@@ -8,6 +8,16 @@
 
 Bitte beachten: Wird das IM72D128 Mikrofon eingesetzt, muss auf dem Teensy4.0 Board die Firmware DNMS_V5.2.6 oder DNMS_V5.5.x und höher geflasht sein. Die Firmware DNMS_V5.5.x kann mit dem IM72D128 benutzt werden, wenn auf dem Kommunikationsprozessor (NodeMCU oder Raspiberry Pi) eine Firmware vorhanden ist, die die Umschaltung zwischen den Mikrofonen ICS-43434 und IM72D128 erlaubt. Wird z.B. auf der NodeMCU eine ältere Firmware oder die Standard Firmware von Sensor.Community eingesetzt, so muss auf dem Teensy4.0 Board die DNMS_V5.2.6 Firmware geflasht sein.
 
+
+- DNMS_V6.0.x für IM72D128 und ICS-43434 Mikrofone.   
+ 	+ Komplettes Refactoring der Firmware mit Optimierung der Verwendung von Double (nur noch wenn absolut notwendig), dadurch erfordert die Berechnung der Leq Werte deutlich weniger Ressourcen.
+ 	+  Fehlerbeseitigung einer Race-Condition zwischen 1. und 2. Messintervall.
+ 	+  Die Parameterwerte zur Frequenzgangkorrektur sind nicht mehr in der Firmware fest abgespeichert. Es werden für jeden Mikrofontyp 31 Korrekturwerte vom Kommunikationsprozessor an die Teensy Firmware beim Start übertragen, daraus berechnet die Teensy Firmware die Korrekturwerte für den gewählten Mikrofontyp für die FFT Bins.
+ 	+  Änderung der Filterparameter für die I²C Kommunikation zwischen Teensy und Kommunikationsprozessor, dadurch stabilere I²C Übertragung. Beim Kompilieren der Firmware ist es deshalb notwendig die angepasste teensy4_i2c-master Library zu benutzen (zu finden unter Firmware/Teensy/Teensy4.0/).
+ 
+  	<mark>Achtung: Um diese Firmware zu nutzen, ist die Firmware Version airrohr-DNMS-6.0.0 (oder höher) beim NodeMCU Kommunikationsprozessor oder beim Raspberry Pi  die Version dnms-0.9.27 bzw. dnms-0.9.28 (oder höher) notwendig. Nur diese Versionen haben die Parameter zur Frequenzgangkorrektur abgespeichert und übertragen diese Werte beim Start.<mark>
+ 
+
 - DNMS_V5.9.x  für IM72D128 und ICS-43434 Mikrofone mit dem Unterschied zur Version DNMS_V5.8.x, dass zusätzlich C-Werte berechnet und abgerufen werden können. Wenn keine C-Werte benötigt werden, ist die Version  DNMS_V5.8.x weiterhin aktuell. Eine Version mit Abfrage der C-Werte ist die Raspberry Pi Version dnms-0.9.25. Eine Abfrage der C-Werte für die NodeMCU Firmware ist z.Zt. nicht geplant.
 
 - DNMS_V5.8.x  für IM72D128 und ICS-43434 Mikrofone mit:
@@ -51,6 +61,14 @@ IM72D128: im Wechsel 500ms an und 500ms aus
 ### Version history:
 
 Please note: If the IM72D128 microphone is used, the firmware DNMS_V5.2.6 or DNMS_V5.5.x and higher must be flashed on the Teensy4.0 board. The firmware DNMS_V5.5.x can be used with the IM72D128 if there is firmware on the communications processor (NodeMCU or Raspiberry Pi) that allows switching between the ICS-43434 and IM72D128 microphones. For example, if older firmware or the standard firmware from Sensor.Community is used on the NodeMCU, the DNMS_V5.2.6 firmware must be flashed on the Teensy4.0 board.
+
+- DNMS_V6.0.x for IM72D128 and ICS-43434 microphones.   
+ 	+ Complete refactoring of the firmware, optimising the use of `double` (now only used when absolutely necessary), meaning that the calculation of Leq values requires significantly fewer resources.
+ 	+  Resolving a race condition between the first and second measurement intervals.
+ 	+  The parameter values for frequency response correction are no longer hard-coded in the firmware. For each microphone type, 31 correction values are transferred from the communication processor to the Teensy firmware at start-up; the Teensy firmware then uses these to calculate the correction values for the selected microphone type for the FFT bins.
+ 	+  Changes to the filter parameters for I²C communication between the Teensy and the communication processor, resulting in more stable I²C transmission. When compiling the firmware, it is therefore necessary to use the modified teensy4_i2c-master library (located in Firmware/Teensy/Teensy4.0/).
+ 
+ 	<mark>Please note: To use this firmware, the NodeMCU communication processor must be running firmware version airrohr-DNMS-6.0.0 (or later), whilst the Raspberry Pi must be running version dnms-0.9.27 or dnms-0.9.28 (or later). Only these versions have the frequency response correction parameters stored and transmit these values on start-up.<mark>
 
 - DNMS_V5.9.x  for IM72D128 and ICS-43434 microphones; the difference from version DNMS_V5.8.x is that C-values can now also be calculated and retrieved. If C-values are not required, version  DNMS_V5.8.x remains the current version. One version that retrieves C-values is the Raspberry Pi version dnms-0.9.25. There are currently no plans to retrieve C-values for the NodeMCU firmware.
 
